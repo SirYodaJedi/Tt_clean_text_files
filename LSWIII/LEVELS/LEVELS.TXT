@@ -1,0 +1,3320 @@
+level_start
+	dir "FrontEnd"
+	file "FrontEnd"
+	common_dir "FrontEnd\common"
+	common_file "FrontEnd_TECH"
+level_end
+
+level_start
+	dir "CWHub\MainStory_IntroA"
+	file "MainStory_IntroA"
+	intro_level
+	unlit
+level_end
+
+level_start
+	dir "CWHub\MainStory_IntroB"
+	file "MainStory_IntroB"
+	intro_level
+	unlit
+level_end
+
+level_start
+	name_char "LEVEL_CWHub"
+	dir "CWHub\CWHub"
+	file "CWHub"
+	common_dir "CWHub\CWHub\common"
+	common_file "CWHub_TECH"
+	hub_new_level
+	loadgame_level
+	customiser_level
+	no_background_levels
+level_end
+
+level_start
+	name_char "LEVEL_HubAssault"
+	dir "HubAssault\HubAssault"
+	file "HubAssault"
+	common_dir "HubAssault\HubAssault\common"
+	common_file "HubAssault_TECH"
+	test_level ///remember to remove
+level_end
+
+level_start
+	dir "CWHub\FreePlayExit_Status"
+	file "FreePlayExit_Status"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+level_start
+	name_char "LEVEL_AMBUSH_INTRO"
+	dir "Ambush\Ambush_Intro"
+	file "Ambush_Intro"
+	intro_level
+level_end
+
+level_start
+	name_char "LEVEL_AMBUSH_A"
+	dir "Ambush\Ambush_A"
+	file "Ambush_A"
+	common_dir "Ambush\Ambush_A\common"
+	common_file "Ambush_A_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_AMBUSH_B"
+	dir "Ambush\Ambush_B"
+	file "Ambush_B"
+	common_dir "Ambush\Ambush_B\common"
+	common_file "Ambush_B_TECH"
+level_end
+
+level_start
+	dir "Ambush\Ambush_Outro"
+	file "Ambush_Outro"
+	outro_level
+level_end
+
+level_start
+	dir "Ambush\Ambush_Status"
+	file "Ambush_Status"
+	status_continue_to_level "StoryB_Midtro1"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "Ambush\Ambush_MissionStatus"
+	file "Ambush_MissionStatus"
+	status_continue_to_level "StoryB_Midtro1"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "Ambush\StoryB_Midtro1"
+	file "StoryB_Midtro1"
+	midtro_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	name_char "LEVEL_GeonosianArena"
+	dir "GeonosianArena\GeonosianArena"
+	file "GeonosianArena"
+	SplitDirMethod_AverageCam
+	common_dir "GeonosianArena\GeonosianArena\common"
+	common_file "GeonosianArena_TECH"
+	newgame_level
+level_end
+
+level_start
+	dir "GeonosianArena\GeonosianArena_Status"
+	file "GeonosianArena_Status"
+	status_continue_to_level "MainStory_IntroA"
+	status_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	name_char "LEVEL_Rookies_Intro"
+	dir "Rookies\Rookies_Intro"
+	file "Rookies_Intro"
+	intro_level
+level_end
+
+level_start
+	name_char "LEVEL_Rookies_A"
+	dir "Rookies\Rookies_A"
+	file "Rookies_A"
+	common_dir "Rookies\Rookies_A\common"
+	common_file "Rookies_A_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_Rookies_B"
+	dir "Rookies\Rookies_B"
+	file "Rookies_B"
+	common_dir "Rookies\Rookies_B\common"
+	common_file "Rookies_B_TECH"
+	Use_Fixed_Orb
+level_end
+
+level_start
+	dir "Rookies\Rookies_OutroB"
+	file "Rookies_OutroB"
+	outro_level
+level_end
+
+level_start
+	dir "Rookies\Rookies_OutroC"
+	file "Rookies_OutroC"
+	outro_level
+level_end
+
+level_start
+	dir "Rookies\Rookies_OutroD"
+	file "Rookies_OutroD"
+	outro_level
+level_end
+
+level_start
+	dir "Rookies\Rookies_Status"
+	file "Rookies_Status"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "Rookies\Rookies_MissionStatus"
+	file "Rookies_MissionStatus"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	name_char "LEVEL_GunganGeneral_IntroA"
+	dir "GunganGeneral\GunganGeneral_IntroA"
+	file "GunganGeneral_IntroA"
+	intro_level
+level_end
+
+level_start
+	name_char "LEVEL_GunganGeneral_IntroB"
+	dir "GunganGeneral\GunganGeneral_IntroB"
+	file "GunganGeneral_IntroB"
+	intro_level
+level_end
+
+level_start
+	name_char "LEVEL_GunganGeneral_A"
+	dir "GunganGeneral\GunganGeneral_A"
+	file "GunganGeneral_A"
+	common_dir "GunganGeneral\GunganGeneral_A\common"
+	common_file "GunganGeneral_A_TECH"
+	disable_bolt_shadows
+	full_ground_assault
+level_end
+
+level_start
+	dir "GunganGeneral\GunganGeneral_Outro"
+	file "GunganGeneral_Outro"
+	outro_level
+level_end
+
+level_start
+	dir "GunganGeneral\GunganGeneral_Status"
+	file "GunganGeneral_Status"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	name_char "LEVEL_DuelOfTheDroids_INTRO"
+	dir "DuelOfTheDroids\DuelOfTheDroids_INTRO"
+	file "DuelOfTheDroids_INTRO"
+	intro_level
+level_end
+
+level_start
+	dir "DuelOfTheDroids\DuelOfTheDroids_OUTRO"
+	file "DuelOfTheDroids_OUTRO"
+	outro_level
+level_end
+
+level_start
+	name_char "LEVEL_DuelOfTheDroids_A"
+	dir "DuelOfTheDroids\DuelOfTheDroids_A"
+	file "DuelOfTheDroids_A"
+	common_dir "DuelOfTheDroids\DuelOfTheDroids_A\common"
+	common_file "DuelOfTheDroids_A_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_DuelOfTheDroids_B"
+	dir "DuelOfTheDroids\DuelOfTheDroids_B"
+	file "DuelOfTheDroids_B"
+	common_dir "DuelOfTheDroids\DuelOfTheDroids_B\common"
+	common_file "DuelOfTheDroids_B_TECH"
+	disable_sabre_scar
+	Use_Fixed_Orb
+level_end
+
+level_start
+	name_char "LEVEL_DuelOfTheDroids_C"
+	dir "DuelOfTheDroids\DuelOfTheDroids_C"
+	file "DuelOfTheDroids_C"
+	common_dir "DuelOfTheDroids\DuelOfTheDroids_C\common"
+	common_file "DuelOfTheDroids_C_TECH"
+level_end
+
+level_start
+	dir "DuelOfTheDroids\DuelOfTheDroids_MissionStatus"
+	file "DuelOfTheDroids_MissionStatus"
+	status_continue_to_level "DuelOfTheDroids_A"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "DuelOfTheDroids\DuelOfTheDroids_Status"
+	file "DuelOfTheDroids_Status"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	name_char "LEVEL_LairOfGrievous_A"
+	dir "LairOfGrievous\LairOfGrievous_A"
+	file "LairOfGrievous_A"
+	common_dir "LairOfGrievous\LairOfGrievous_a\Common"
+	common_file "LairOfGrievous_a_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_LairOfGrievous_B"
+	dir "LairOfGrievous\LairOfGrievous_B"
+	file "LairOfGrievous_B"
+	common_dir "LairOfGrievous\LairOfGrievous_b\Common"
+	common_file "LairOfGrievous_b_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_LairOfGrievous_C"
+	dir "LairOfGrievous\LairOfGrievous_C"
+	file "LairOfGrievous_C"
+	common_dir "LairOfGrievous\LairOfGrievous_c\Common"
+	common_file "LairOfGrievous_c_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_LairOfGrievous_D"
+	dir "LairOfGrievous\LairOfGrievous_D"
+	file "LairOfGrievous_D"
+	common_dir "LairOfGrievous\LairOfGrievous_D\Common"
+	common_file "LairOfGrievous_D_TECH"
+level_end
+
+level_start
+	dir "LairOfGrievous\LairOfGrievous_Status"
+	file "LairOfGrievous_Status"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "LairOfGrievous\LairOfGrievous_MissionStatus"
+	file "LairOfGrievous_MissionStatus"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	name_char "LEVEL_ShadowOfMalevolence_INTRO"
+	dir "ShadowOfMalevolence\ShadowOfMalevolence_INTRO"
+	file "ShadowOfMalevolence_INTRO"
+	intro_level
+level_end
+
+level_start
+	name_char "LEVEL_ShadowOfMalevolence_A"
+	dir "ShadowOfMalevolence\ShadowOfMalevolence_A"
+	file "ShadowOfMalevolence_A"
+	common_dir "ShadowOfMalevolence\ShadowOfMalevolence_A\common"
+	common_file "ShadowOfMalevolence_A_TECH"
+	in_space
+level_end
+
+level_start
+	dir "ShadowOfMalevolence\ShadowOfMalevolence_OUTRO"
+	file "ShadowOfMalevolence_OUTRO"
+	outro_level
+level_end
+
+level_start
+	dir "ShadowOfMalevolence\ShadowOfMalevolence_Status"
+	file "ShadowOfMalevolence_Status"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "ShadowOfMalevolence\ShadowOfMalevolence_MissionSt"
+	file "ShadowOfMalevolence_MissionSt"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	name_char "LEVEL_DestroyMalevolence_INTRO"
+	dir "DestroyMalevolence\DestroyMalevolence_INTRO"
+	file "DestroyMalevolence_INTRO"
+	intro_level
+level_end
+
+level_start
+	name_char "LEVEL_DestroyMalevolence_A"
+	dir "DestroyMalevolence\DestroyMalevolence_A"
+	file "DestroyMalevolence_A"
+	common_dir "DestroyMalevolence\DestroyMalevolence_A\common"
+	common_file "DestroyMalevolence_A_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_DestroyMalevolence_B"
+	dir "DestroyMalevolence\DestroyMalevolence_B"
+	file "DestroyMalevolence_B"
+	common_dir "DestroyMalevolence\DestroyMalevolence_B\common"
+	common_file "DestroyMalevolence_B_TECH"
+	Use_Fixed_Orb
+level_end
+
+level_start
+	dir "DestroyMalevolence\DestroyMalevolence_OUTRO"
+	file "DestroyMalevolence_OUTRO"
+	outro_level
+level_end
+
+level_start
+	dir "DestroyMalevolence\DestroyMalevolence_Status"
+	file "DestroyMalevolence_Status"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "DestroyMalevolence\DestroyMalevolence_MissionSt"
+	file "DestroyMalevolence_MissionSt"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	name_char "LEVEL_JediCrash_INTRO"
+	dir "JediCrash\JediCrash_INTRO"
+	file "JediCrash_INTRO"
+	intro_level
+level_end
+
+level_start
+	name_char "LEVEL_JediCrash_A"
+	dir "JediCrash\JediCrash_A"
+	file "JediCrash_A"
+	common_dir "JediCrash\JediCrash_A\Common"
+	common_file "JediCrash_A_TECH"
+	in_space
+level_end
+
+level_start
+	dir "JediCrash\JediCrash_OUTRO"
+	file "JediCrash_OUTRO"
+	outro_level
+level_end
+
+level_start
+	dir "JediCrash\JediCrash_Status"
+	file "JediCrash_Status"
+	status_continue_to_level "StoryA_Midtro1"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "JediCrash\JediCrash_MissionStatus"
+	file "JediCrash_MissionStatus"
+	status_continue_to_level "StoryA_Midtro1"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "JediCrash\StoryA_Midtro1"
+	file "StoryA_Midtro1"
+	midtro_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	name_char "LEVEL_DefendersOfThePeace_A"
+	dir "DefendersOfThePeace\DefendersOfThePeace_A"
+	file "DefendersOfThePeace"
+	common_dir "DefendersOfThePeace\DefendersOfThePeace_A\common"
+	common_file "DefendersOfThePeace_TECH"
+	disable_bolt_shadows
+	full_ground_assault
+level_end
+
+level_start
+	dir "DefendersOfThePeace\DefendersOfThePeace_Status"
+	file "DefendersOfThePeace_Status"
+	status_continue_to_level "StoryA_Midtro2"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "DefendersOfThePeace\StoryA_Midtro2"
+	file "StoryA_Midtro2"
+	midtro_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	dir "HiddenEnemy\HiddenEnemy_Intro"
+	file "HiddenEnemy_Intro"
+	intro_level
+level_end
+
+level_start
+	name_char "LEVEL_HiddenEnemy_A"
+	dir "HiddenEnemy\HiddenEnemy_A"
+	file "HiddenEnemy_A"
+	common_dir "HiddenEnemy\HiddenEnemy_A\common"
+	common_file "HiddenEnemy_A_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_HiddenEnemy_B"
+	dir "HiddenEnemy\HiddenEnemy_B"
+	file "HiddenEnemy_B"
+	common_dir "HiddenEnemy\HiddenEnemy_B\common"
+	common_file "HiddenEnemy_B_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_HiddenEnemy_C"
+	dir "HiddenEnemy\HiddenEnemy_C"
+	file "HiddenEnemy_C"
+	common_dir "HiddenEnemy\HiddenEnemy_C\common"
+	common_file "HiddenEnemy_C_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_HiddenEnemy_D"
+	dir "HiddenEnemy\HiddenEnemy_D"
+	file "HiddenEnemy_D"
+	common_dir "HiddenEnemy\HiddenEnemy_D\common"
+	common_file "HiddenEnemy_D_TECH"
+level_end
+
+level_start
+	dir "HiddenEnemy\HiddenEnemy_Outro"
+	file "HiddenEnemy_Outro"
+	outro_level
+level_end
+
+level_start
+	dir "HiddenEnemy\HiddenEnemy_Status"
+	file "HiddenEnemy_Status"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "HiddenEnemy\HiddenEnemy_MissionStatus"
+	file "HiddenEnemy_MissionStatus"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	dir "BlueShadowVirus\BlueShadowVirus_IntroA"
+	file "BlueShadowVirus_IntroA"
+	intro_level
+level_end
+
+level_start
+	dir "BlueShadowVirus\BlueShadowVirus_IntroB"
+	file "BlueShadowVirus_IntroB"
+	intro_level
+level_end
+
+level_start
+	name_char "LEVEL_BlueShadowVirus_A"
+	dir "BlueShadowVirus\BlueShadowVirus_A"
+	file "BlueShadowVirus_A"
+	common_dir "BlueShadowVirus\BlueShadowVirus_A\common"
+	common_file "BlueShadowVirus_A_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_BlueShadowVirus_B"
+	dir "BlueShadowVirus\BlueShadowVirus_B"
+	file "BlueShadowVirus_B"
+	common_dir "BlueShadowVirus\BlueShadowVirus_B\common"
+	common_file "BlueShadowVirus_B_TECH"
+	Use_Fixed_Orb
+level_end
+
+level_start
+	dir "BlueShadowVirus\BlueShadowVirus_Midtro"
+	file "BlueShadowVirus_Midtro"
+	midtro_level
+level_end
+
+level_start
+	name_char "LEVEL_BlueShadowVirus_C"
+	dir "BlueShadowVirus\BlueShadowVirus_C"
+	file "BlueShadowVirus_C"
+	common_dir "BlueShadowVirus\BlueShadowVirus_C\common"
+	common_file "BlueShadowVirus_C_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_BlueShadowVirus_D"
+	dir "BlueShadowVirus\BlueShadowVirus_D"
+	file "BlueShadowVirus_D"
+	common_dir "BlueShadowVirus\BlueShadowVirus_D\common"
+	common_file "BlueShadowVirus_D_TECH"
+	Use_Fixed_Orb
+level_end
+
+level_start
+	dir "BlueShadowVirus\BlueShadowVirus_Outro"
+	file "BlueShadowVirus_Outro"
+	outro_level
+level_end
+
+level_start
+	dir "BlueShadowVirus\BlueShadowVirus_Status"
+	file "BlueShadowVirus_Status"
+	status_continue_to_level "StoryB_Midtro2"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "BlueShadowVirus\BlueShadowVirus_MissionStatus"
+	file "BlueShadowVirus_MissionStatus"
+	status_continue_to_level "StoryB_Midtro2"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "BlueShadowVirus\StoryB_Midtro2"
+	file "StoryB_Midtro2"
+	midtro_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	name_char "LEVEL_BattleOfGeonosis_A"
+	dir "BattleOfGeonosis\BattleOfGeonosis_A"
+	file "BattleOfGeonosis"
+	common_dir "BattleOfGeonosis\BattleOfGeonosis_A\common"
+	common_file "BattleOfGeonosis_TECH"
+	disable_bolt_shadows
+	full_ground_assault
+level_end
+
+level_start
+	dir "BattleOfGeonosis\BattleOfGeonosis_Status"
+	file "BattleOfGeonosis_Status"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	dir "StormOverRyloth\StormOverRyloth_IntroA"
+	file "StormOverRyloth_IntroA"
+	intro_level
+level_end
+
+level_start
+	dir "StormOverRyloth\StormOverRyloth_IntroB"
+	file "StormOverRyloth_IntroB"
+	intro_level
+level_end
+
+level_start
+	name_char "LEVEL_StormOverRyloth_A"
+	dir "StormOverRyloth\StormOverRyloth_A"
+	file "StormOverRyloth_A"
+	common_dir "StormOverRyloth\StormOverRyloth_A\common"
+	common_file "StormOverRyloth_A_TECH"
+	in_space
+level_end
+
+level_start
+	dir "StormOverRyloth\StormOverRyloth_Outro"
+	file "StormOverRyloth_Outro"
+	outro_level
+level_end
+
+level_start
+	dir "StormOverRyloth\StormOverRyloth_Status"
+	file "StormOverRyloth_Status"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "StormOverRyloth\StormOverRyloth_MissionStatus"
+	file "StormOverRyloth_MissionStatus"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	dir "InnocentsOfRyloth\InnocentsOfRyloth_Intro"
+	file "InnocentsOfRyloth_Intro"
+	intro_level
+level_end
+
+level_start
+	name_char "LEVEL_InnocentsOfRyloth_A"
+	dir "InnocentsOfRyloth\InnocentsOfRyloth_A"
+	file "InnocentsOfRyloth_A"
+	common_dir "InnocentsOfRyloth\InnocentsOfRyloth_A\common"
+	common_file "InnocentsOfRyloth_A_TECH"
+	disable_bolt_shadows
+level_end
+
+level_start
+	name_char "LEVEL_InnocentsOfRyloth_B"
+	dir "InnocentsOfRyloth\InnocentsOfRyloth_B"
+	file "InnocentsOfRyloth_B"
+	common_dir "InnocentsOfRyloth\InnocentsOfRyloth_B\common"
+	common_file "InnocentsOfRyloth_B_TECH"
+	disable_bolt_shadows
+level_end
+
+level_start
+	dir "InnocentsOfRyloth\InnocentsOfRyloth_Outro"
+	file "InnocentsOfRyloth_Outro"
+	outro_level
+level_end
+
+level_start
+	dir "InnocentsOfRyloth\InnocentsOfRyloth_Status"
+	file "InnocentsOfRyloth_Status"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "InnocentsOfRyloth\InnocentsOfRyloth_MissionStatus"
+	file "InnocentsOfRyloth_MissionStatus"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	name_char "LEVEL_LibertyOnRyloth_A"
+	dir "LibertyOnRyloth\LibertyOnRyloth_A"
+	file "LibertyOnRyloth_A"
+	common_dir "LibertyOnRyloth\LibertyOnRyloth_A\common"
+	common_file "LibertyOnRyloth_A_TECH"
+	disable_bolt_shadows
+	full_ground_assault
+level_end
+
+level_start
+	dir "LibertyOnRyloth\LibertyOnRyloth_Status"
+	file "LibertyOnRyloth_Status"
+	status_continue_to_level "StoryB_End"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "LibertyOnRyloth\StoryB_End"
+	file "StoryB_End"
+	outro_level
+	story_end
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	name_char "LEVEL_WeaponsFactory_A"
+	dir "WeaponsFactory\WeaponsFactory_A"
+	file "WeaponsFactory_A"
+	common_dir "WeaponsFactory\WeaponsFactory_A\common"
+	common_file "WeaponsFactory_A_TECH"
+	disable_bolt_shadows
+	full_ground_assault
+level_end
+
+level_start
+	name_char "LEVEL_WeaponsFactory_B"
+	dir "WeaponsFactory\WeaponsFactory_B"
+	file "WeaponsFactory_B"
+	common_dir "WeaponsFactory\WeaponsFactory_B\common"
+	common_file "WeaponsFactory_B_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_WeaponsFactory_C"
+	dir "WeaponsFactory\WeaponsFactory_C"
+	file "WeaponsFactory_C"
+	common_dir "WeaponsFactory\WeaponsFactory_C\common"
+	common_file "WeaponsFactory_C_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_WeaponsFactory_Outro"
+	dir "WeaponsFactory\WeaponsFactory_Outro"
+	file "WeaponsFactory_Outro"
+	outro_level
+level_end
+
+level_start
+	name_char "LEVEL_WeaponsFactory_Midtro"
+	dir "WeaponsFactory\WeaponsFactory_Midtro"
+	file "WeaponsFactory_Midtro"
+	midtro_level
+level_end
+
+level_start
+	dir "WeaponsFactory\WeaponsFactory_Status"
+	file "WeaponsFactory_Status"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "WeaponsFactory\WeaponsFactory_MissionStatus"
+	file "WeaponsFactory_MissionStatus"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	dir "LegacyOfTerror\LegacyOfTerror_Intro"
+	file "LegacyOfTerror_Intro"
+	intro_level
+level_end
+
+level_start
+	name_char "LEVEL_LegacyOfTerror_A"
+	dir "LegacyOfTerror\LegacyOfTerror_A"
+	file "LegacyOfTerror_A"
+	common_dir "LegacyOfTerror\LegacyOfTerror_A\common"
+	common_file "LegacyOfTerror_A_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_LegacyOfTerror_B"
+	dir "LegacyOfTerror\LegacyOfTerror_B"
+	file "LegacyOfTerror_B"
+	common_dir "LegacyOfTerror\LegacyOfTerror_B\common"
+	common_file "LegacyOfTerror_B_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_LegacyOfTerror_C"
+	dir "LegacyOfTerror\LegacyOfTerror_C"
+	file "LegacyOfTerror_C"
+	common_dir "LegacyOfTerror\LegacyOfTerror_C\common"
+	common_file "LegacyOfTerror_C_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_LegacyOfTerror_D"
+	dir "LegacyOfTerror\LegacyOfTerror_D"
+	file "LegacyOfTerror_D"
+	common_dir "LegacyOfTerror\LegacyOfTerror_D\common"
+	common_file "LegacyOfTerror_D_TECH"
+level_end
+
+level_start
+	dir "LegacyOfTerror\LegacyOfTerror_Status"
+	file "LegacyOfTerror_Status"
+	status_continue_to_level "StoryA_End"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "LegacyOfTerror\LegacyOfTerror_MissionStatus"
+	file "LegacyOfTerror_MissionStatus"
+	status_continue_to_level "StoryA_End"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "LegacyOfTerror\StoryA_End"
+	file "StoryA_End"
+	outro_level
+	story_end
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	name_char "LEVEL_ZilloBeast_A"
+	dir "ZilloBeast\ZilloBeast_A"
+	file "ZilloBeast_A"
+	common_dir "ZilloBeast\ZilloBeast_A\common"
+	common_file "ZilloBeast_A_TECH"
+	disable_bolt_shadows
+	full_ground_assault
+level_end
+
+level_start
+	name_char "LEVEL_ZilloBeast_B"
+	dir "ZilloBeast\ZilloBeast_B"
+	file "ZilloBeast_B"
+	common_dir "ZilloBeast\ZilloBeast_B\common"
+	common_file "ZilloBeast_B_TECH"
+	disable_bolt_shadows
+level_end
+
+level_start
+	dir "ZilloBeast\ZilloBeast_Status"
+	file "ZilloBeast_Status"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+/----------------------------------------------------------------------
+level_start
+	dir "CastleOfDoom\CastleOfDoom_Intro"
+	file "CastleOfDoom_Intro"
+	intro_level
+level_end
+
+level_start
+	name_char "LEVEL_CastleOfDoom_A"
+	dir "CastleOfDoom\CastleOfDoom_A"
+	file "CastleOfDoom_A"
+	common_dir "CastleOfDoom\CastleOfDoom_A\common"
+	common_file "CastleOfDoom_A_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_CastleOfDoom_B"
+	dir "CastleOfDoom\CastleOfDoom_B"
+	file "CastleOfDoom_B"
+	common_dir "CastleOfDoom\CastleOfDoom_B\common"
+	common_file "CastleOfDoom_B_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_CastleOfDoom_C"
+	dir "CastleOfDoom\CastleOfDoom_C"
+	file "CastleOfDoom_C"
+	common_dir "CastleOfDoom\CastleOfDoom_C\common"
+	common_file "CastleOfDoom_C_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_CastleOfDoom_D"
+	dir "CastleOfDoom\CastleOfDoom_D"
+	file "CastleOfDoom_D"
+	common_dir "CastleOfDoom\CastleOfDoom_D\common"
+	common_file "CastleOfDoom_D_TECH"
+level_end
+
+level_start
+	dir "CastleOfDoom\CastleOfDoom_Status"
+	file "CastleOfDoom_Status"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "CastleOfDoom\CastleOfDoom_MissionStatus"
+	file "CastleOfDoom_MissionStatus"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	dir "HostageCrisis\HostageCrisis_Intro"
+	file "HostageCrisis_Intro"
+	intro_level
+level_end
+
+level_start
+	name_char "LEVEL_HostageCrisis_A"
+	dir "HostageCrisis\HostageCrisis_A"
+	file "HostageCrisis_A"
+	common_dir "HostageCrisis\HostageCrisis_A\common"
+	common_file "HostageCrisis_A_TECH"
+level_end
+
+level_start
+	name_char "LEVEL_HostageCrisis_B"
+	dir "HostageCrisis\HostageCrisis_B"
+	file "HostageCrisis_B"
+	common_dir "HostageCrisis\HostageCrisis_B\common"
+	common_file "HostageCrisis_B_TECH"
+level_end
+
+level_start
+	dir "HostageCrisis\HostageCrisis_Midtro"
+	file "HostageCrisis_Midtro"
+	midtro_level
+level_end
+
+level_start
+	dir "HostageCrisis\HostageCrisis_OutroA"
+	file "HostageCrisis_OutroA"
+	outro_level
+level_end
+
+level_start
+	dir "HostageCrisis\HostageCrisis_OutroB"
+	file "HostageCrisis_OutroB"
+	outro_level
+level_end
+
+level_start
+	dir "HostageCrisis\HostageCrisis_Status"
+	file "HostageCrisis_Status"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "HostageCrisis\HostageCrisis_MissionStatus"
+	file "HostageCrisis_MissionStatus"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+/----------------------------------------------------------------------
+level_start
+	name_char "LEVEL_GrievousIntrigue_Intro"
+	dir "GrievousIntrigue\GrievousIntrigue_Intro"
+	file "GrievousIntrigue_Intro"
+	intro_level
+level_end
+
+level_start
+	name_char "LEVEL_GrievousIntrigue_A"
+	dir "GrievousIntrigue\GrievousIntrigue_A"
+	file "GrievousIntrigue_A"
+	common_dir "GrievousIntrigue\GrievousIntrigue_A\common"
+	common_file "GrievousIntrigue_A_TECH"
+level_end
+
+level_start
+	dir "GrievousIntrigue\GrievousIntrigue_MidtroB"
+	file "GrievousIntrigue_MidtroB"
+	midtro_level
+level_end
+
+level_start
+	name_char "LEVEL_GrievousIntrigue_B"
+	dir "GrievousIntrigue\GrievousIntrigue_B"
+	file "GrievousIntrigue_B"
+	common_dir "GrievousIntrigue\GrievousIntrigue_B\common"
+	common_file "GrievousIntrigue_B_TECH"
+	Use_Fixed_Orb
+level_end
+
+level_start
+	name_char "LEVEL_GrievousIntrigue_C"
+	dir "GrievousIntrigue\GrievousIntrigue_C"
+	file "GrievousIntrigue_C"
+	common_dir "GrievousIntrigue\GrievousIntrigue_C\common"
+	common_file "GrievousIntrigue_C_TECH"
+	Use_Fixed_Orb
+level_end
+
+level_start
+	dir "GrievousIntrigue\GrievousIntrigue_Status"
+	file "GrievousIntrigue_Status"
+	status_continue_to_level "StoryC_End"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "GrievousIntrigue\GrievousIntrigue_MissionStatus"
+	file "GrievousIntrigue_MissionStatus"
+	status_continue_to_level "StoryC_End"
+	status_level
+	unlit
+level_end
+
+level_start
+	dir "GrievousIntrigue\StoryC_End"
+	file "StoryC_End"
+	outro_level
+	story_end
+level_end
+
+level_start
+	dir "Builder\BuilderDefault"
+	file "BuilderDefault"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderCharacterNulls"
+	file "BuilderCharacterNulls"
+	lego_set
+level_end
+
+level_start //// hubroom1
+	dir "Builder\BuilderHub1"
+	file "BuilderHub1"
+	lego_set
+level_end
+
+level_start //// hubroom1
+	dir "Builder\BuilderHub2"
+	file "BuilderHub2"
+	lego_set
+level_end
+
+level_start //// hubroom1
+	dir "Builder\BuilderHub3"
+	file "BuilderHub3"
+	lego_set
+level_end
+
+level_start //// hubroom1
+	dir "Builder\BuilderHub4"
+	file "BuilderHub4"
+	lego_set
+level_end
+
+level_start //// turrets
+	dir "Builder\BuilderHubTurrets"
+	file "BuilderHubTurrets"
+	lego_set
+level_end
+
+level_start //// Stealth ship
+	dir "Builder\BuilderHubStealth"
+	file "BuilderHubStealth"
+	lego_set
+level_end
+
+level_start //// wii Stealth ship
+	dir "Builder\BuilderHubStealthWii"
+	file "BuilderHubStealthWii"
+	lego_set
+level_end
+
+level_start //// hub space
+	dir "Builder\BuilderHubSpace"
+	file "BuilderHubSpace"
+	lego_set
+level_end
+
+level_start //// Asteroids and moon
+	dir "Builder\BuilderHubSpaceAsteroids"
+	file "BuilderHubSpaceAsteroids"
+	lego_set
+level_end
+
+level_start //// hub space
+	dir "Builder\BuilderBowling"
+	file "BuilderBowling"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_MTLTest"
+	file "Krawly_MTLTest"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_BattleDroid"
+	file "Krawly_BattleDroid_Hi"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_BattleDroid"
+	file "Krawly_BattleDroid_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_BattleDroid"
+	file "Krawly_BattleDroid_Very_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_BattleDroid"
+	file "Krawly_BattleDroid_Ultra_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_B2DroidB"
+	file "Krawly_B2DroidB_Hi"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_B2DroidB"
+	file "Krawly_B2DroidB_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_B2DroidB"
+	file "Krawly_B2DroidB_Very_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_B2DroidB"
+	file "Krawly_B2DroidB_Ultra_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_B2DroidB"
+	file "B2DROIDB_STATIC"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_CloneTrooper"
+	file "Krawly_CloneTrooper_Hi"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_CloneTrooper"
+	file "Krawly_CloneTrooper_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_CloneTrooper"
+	file "Krawly_CloneTrooper_Very_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_CloneTrooper"
+	file "Krawly_CloneTrooper_Ultra_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_CloneTrooper"
+	file "Krawly_CloneTrooperRL_Hi"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_CloneTrooper"
+	file "Krawly_CloneTrooperRL_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_CloneTrooper"
+	file "Krawly_CloneTrooperRL_Very_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_CloneTrooper"
+	file "Krawly_CloneTrooperRL_Ultra_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_CloneTrooper"
+	file "Krawly_CTCommandPost_Hi"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_CloneTrooper"
+	file "Krawly_CTCommandPost_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_CloneTrooper"
+	file "Krawly_CTCommandPost_Very_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_CloneTrooper"
+	file "Krawly_CTCommandPost_Ultra_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_BattleDroid"
+	file "Krawly_B1CommandPost_Hi"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_BattleDroid"
+	file "Krawly_B1CommandPost_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_BattleDroid"
+	file "Krawly_B1CommandPost_Very_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_BattleDroid"
+	file "Krawly_B1CommandPost_Ultra_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_BattleDroid"
+	file "BATTLEDROID_STATIC"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_GeonosianCitizen"
+	file "Krawly_GeonosianCitizen_Hi"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_GeonosianCitizen"
+	file "Krawly_GeonosianCitizen_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_GeonosianCitizen"
+	file "Krawly_GeonosianCitizen_Very_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_GeonosianCitizen"
+	file "Krawly_GeonosianCitizen_UltraLo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_GeonosianCitizen"
+	file "Krawly_GeonosianCitizen_UltraUL"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_GeonosianCitizen"
+	file "GEONOSIANCITIZEN_STATIC"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_GeonosianZombie"
+	file "Krawly_GeonosianZombie_Hi"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_GeonosianZombie"
+	file "Krawly_GeonosianZombie_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_GeonosianZombie"
+	file "Krawly_GeonosianZombie_Very_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_GeonosianZombie"
+	file "Krawly_GeonosianZombie_Ultra_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_Pirate"
+	file "Krawly_Pirate_Hi"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_Pirate"
+	file "Krawly_Pirate_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_Pirate"
+	file "Krawly_Pirate_Very_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "Krawlies\Krawly_Pirate"
+	file "Krawly_Pirate_Ultra_Lo"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\RTS_Coinfountain"
+	file "Coinfountain"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\RTS_Tessler"
+	file "RTS_Tessler"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\ZilloCross"
+	file "ZilloCross"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\RTS_Freeplay"
+	file "RTS_Freeplay"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\CloneDropits"
+	file "CloneDropits"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\DroidDropits"
+	file "DroidDropits"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\PVPDropits"
+	file "PVPDropits"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\PowerDistributors"
+	file "PowerDistributors"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\HUD"
+	file "HUD"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\RTSPadCover"
+	file "RTSPadCover"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\RTSGenericStuff"
+	file "RTSGenericStuff"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\VehicleGenerator"
+	file "VehicleGenerator"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\VehicleGenSmall"
+	file "VehicleGenSmall"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\VehicleGenerator_wii"
+	file "VehicleGeneratorwii"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\VehicleGenSmall_wii"
+	file "VehicleGenSmallwii"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\RTS_Tessler_wii"
+	file "RTS_TesslerWii"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\CloneDropits_wii"
+	file "CloneDropitswii"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\DroidDropits_wii"
+	file "DroidDropitswii"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\PowerDistributors_wii"
+	file "PowerDistributorswii"
+	lego_set
+level_end
+
+level_start
+	dir "SimpleRTS\PVPDropits_wii"
+	file "PVPDropitswii"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_Gen"
+	file "BuilderVFX_Gen"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_Radiowaves"
+	file "BuilderVFX_Radiowaves"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_IonCannon"
+	file "BuilderVFX_IonCannon"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_IonCannonExplode"
+	file "BuilderVFX_IonCannonExplode"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_RTS"
+	file "BuilderVFX_RTS"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_GorFloorCracks"
+	file "BuilderVFX_GorFloorCracks"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_RookiesFloorCracks"
+	file "BuilderVFX_RookiesFloorCracks"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_AcklayFloorCracks"
+	file "BuilderVFX_AcklayFloorCracks"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderSanduneCracks"
+	file "BuilderSanduneCracks"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_Space"
+	file "BuilderVFX_Space"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_Fire"
+	file "BuilderVFX_Fire"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_Explode"
+	file "BuilderVFX_Explode"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_ExplodeAnims"
+	file "BuilderVFX_ExplodeAnims"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_ExplodeGold"
+	file "BuilderVFX_ExplodeGold"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_ExplodeBSVB"
+	file "BuilderVFX_ExplodeBSVB"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_SpaceVortex"
+	file "BuilderVFX_SpaceVortex"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_LocomoteFog"
+	file "BuilderVFX_LocomoteFog"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_TriDroidShockwave"
+	file "BuilderVFX_TriDroidShockwave"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVFX_VehicleAtmos"
+	file "BuilderVFX_VehicleAtmos"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderRTS_GIZ"
+	file "BuilderRTS_GIZ"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderBuildLever" //lever build it
+	file "BuilderBuildLever"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderTNTDetonator" //Clone Wars rts tnt detonator switch
+	file "BuilderTNTDetonator"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderGrievousA" //Clone Wars grievous props
+	file "BuilderGrievousA"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderGrievousB" //Clone Wars grievous props
+	file "BuilderGrievousB"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderGrievousC" //Clone Wars grievous props
+	file "BuilderGrievousC"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderWeaponsFactory" //Clone Wars grievous props
+	file "BuilderWeaponsFactory"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderThrowableBoxes" //Clone Wars grievous props
+	file "BuilderThrowableBoxes"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderGrievousParts" //Clone Wars grievous props
+	file "BuilderGrievousParts"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderPlants" //Clone Wars Plants props
+	file "BuilderPlants"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderMalevolenceSpace" //Clone Wars
+	file "BuilderMalevolenceSpace"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderShadowMalevSmallCrates" //Clone Wars
+	file "BuilderShadowMalevSmallCrates"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderMalevolenceCorridor" //corridor panels
+	file "BuilderMalevolenceCorridor"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderMalevolenceReactor" //Reactor Room Core Elements
+	file "BuilderMalevolenceReactor"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderDuelOfTheDroids" //Clone Wars
+	file "BuilderDuelOfTheDroids"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderHiddenEnemy" //Clone Wars
+	file "BuilderHiddenEnemy"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderHiddenEnemyB" //Clone Wars
+	file "BuilderHiddenEnemyB"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderBlueShadowVirus" //Clone Wars
+	file "BuilderBlueShadowVirus"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderBlueShadowVirusB_C" //Clone Wars
+	file "BuilderBlueShadowVirusB_C"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderCrates1" //small crates
+	file "BuilderCrates1"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderFunCrates1" // small crates with fun things in them.. ha ha
+	file "BuilderFunCrates1"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderCratesShiny1" //small shiny crates
+	file "BuilderCratesShiny1"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderCratesBlack1" //small black crates
+	file "BuilderCratesBlack1"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderCratesKS" //Brown and black Crates
+	file "BuilderCratesKS"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderTentacles" //Tentacles in Duel of the Droids A
+	file "BuilderTentacles"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderForceHeatsinkConduit" //Force Heatsink Conduit in Duel of the Droids A
+	file "BuilderForceHeatsinkConduit"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVehicleVultureDroid" //Vulture Droid special object to populate space combat levels
+	file "BuilderVehicleVultureDroid"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderLandingLights"
+	file "BuilderLandingLights"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderSputnik"
+	file "BuilderSputnik"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderLazerBolts" //Y-Wing special object to populate space combat levels
+	file "BuilderLazerBolts"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVehicleYWing" //Y-Wing special object to populate space combat levels
+	file "BuilderVehicleYWing"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVehicleLAAT" //Y-Wing special object to populate space combat levels
+	file "BuilderVehicleLAAT"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderVehicleV19Torrent" //Y-Wing special object to populate space combat levels
+	file "BuilderVehicleV19Torrent"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderRookiesProps" //Props for Rookies
+	file "BuilderRookiesProps"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderRookiesPanels1" //Panels for Rookies
+	file "BuilderRookiesPanels1"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderHostageCrisis" // Hostage Crisis Props
+	file "BuilderHostageCrisis"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderHostageCrisis_B" // Hostage Crisis_B Props
+	file "BuilderHostageCrisis_B"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderSuperTank" // SuperTank boss parts for WeaponFactory C
+	file "BuilderSuperTank"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderPlants_RTS" // TEMP RTS for demo
+	file "BuilderPlants_RTS"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderRocks_RTS" // for WeaponsFActory A rts
+	file "BuilderRocks_RTS"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderPilon"
+	file "BuilderPilon"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderAmbushPlants1" // Ambush plant gizmos 1
+	file "BuilderAmbushPlants1"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderAmbushPlants2" // Ambush plant gizmos 2
+	file "BuilderAmbushPlants2"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderAmbushPlants3" // Ambush plant gizmos 3
+	file "BuilderAmbushPlants3"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderAmbushPlants4" // Ambush plant gizmos 4
+	file "BuilderAmbushPlants4"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderAmbushBones1" // Ambush bone gizmos
+	file "BuilderAmbushBones1"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderAmbushCreatures1" // Ambush creature gizmos
+	file "BuilderAmbushCreatures1"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderAmbushIndyProps" // Ambush Indy props for Ambush B
+	file "BuilderAmbushIndyProps"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderStormOverRyloth1" // big turrets
+	file "BuilderStormOverRyloth1"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderStormOverRyloth2" // control panels from hub
+	file "BuilderStormOverRyloth2"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderStormOverRyloth3" //not used
+	file "BuilderStormOverRyloth3"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderStormOverRyloth_Gold" //gold freeplay blowups
+	file "BuilderStormOverRyloth_Gold"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderLegacyRocks" //generic rocks
+	file "BuilderLegacyRocks"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderLegacySilverRocks" //silver blowup rocks
+	file "BuilderLegacySilverRocks"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderLegacyBones" //Keiths old Legacy tech tidied up
+	file "BuilderLegacyBones"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderLegacyWebs" //spider web grapple pull
+	file "BuilderLegacyWebs"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderLegacySkeleton" //dancing skeleton
+	file "BuilderLegacySkeleton"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderLegacyLights" //freeplay party room light
+	file "BuilderLegacyLights"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderResetLever" // reset lever for hub
+	file "BuilderResetLever"
+	lego_set
+level_end
+
+level_start
+	dir "Builder\BuilderGeonosianArena" // Freeplay set pieces
+	file "BuilderGeonosianArena"
+	lego_set
+level_end
+
+level_start
+	dir "credits"
+	file "credits"
+level_end
+
+level_start
+	dir "titles"
+	file "titles"
+	start_level
+	titles_level
+	old_ai
+level_end
+
+level_start
+	dir "Custard"
+	file "Custard"
+	customiser_level
+level_end
+
+ART SLICE
+level_start
+	name_char "LEVEL_GeonosianArena_ART"
+	dir "ArtSlice\GeonosianArena_CL"
+	file "GeonosianArena_CL"
+	common_dir "ArtSlice\GeonosianArena_CL\common"
+	common_file "GeonosianArena_CL_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_LegacyOfTerror_A_CL_ART"
+	dir "ArtSlice\LegacyOfTerror_A_CL"
+	file "LegacyOfTerror_A_CL"
+	common_dir "ArtSlice\LegacyOfTerror_A_CL\Common"
+	common_file "LegacyOfTerror_A_CL_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_LegacyOfTerror_B_CL_ART"
+	dir "ArtSlice\LegacyOfTerror_B_CL"
+	file "LegacyOfTerror_B_CL"
+	common_dir "ArtSlice\LegacyOfTerror_B_CL\Common"
+	common_file "LegacyOfTerror_B_CL_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_LegacyOfTerror_C_CL_ART"
+	dir "ArtSlice\LegacyOfTerror_C_CL"
+	file "LegacyOfTerror_C_CL"
+	common_dir "ArtSlice\LegacyOfTerror_C_CL\Common"
+	common_file "LegacyOfTerror_C_CL_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_LegacyOfTerror_D_CL_ART"
+	dir "ArtSlice\LegacyOfTerror_D_CL"
+	file "LegacyOfTerror_D_CL"
+	common_dir "ArtSlice\LegacyOfTerror_D_CL\Common"
+	common_file "LegacyOfTerror_D_CL_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_LegacyOfTerror_ART"
+	dir "ArtSlice\LegacyOfTerror_SH"
+	file "LegacyOfTerror_SH"
+	common_dir "ArtSlice\LegacyOfTerror_SH\Common"
+	common_file "LegacyOfTerror_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_VenatorDeck_ART"
+	dir "ArtSlice\VenatorDeck_RW"
+	file "VenatorDeck_RW"
+	common_dir "ArtSlice\VenatorDeck_RW\Common"
+	common_file "VenatorDeck_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_DestroyMalevolence_Space_ART"
+	dir "ArtSlice\DestroyMalevolence_Space_PM"
+	file "DestroyMalevolence_Space_PM"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_DuelOfTheDriods_ART"
+	dir "ArtSlice\DuelOfTheDriods_JH"
+	file "DuelOfTheDriods_JH"
+	common_dir "ArtSlice\DuelOfTheDriods_JH\Common"
+	common_file "DuelOfTheDriods_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_Rookies_ART"
+	dir "ArtSlice\Rookies_RPH"
+	file "Rookies_RPH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_Ambush_ART"
+	dir "ArtSlice\Ambush_JB"
+	file "Ambush_JB"
+	common_dir "ArtSlice\Ambush_JB\common"
+	common_file "Ambush_JB_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_CloakOfDarkness_ART"
+	dir "ArtSlice\CloakOfDarkness_DP"
+	file "CloakOfDarkness_DP"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_LairOfGrevious_ART"
+	dir "ArtSlice\LairOfGrevious_LW"
+	file "LairOfGrevious_LW"
+	common_dir "ArtSlice\LairOfGrevious_LW\Common"
+	common_file "LairOfGrevious_lw_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_HiddenEnemy_ART"
+	dir "ArtSlice\HiddenEnemy_PM"
+	file "HiddenEnemy_PM"
+	common_dir "ArtSlice\HiddenEnemy_PM\Common"
+	common_file "HiddenEnemy_Tech"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_PirateBase_ART"
+	dir "ArtSlice\PirateBase_MC"
+	file "PirateBase_MC"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_BattleSphere_ART"
+	dir "ArtSlice\BattleSphere_MC"
+	file "BattleSphere_MC"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_Ambush_B_ART"
+	dir "ArtSlice\Ambush_B_JB"
+	file "Ambush_B_JB"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_StormOverRyloth_ART"
+	dir "ArtSlice\StormOverRyloth_CL"
+	file "StormOverRyloth_CL"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_HiddenEnemy_C_ART"
+	dir "ArtSlice\HiddenEnemy_C_PM"
+	file "HiddenEnemy_C_PM"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_DuelOfTheDroids_C_ART"
+	dir "ArtSlice\DuelOfTheDroids_C_JH"
+	file "DuelOfTheDroids_C_JH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_Rookies_A_ART"
+	dir "ArtSlice\Rookies_A_RPH"
+	file "Rookies_A_RPH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_WeaponsFactory_ART"
+	dir "ArtSlice\WeaponsFactory_SH"
+	file "WeaponsFactory_SH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_WeaponsFactory_ART"
+	dir "ArtSlice\WeaponsFactory_B_EW"
+	file "WeaponsFactory_B_EW"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_CloakOfDarkness_2_ART"
+	dir "ArtSlice\CloakOfDarkness_2_DP"
+	file "CloakOfDarkness_2_DP"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_CargoOfDoom_ART"
+	dir "ArtSlice\CargoOfDoom_RW"
+	file "CargoOfDoom_RW"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_HostageCrisis_ART"
+	dir "ArtSlice\HostageCrisis_EW"
+	file "HostageCrisis_EW"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_CastleOfDoom_A_ART"
+	dir "ArtSlice\CastleOfDoom_DL"
+	file "CastleOfDoom_DL"
+	common_dir "ArtSlice\CastleOfDoom_DL\common"
+	common_file "CastleOfDoom_DL_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_CastleOfDoom_B_ART"
+	dir "ArtSlice\CastleOfDoom_B_DL"
+	file "CastleOfDoom_B_DL"
+	common_dir "ArtSlice\CastleOfDoom_B_DL\common"
+	common_file "CastleOfDoom_B_DL_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_CastleOfDoom_C_ART"
+	dir "ArtSlice\CastleOfDoom_C_JB"
+	file "CastleOfDoom_C_JB"
+	common_dir "ArtSlice\CastleOfDoom_C_JB\common"
+	common_file "CastleOfDoom_C_JB_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_GrievousIntrigue_ART"
+	dir "ArtSlice\GrievousIntrigue_JB"
+	file "GrievousIntrigue_JB"
+	common_dir "ArtSlice\GrievousIntrigue_JB\common"
+	common_file "GrievousIntrigue_JB_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_GrievousIntrigue_B_ART"
+	dir "ArtSlice\GrievousIntrigue_B_JH"
+	file "GrievousIntrigue_B_JH"
+	common_dir "ArtSlice\GrievousIntrigue_B_JH\common"
+	common_file "GrievousIntrigue_B_JH_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_GrievousIntrigue_B_ART"
+	dir "ArtSlice\GrievousIntrigue_B_RW"
+	file "GrievousIntrigue_B_RW"
+	common_dir "ArtSlice\GrievousIntrigue_B_RW\common"
+	common_file "GrievousIntrigue_B_RW_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_GrievousIntrigue_C_ART"
+	dir "ArtSlice\GrievousIntrigue_C_RW"
+	file "GrievousIntrigue_C_RW"
+	common_dir "ArtSlice\GrievousIntrigue_C_RW\common"
+	common_file "GrievousIntrigue_C_RW_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_StormOverRyloth_A_ART"
+	dir "ArtSlice\StormOverRyloth_A_CL"
+	file "StormOverRyloth_A_CL"
+	common_dir "ArtSlice\StormOverRyloth_A_CL\common"
+	common_file "StormOverRyloth_A_CL_TECH"
+	test_level
+level_end
+
+level_start
+	dir "ArtSlice\CloakOfDarkness_2F_DP"
+	file "CloakOfDarkness_2F_DP"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_ResoluteHanger_ART"
+	dir "ArtSlice\ResoluteHanger_DP"
+	file "ResoluteHanger_DP"
+	test_level
+level_end
+
+level_start
+	dir "ArtSlice\LegacyOfTerror_2_SH"
+	file "LegacyOfTerror_2_SH"
+	test_level
+level_end
+
+level_start
+	dir "ArtSlice\BlueShadowVirus_A_DH"
+	file "BlueShadowVirus_A_DH"
+	common_dir "ArtSlice\BlueShadowVirus_A_DH\common"
+	common_file "BlueShadowVirus_A_DH_TECH"
+	test_level
+level_end
+
+level_start
+	dir "ArtSlice\BlueShadowVirus_B_DH"
+	file "BlueShadowVirus_B_DH"
+	common_dir "ArtSlice\BlueShadowVirus_B_DH\common"
+	common_file "BlueShadowVirus_B_DH_TECH"
+	test_level
+level_end
+
+level_start
+	dir "ArtSlice\ResoluteHub_A_DP"
+	file "ResoluteHub_A_DP"
+	common_dir "ArtSlice\ResoluteHub_A_DP\common"
+	common_file "ResoluteHub_A_DP_TECH"
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_BlueShadowVirus_C_ART"
+	dir "ArtSlice\BlueShadowVirus_C_RPH"
+	file "BlueShadowVirus_C_RPH"
+	common_dir "ArtSlice\BlueShadowVirus_C_RPH\common"
+	common_file "BlueShadowVirus_C_RPH_TECH"
+	test_level
+level_end
+
+level_start
+	dir "ArtSlice\BlueShadowVirus_D_RPH"
+	file "BlueShadowVirus_D_RPH"
+	common_dir "ArtSlice\BlueShadowVirus_D_RPH\common"
+	common_file "BlueShadowVirus_D_RPH_TECH"
+	test_level
+level_end
+
+	dir "ArtSlice\CargoOfDoom_2_RW"
+	file "CargoOfDoom_2_RW"
+	common_dir "ArtSlice\CargoOfDoom_2_RW\common"
+	common_file "CargoOfDoom_2_RW_TECH"
+	test_level
+	dir "ArtSlice\Ambush_A_CL"
+	file "Ambush_A_CL"
+	common_dir "ArtSlice\Ambush_A_CL\common"
+	common_file "Ambush_A_CL_TECH"
+	test_level
+	dir "ArtSlice\HostageCrisis_A_DP"
+	file "HostageCrisis_A_DP"
+	common_dir "ArtSlice\HostageCrisis_A_DP\common"
+	common_file "HostageCrisis_A_DP_TECH"
+	test_level
+	dir "ArtSlice\InvisibleHand_Corridor_EV"
+	file "InvisibleHand_Corridor_EV"
+	common_dir "ArtSlice\InvisibleHand_Corridor_EV\common"
+	common_file "InvisibleHand_Corridor_EV_TECH"
+	test_level
+	dir "ArtSlice\HiddenEnemy_A_PM"
+	file "HiddenEnemy_A_PM"
+	common_dir "ArtSlice\HiddenEnemy_A_PM\common"
+	common_file "HiddenEnemy_A_PM_TECH"
+	test_level
+
+Ground Assault PVP
+level_start
+	name_char "LEVEL_Christophsis"
+	dir "GroundAssaultPVP\Christophsis"
+	file "Christophsis"
+	SplitDirMethod_AverageCam
+	dont_keep_progress
+	Use_Fixed_Orb
+	disable_bolt_shadows
+	full_ground_assault
+	autotest_ignore
+level_end
+
+level_start
+	name_char "LEVEL_Tatooine"
+	dir "GroundAssaultPVP\Tatooine"
+	file "Tatooine"
+	SplitDirMethod_AverageCam
+	dont_keep_progress
+	Use_Fixed_Orb
+	disable_bolt_shadows
+	full_ground_assault
+	autotest_ignore
+level_end
+
+level_start
+	name_char "LEVEL_RuusanMoon"
+	dir "GroundAssaultPVP\RuusanMoon"
+	file "RuusanMoon"
+	SplitDirMethod_AverageCam
+	dont_keep_progress
+	Use_Fixed_Orb
+	autotest_ignore
+	full_ground_assault
+	disable_bolt_shadows
+level_end
+
+level_start
+	name_char "LEVEL_Rugosa"
+	dir "GroundAssaultPVP\Rugosa"
+	file "Rugosa"
+	SplitDirMethod_AverageCam
+	dont_keep_progress
+	Use_Fixed_Orb
+	disable_bolt_shadows
+	full_ground_assault
+	autotest_ignore
+level_end
+
+level_start
+	name_char "LEVEL_DeadMoonOfAntar"
+	dir "GroundAssaultPVP\DeadMoonOfAntar"
+	file "DeadMoonOfAntar"
+	SplitDirMethod_AverageCam
+	dont_keep_progress
+	Use_Fixed_Orb
+	disable_bolt_shadows
+	full_ground_assault
+	autotest_ignore
+level_end
+
+level_start
+	name_char "LEVEL_Vassek"
+	dir "GroundAssaultPVP\Vassek"
+	file "Vassek"
+	SplitDirMethod_AverageCam
+	dont_keep_progress
+	Use_Fixed_Orb
+	disable_bolt_shadows
+	full_ground_assault
+	autotest_ignore
+level_end
+
+level_start
+	name_char "LEVEL_RishiMoon"
+	dir "GroundAssaultPVP\RishiMoon"
+	file "RishiMoon"
+	SplitDirMethod_AverageCam
+	dont_keep_progress
+	Use_Fixed_Orb
+	disable_bolt_shadows
+	full_ground_assault
+	autotest_ignore
+level_end
+
+level_start
+	name_char "LEVEL_Florrum"
+	dir "GroundAssaultPVP\Florrum"
+	file "Florrum"
+	SplitDirMethod_AverageCam
+	dont_keep_progress
+	Use_Fixed_Orb
+	disable_bolt_shadows
+	full_ground_assault
+	autotest_ignore
+level_end
+
+level_start
+	name_char "LEVEL_Ryloth"
+	dir "GroundAssaultPVP\Ryloth"
+	file "Ryloth"
+	SplitDirMethod_AverageCam
+	dont_keep_progress
+	Use_Fixed_Orb
+	disable_bolt_shadows
+	full_ground_assault
+	autotest_ignore
+level_end
+
+level_start
+	name_char "LEVEL_Quell"
+	dir "GroundAssaultPVP\Quell"
+	file "Quell"
+	SplitDirMethod_AverageCam
+	dont_keep_progress
+	Use_Fixed_Orb
+	disable_bolt_shadows
+	full_ground_assault
+	autotest_ignore
+level_end
+
+level_start
+	name_char "LEVEL_Maridun"
+	dir "GroundAssaultPVP\Maridun"
+	file "Maridun"
+	SplitDirMethod_AverageCam
+	dont_keep_progress
+	Use_Fixed_Orb
+	disable_bolt_shadows
+	full_ground_assault
+	autotest_ignore
+level_end
+
+level_start
+	name_char "LEVEL_Naboo"
+	dir "GroundAssaultPVP\Naboo"
+	file "Naboo"
+	SplitDirMethod_AverageCam
+	dont_keep_progress
+	Use_Fixed_Orb
+	disable_bolt_shadows
+	full_ground_assault
+	autotest_ignore
+level_end
+
+level_start
+	name_char "LEVEL_Coruscant"
+	dir "GroundAssaultPVP\Coruscant"
+	file "Coruscant"
+	SplitDirMethod_AverageCam
+	dont_keep_progress
+	Use_Fixed_Orb
+	disable_bolt_shadows
+	full_ground_assault
+	autotest_ignore
+level_end
+
+level_start
+	name_char "LEVEL_Geonosis"
+	dir "GroundAssaultPVP\Geonosis"
+	file "Geonosis"
+	SplitDirMethod_AverageCam
+	dont_keep_progress
+	Use_Fixed_Orb
+	disable_bolt_shadows
+	full_ground_assault
+	autotest_ignore
+level_end
+
+level_start
+	name_char "LEVEL_Saleucami"
+	dir "GroundAssaultPVP\Saleucami"
+	file "Saleucami"
+	SplitDirMethod_AverageCam
+	dont_keep_progress
+	Use_Fixed_Orb
+	disable_bolt_shadows
+	full_ground_assault
+	autotest_ignore
+level_end
+
+level_start
+	name_char "LEVEL_Malastare"
+	dir "GroundAssaultPVP\Malastare"
+	file "Malastare"
+	SplitDirMethod_AverageCam
+	dont_keep_progress
+	Use_Fixed_Orb
+	autotest_ignore
+	disable_bolt_shadows
+	full_ground_assault
+	autotest_ignore
+level_end
+
+level_start
+	dir "GroundAssaultPVP\GroundAssaultPVP_Status"
+	file "GroundAssaultPVP_Status"
+	status_continue_to_level "CWHub"
+	status_level
+	unlit
+level_end
+
+
+ART SLICE PVP
+level_start
+	dir "ArtSlicePVP\CastleOfDeception_EV"
+	file "CastleOfDeception_EV"
+	common_dir "ArtSlicePVP\CastleOfDeception_EV\common"
+	common_file "CastleOfDeception_EV_TECH"
+	SplitDirMethod_AverageCam
+	test_level
+level_end
+
+level_start
+	dir "ArtSlicePVP\GunganGeneral_DL"
+	file "GunganGeneral_DL"
+	SplitDirMethod_AverageCam
+	test_level
+	autotest_ignore
+level_end
+
+level_start
+	dir "ArtSlicePVP\JediCrash_PM"
+	file "JediCrash_PM"
+	SplitDirMethod_AverageCam
+	test_level
+level_end
+
+level_start
+	dir "ArtSlicePVP\LibertyOnRyloth_EV"
+	file "LibertyOnRyloth_EV"
+	common_dir "ArtSlicePVP\LibertyOnRyloth_EV\common"
+	common_file "LibertyOnRyloth_EV_TECH"
+	SplitDirMethod_AverageCam
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_Naboo_EM"
+	dir "ArtSlicePVP\Naboo_EM"
+	file "Naboo_EM"
+	common_dir "ArtSlicePVP\Naboo_EM\common"
+	common_file "Naboo_EM_TECH"
+	SplitDirMethod_AverageCam
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_RishiMoon_AD"
+	dir "ArtSlicePVP\RishiMoon_AD"
+	file "RishiMoon_AD"
+	common_dir "ArtSlicePVP\RishiMoon_AD\common"
+	common_file "RishiMoon_AD_TECH"
+	SplitDirMethod_AverageCam
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_Rugosa_JB"
+	dir "ArtSlicePVP\Rugosa_JB"
+	file "Rugosa_JB"
+	common_dir "ArtSlicePVP\Rugosa_JB\common"
+	common_file "Rugosa_JB_TECH"
+	SplitDirMethod_AverageCam
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_Ryloth_AD"
+	dir "ArtSlicePVP\Ryloth_AD"
+	file "Ryloth_AD"
+	common_dir "ArtSlicePVP\Ryloth_AD\common"
+	common_file "Ryloth_AD_TECH"
+	SplitDirMethod_AverageCam
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_Saleucami_AK"
+	dir "Saleucami_AK_PVP\Saleucami_AK"
+	file "Saleucami_AK"
+	common_dir "Saleucami_AK_PVP\Saleucami_AK\common"
+	common_file "Saleucami_AK_TECH"
+	SplitDirMethod_AverageCam
+	test_level
+	autotest_ignore
+level_end
+
+level_start
+	name_char "LEVEL_Vassek_SDS"
+	dir "ArtSlicePVP\Vassek_SDS"
+	file "Vassek_SDS"
+	common_dir "ArtSlicePVP\Vassek_SDS\common"
+	common_file "Vassek_SDS_TECH"
+	SplitDirMethod_AverageCam
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_RuusanMoon_SDS"
+	dir "ArtSlicePVP\RuusanMoon_SDS"
+	file "RuusanMoon_SDS"
+	common_dir "ArtSlicePVP\RuusanMoon_SDS\common"
+	common_file "RuusanMoon_SDS_TECH"
+	SplitDirMethod_AverageCam
+	test_level
+	autotest_ignore
+level_end
+
+level_start
+	name_char "LEVEL_DeadMoonOfAntar_AD"
+	dir "ArtSlicePVP\DeadMoonOfAntar_AD"
+	file "DeadMoonOfAntar_AD"
+	SplitDirMethod_AverageCam
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_Malastare_EM"
+	dir "ArtSlicePVP\Malastare_EM"
+	file "Malastare_EM"
+	SplitDirMethod_AverageCam
+	test_level
+	autotest_ignore
+level_end
+
+level_start
+	name_char "LEVEL_Quell_EM"
+	dir "ArtSlicePVP\Quell_EM"
+	file "Quell_EM"
+	SplitDirMethod_AverageCam
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_Tatooine_AD"
+	dir "ArtSlicePVP\Tatooine_AD"
+	file "Tatooine_AD"
+	common_dir "ArtSlicePVP\Tatooine_AD\common"
+	common_file "Tatooine_AD_TECH"
+	SplitDirMethod_AverageCam
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_Florrum_EM"
+	dir "ArtSlicePVP\Florrum_EM"
+	file "Florrum_EM"
+	SplitDirMethod_AverageCam
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_Geonosis_AD"
+	dir "ArtSlicePVP\Geonosis_AD"
+	file "Geonosis_AD"
+	SplitDirMethod_AverageCam
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_Maridun_EM"
+	dir "ArtSlicePVP\Maridun_EM"
+	file "Maridun_EM"
+	SplitDirMethod_AverageCam
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_Geonosistest_AD"
+	dir "ArtSlicePVP\Geonosistest_AD"
+	file "Geonosistest_AD"
+	SplitDirMethod_AverageCam
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_Christopsis_PM"
+	dir "ArtSlicePVP\Christopsis_PM"
+	file "Christopsis_PM"
+	SplitDirMethod_AverageCam
+	test_level
+level_end
+
+level_start
+	name_char "LEVEL_Coruscant_EM"
+	dir "ArtSlicePVP\Coruscant_EM"
+	file "Coruscant_EM"
+	SplitDirMethod_AverageCam
+	test_level
+level_end
+
+
+TEST
+level_start
+	dir "Test\SteveTest"
+	file "SteveTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\CamTest\StraightCorridor"
+	file "StraightCorridor"
+	test_level
+level_end
+
+level_start
+	dir "Test\CamTest\BendyCorridor"
+	file "BendyCorridor"
+	test_level
+level_end
+
+level_start
+	dir "Test\CamTest\YCorridor"
+	file "YCorridor"
+	test_level
+level_end
+
+level_start
+	dir "Test\CamTest\JunctionCorridor"
+	file "JunctionCorridor"
+	test_level
+level_end
+
+level_start
+	dir "Test\CamTest\DonutCorridor"
+	file "DonutCorridor"
+	test_level
+level_end
+
+level_start
+	dir "Test\CamTest\LairOfGrevious"
+	file "LairOfGrevious"
+	test_level
+level_end
+
+level_start
+	dir "Test\CamTest\Rookies"
+	file "Rookies"
+	test_level
+level_end
+
+level_start
+	dir "Test\CamTest\RookiesExterior"
+	file "RookiesExterior"
+	test_level
+level_end
+
+level_start
+	dir "Test\CamTest\BlueShadow"
+	file "BlueShadow"
+	test_level
+level_end
+
+level_start
+	dir "Test\CamTest\BlueShadow_C"
+	file "BlueShadow_C"
+	test_level
+level_end
+
+level_start
+	dir "Test\CamTest\Transparent"
+	file "Transparent"
+	test_level
+level_end
+
+level_start
+	dir "Test\CamTest\GrievousIntrigueCAM"
+	file "GrievousIntrigueCAM"
+	test_level
+level_end
+
+level_start
+	dir "Test\CamTest\Innocents_A"
+	file "Innocents_A"
+	test_level
+level_end
+
+level_start
+	dir "Test\CamTest\Freeplay"
+	file "Freeplay"
+	test_level
+level_end
+
+level_start
+	dir "Test\CarlTest"
+	file "CarlTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\ChasTest"
+	file "ChasTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTest1\SabreCut"
+	file "SabreCut"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTest1\locomote"
+	file "locomote"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTest1\GizSpellIt"
+	file "GizSpellIt"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTest1\GizBuildIt"
+	file "GizBuildIt"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTest1\Force"
+	file "force"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTest1\SuperCounters"
+	file "SuperCounters"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTest1\PhotonThrow"
+	file "PhotonThrow"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTest1\Terrain"
+	file "Terrain"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTest1\CamSwitch"
+	file "CamSwitch"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTest1\LoopTest"
+	file "LoopTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTest1\LODTest"
+	file "LODTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTest1\PushBlock"
+	file "PushBlock"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTest1\AutoBake"
+	file "AutoBake"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTest1\TTVisibilityAnim"
+	file "TTVisibilityAnim"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTest1\Blowup"
+	file "Blowup"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTest1\Dyno"
+	file "Dyno"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTest\MechTest"
+	file "MechTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\BowlingTest\BowlingTest"
+	file "BowlingTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\Animtest"
+	file "AnimTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\Animtest2"
+	file "AnimTest2"
+	test_level
+level_end
+
+level_start
+	dir "SteveTest\SteveTest"
+	file "SteveTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTestDyno"
+	file "MechTestDyno"
+	test_level
+level_end
+
+level_start
+	dir "Test\MechTestDyno2"
+	file "MechTestDyno2"
+	test_level
+level_end
+
+level_start
+	dir "Test\Prototype\Throne_Room"
+	file "throne_room"
+	test_level
+level_end
+
+level_start
+	dir "Test\Prototype\Hanger"
+	file "hanger"
+	test_level
+level_end
+
+level_start
+	dir "Test\Prototype\Corridor"
+	file "corridor"
+	test_level
+level_end
+
+level_start
+	dir "Test\Prototype\Corridor_Red"
+	file "corridor_red"
+	test_level
+level_end
+
+level_start
+	dir "Test\Prototype\Cells"
+	file "cells"
+	test_level
+level_end
+
+level_start
+	dir "Test\Prototype\Driod_Line"
+	file "driod_line"
+	test_level
+level_end
+
+level_start
+	dir "Test\Prototype\Coruscant_Temple"
+	file "Coruscant_Temple"
+	test_level
+level_end
+
+level_start
+	dir "Test\PDobson\TechTestRoom"
+	file "TechTestRoom"
+	test_level
+level_end
+
+level_start
+	dir "Test\PDobson\CorridorTest"
+	file "CorridorTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\PDobson\FollowSpecial"
+	file "FollowSpecial"
+	test_level
+level_end
+
+level_start
+	dir "Test\PDobson\DynoLOD"
+	file "DynoLOD"
+	test_level
+level_end
+
+level_start
+	dir "\Test\PDobson\LEDeditorTest"
+	file "LEDeditorTest"
+	test_level
+level_end
+
+level_start
+	dir "\Test\PDobson\MazeTest"
+	file "MazeTest"
+	test_level
+level_end
+
+level_start
+	dir "\Test\PDobson\LocomoteComplete"
+	file "LocomoteComplete"
+	test_level
+level_end
+
+level_start
+	dir "Test\PDobson\DynoTerrainTypes"
+	file "DynoTerrainTypes"
+	test_level
+level_end
+
+level_start
+	dir "Test\PDobson\ObstacleTests"
+	file "ObstacleTests"
+	test_level
+level_end
+
+level_start
+	dir "Test\PDobson\Gameplay"
+	file "Gameplay"
+	test_level
+level_end
+
+level_start
+	dir "Test\PDobson\GrappleObTest"
+	file "GrappleObTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\PDobson\SplitCamTest"
+	file "SplitCamTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\PDobson\ParticleFollow"
+	file "ParticleFollow"
+	test_level
+level_end
+
+level_start
+	dir "Test\PDobson\ComplexGizmoFollows"
+	file "ComplexGizmoFollows"
+	test_level
+level_end
+
+level_start
+	dir "Test\PDobson\WiiCutdownTest"
+	file "WiiCutdownTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\DBurton\Exterior_Scale"
+	file "exterior_scale"
+	test_level
+level_end
+
+level_start
+	dir "Test\KShankland\Props_Testing"
+	file "Props_Testing"
+	test_level
+level_end
+
+level_start
+	dir "Test\BKlages\CoverTest"
+	file "CoverTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\BKlages\GrabberTest"
+	file "GrabberTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\BKlages\MagnaTest"
+	file "MagnaTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\BKlages\GoldB2Test"
+	file "GoldB2Test"
+	test_level
+level_end
+
+level_start
+	dir "Test\BKlages\CommandoTest"
+	file "CommandoTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\BKlages\TX20Test"
+	file "TX20Test"
+	test_level
+level_end
+
+level_start
+	dir "Test\BKlages\GeonTest"
+	file "GeonTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\BKlages\GrappleTest"
+	file "GrappleTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\POpdam\VehicleTest"
+	file "VehicleTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\LFleming\Test"
+	file "Test"
+	test_level
+level_end
+
+level_start
+	dir "Test\LFleming\Hologram_Test"
+	file "Hologram_Test"
+	test_level
+level_end
+
+level_start
+	dir "Test\LFleming\locomote_test"
+	file "locomote_Test"
+	test_level
+level_end
+
+level_start
+	dir "Test\EMorrison"
+	file "EMorrison"
+	test_level
+level_end
+
+level_start
+	dir "Test\rtstest\pvp"
+	file "pvp"
+	test_level
+level_end
+
+level_start
+	dir "Test\aitest"
+	file "aitest"
+	test_level
+level_end
+
+level_start
+	dir "Test\vehicleaitest"
+	file "vehicleaitest"
+	test_level
+level_end
+
+level_start
+	dir "Test\JBakis\JBTest_A"
+	file "JBTest_A"
+	test_level
+level_end
+
+level_start
+	dir "Test\JBakis\JBTest_B"
+	file "JBTest_B"
+	test_level
+level_end
+
+level_start
+	dir "Test\JBakis\JBTest_C"
+	file "JBTest_C"
+	test_level
+level_end
+
+level_start
+	dir "Test\robd\blendshapes"
+	file "blendshapes"
+	test_level
+level_end
+
+level_start
+	dir "Test\robd\lightsabers"
+	file "lightsabers"
+	test_level
+level_end
+
+level_start
+	dir "Test\robd\tech_DEMO"
+	file "tech_DEMO"
+	test_level
+level_end
+
+level_start
+	dir "TitlesNew"
+	file "TitlesNew"
+	test_level
+level_end
+
+level_start
+	dir "CUT_SceneTests\GunganGeneral_Intro"
+	file "GunganGeneral_Intro"
+	test_level
+	intro_level
+level_end
+
+level_start
+	dir "Test\DynoTest"
+	file "DynoTest"
+	test_level
+level_end
+
+level_start
+	dir "Test\CUT_Synch"
+	file "SynchTestA"
+	test_level
+level_end
+
+level_start
+	dir "Test\AIDemoTest"
+	file "AIDemoTest"
+	test_level
+level_end
+
