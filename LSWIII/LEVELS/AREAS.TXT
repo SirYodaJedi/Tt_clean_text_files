@@ -1,0 +1,710 @@
+area_start
+	dir "BuilderTest"
+	file "BuilderTest"
+	level "TestBuilder1"
+	level "TestBuilder2"
+	level "TestBuilder3"
+	level "TestBuilder4"
+	level "TestBuilder5"
+	level "TestBasePlates"
+	can_use_builder
+	no_completion_points
+	builder_player_defaults "indianajones_cs" "mac"
+area_end
+
+	dir "FrontEnd"
+	file "FrontEnd"
+	level "FrontEnd"
+	test_area
+	no_completion_points
+
+area_start
+	dir "CWHub"
+	file "CWHub"
+	level "CWHub"
+	level "credits"
+	level "Rookies_Status"
+	level "GunganGeneral_Status"
+	level "DuelOfTheDroids_Status"
+	level "LairOfGrievous_Status"
+	level "ShadowOfMalevolence_Status"
+	level "DestroyMalevolence_STATUS"
+	level "WeaponsFactory_Status"
+	level "ZilloBeast_Status"
+	level "CastleOfDoom_Status"
+	level "HostageCrisis_Status"
+	level "BattleOfGeonosis_Status"
+	level "StormOverRyloth_Status"
+	level "HiddenEnemy_Status"
+	level "InnocentsOfRyloth_Status"
+	level "FreePlayExit_Status"
+	level "GeonosianArena_Status"
+	level "MainStory_IntroA"
+	level "MainStory_IntroB"
+	level "Ambush_Status"
+	level "StoryB_Midtro1"
+	level "JediCrash_Status"
+	level "StoryA_Midtro1"
+	level "DefendersOfThePeace_Status"
+	level "StoryA_Midtro2"
+	level "BlueShadowVirus_Status"
+	level "StoryB_Midtro2"
+	level "LibertyOnRyloth_Status"
+	level "StoryB_End" ;; <- leads to credits
+	level "LegacyOfTerror_Status"
+	level "StoryA_End" ;; <- leads to credits
+	level "GrievousIntrigue_Status"
+	level "StoryC_End" ;; <- leads to credits
+	level "GroundAssaultPVP_Status"
+	hub_area
+	name_char "	name_char_HUB"
+	text_char "	text_char_HUB"
+	progress_buffer_size 50000
+area_end
+
+area_start
+	dir "HubAssault"
+	file "HubAssault"
+	level "HubAssault"
+	no_gold_brick
+	no_completion_points
+area_end
+
+area_start
+	dir "TestHub"
+	file "TestHub"
+	level "TestHub"
+area_end
+
+area_start
+	dir "TestHub2"
+	file "TestHub2"
+	level "TestHub2"
+area_end
+
+area_start
+	dir "ResoluteHub"
+	file "ResoluteHub"
+	level "ResoluteHub"
+area_end
+
+area_start
+	dir "InvisibleHandHub"
+	file "InvisibleHandHub"
+	level "InvisibleHandHub"
+area_end
+
+area_start
+	dir "GeonosianArena"
+	file "GeonosianArena"
+	level "GeonosianArena"
+	name_char "	name_char_GEONOSIANARENA"
+	text_char "	text_char_GEONOSIANARENA"
+	true_hero
+	minikit "Darth_Sid" "minifig"
+	progress_buffer_size 10000
+area_end
+
+area_start
+	dir "Ambush"
+	file "Ambush"
+	level "Ambush_Intro"
+	level "Ambush_A"
+	level "Ambush_B"
+	level "Ambush_Outro"
+	level "Ambush_MissionStatus"
+	name_char "	name_char_AMBUSH"
+	text_char "	text_char_AMBUSH"
+	true_hero
+	minikit "Darth_Vader_Damage" "minifig"
+	progress_buffer_size 40000
+area_end
+
+area_start
+	dir "Rookies"
+	file "Rookies"
+	level "Rookies_Intro"
+	level "Rookies_A"
+	level "Rookies_B"
+	level "Rookies_OutroB"
+	level "Rookies_OutroC"
+	level "Rookies_OutroD"
+	level "Rookies_A_ART"
+	level "Rookies_MissionStatus"
+	name_char "	name_char_ROOKIES"
+	text_char "	text_char_ROOKIES"
+	true_hero
+	minikit "Darth_Maul" "minifig"
+	progress_buffer_size 26000
+area_end
+
+area_start
+	dir "GunganGeneral"
+	file "GunganGeneral"
+	level "GunganGeneral_IntroA"
+	level "GunganGeneral_IntroB"
+	level "GunganGeneral_A"
+	level "GunganGeneral_Outro"
+	name_char "	name_char_GUNGANGENERAL"
+	text_char "	text_char_GUNGANGENERAL"
+	true_hero
+	minikit "Admiral_Ackbar" "minifig"
+	progress_buffer_size 15000
+area_end
+
+area_start
+	dir "DuelOfTheDroids"
+	file "DuelOfTheDroids"
+	level "DuelOfTheDroids_INTRO"
+	level "DuelOfTheDroids_A"
+	level "DuelOfTheDroids_B"
+	level "DuelOfTheDroids_C"
+	level "DuelOfTheDroids_OUTRO"
+	level "DuelOfTheDroids_MissionStatus"
+	name_char "	name_char_DUELOFTHEDROIDS"
+	text_char "	text_char_DUELOFTHEDROIDS"
+	true_hero
+	minikit "HanSolo" "minifig"
+	progress_buffer_size 45000
+area_end
+
+area_start
+	dir "LairOfGrievous"
+	file "LairOfGrievous"
+	level "LairOfGrievous_A"
+	level "LairOfGrievous_B"
+	level "LairOfGrievous_C"
+	level "LairOfGrievous_D"
+	level "LairOfGrievous_MissionStatus"
+	name_char "	name_char_LAIROFGRIEVOUS"
+	text_char "	text_char_LAIROFGRIEVOUS"
+	true_hero
+	minikit "RebelCommando" "minifig"
+	progress_buffer_size 41000
+area_end
+
+area_start
+	icon_scale 2
+	dir "ShadowOfMalevolence"
+	file "ShadowOfMalevolence"
+	level "ShadowOfMalevolence_INTRO"
+	level "ShadowOfMalevolence_A"
+	level "ShadowOfMalevolence_OUTRO"
+	level "ShadowOfMalevolence_MissionSt"
+	name_char "	name_char_SHADOWOFMALEVOLENCE"
+	text_char "	text_char_SHADOWOFMALEVOLENCE"
+	true_hero
+	minikit "LandoCalrissian" "minifig"
+	progress_buffer_size 17000
+area_end
+
+area_start
+	icon_scale 2
+	dir "DestroyMalevolence"
+	file "DestroyMalevolence"
+	level "DestroyMalevolence_INTRO"
+	level "DestroyMalevolence_A"
+	level "DestroyMalevolence_B"
+	level "DestroyMalevolence_OUTRO"
+	level "DestroyMalevolence_MissionSt"
+	name_char "	name_char_DESTROYMALEVOLENCE"
+	text_char "	text_char_DESTROYMALEVOLENCE"
+	true_hero
+	minikit "Wedge" "minifig"
+	progress_buffer_size 30000
+area_end
+
+area_start
+	dir "JediCrash"
+	file "JediCrash"
+	level "JediCrash_INTRO"
+	level "JediCrash_A"
+	level "JediCrash_OUTRO"
+	level "JediCrash_MissionStatus"
+	name_char "	name_char_JEDICRASH"
+	text_char "	text_char_JEDICRASH"
+	true_hero
+	minikit "Obiwan_Ep4" "minifig"
+	progress_buffer_size 25500
+area_end
+
+area_start
+	dir "DefendersOfThePeace"
+	file "DefendersOfThePeace"
+	level "DefendersOfThePeace"
+	name_char "	name_char_DEFENDERSOFPEACE"
+	text_char "	text_char_DEFENDERSOFPEACE"
+	true_hero
+	minikit "Galen_Marek" "minifig"
+	progress_buffer_size 38000
+area_end
+
+area_start
+	dir "HiddenEnemy"
+	file "HiddenEnemy"
+	level "HiddenEnemy_Intro"
+	level "HiddenEnemy_A"
+	level "HiddenEnemy_B"
+	level "HiddenEnemy_C"
+	level "HiddenEnemy_D"
+	level "HiddenEnemy_Outro"
+	level "HiddenEnemy_MissionStatus"
+	name_char "	name_char_THEHIDDENENEMY"
+	text_char "	text_char_THEHIDDENENEMY"
+	true_hero
+	minikit "Greedo" "minifig"
+	progress_buffer_size 50000
+area_end
+
+area_start
+	dir "BlueShadowVirus"
+	file "BlueShadowVirus"
+	level "BlueShadowVirus_IntroA"
+	level "BlueShadowVirus_IntroB"
+	level "BlueShadowVirus_A"
+	level "BlueShadowVirus_B"
+	level "BlueShadowVirus_Midtro"
+	level "BlueShadowVirus_C"
+	level "BlueShadowVirus_D"
+	level "BlueShadowVirus_Outro"
+	level "BlueShadowVirus_MissionStatus"
+	name_char "	name_char_BLUESHADOWVIRUS"
+	text_char "	text_char_BLUESHADOWVIRUS"
+	true_hero
+	minikit "Shadow_Trooper" "minifig"
+	progress_buffer_size 45000
+area_end
+
+area_start
+	dir "BattleOfGeonosis"
+	file "BattleOfGeonosis"
+	level "BattleOfGeonosis"
+	name_char "	name_char_BATTLEOFGEONOSIS"
+	text_char "	text_char_BATTLEOFGEONOSIS"
+	true_hero
+	minikit "LeiaOrgana" "minifig"
+	progress_buffer_size 10000
+area_end
+
+area_start
+	dir "StormOverRyloth"
+	file "StormOverRyloth"
+	level "StormOverRyloth_IntroA"
+	level "StormOverRyloth_IntroB"
+	level "StormOverRyloth_A"
+	level "StormOverRyloth_Outro"
+	level "StormOverRyloth_MissionStatus"
+	name_char "	name_char_STORMOVERRYLOTH"
+	text_char "	text_char_STORMOVERRYLOTH"
+	true_hero
+	minikit "QuiGonJinn" "minifig"
+	progress_buffer_size 16000
+area_end
+
+area_start
+	dir "InnocentsOfRyloth"
+	file "InnocentsOfRyloth"
+	level "InnocentsOfRyloth_Intro"
+	level "InnocentsOfRyloth_A"
+	level "InnocentsOfRyloth_B"
+	level "InnocentsOfRyloth_Outro"
+	level "InnocentsOfRyloth_MissionStatus"
+	name_char "	name_char_INNOCENTSOFRYLOTH"
+	text_char "	text_char_INNOCENTSOFRYLOTH"
+	true_hero
+	minikit "CaptainAntilles" "minifig"
+	progress_buffer_size 60000
+area_end
+
+area_start
+	dir "LibertyOnRyloth"
+	file "LibertyOnRyloth"
+	level "LibertyOnRyloth_A"
+	name_char "	name_char_LIBERTYONRYLOTH"
+	text_char "	text_char_LIBERTYONRYLOTH"
+	true_hero
+	minikit "Storm_Trooper" "minifig"
+	progress_buffer_size 17000
+area_end
+
+area_start
+	dir "WeaponsFactory"
+	file "WeaponsFactory"
+	level "WeaponsFactory_A"
+	level "WeaponsFactory_B"
+	level "WeaponsFactory_C"
+	level "WeaponsFactory_Outro"
+	level "WeaponsFactory_Midtro"
+	level "WeaponsFactory_MissionStatus"
+	name_char "	name_char_WEAPONSFACTORY"
+	text_char "	text_char_WEAPONSFACTORY"
+	true_hero
+	minikit "LukeSkywalker" "minifig"
+	progress_buffer_size 26000
+area_end
+
+area_start
+	dir "LegacyOfTerror"
+	file "LegacyOfTerror"
+	level "LegacyOfTerror_Intro"
+	level "LegacyOfTerror_A"
+	level "LegacyOfTerror_B"
+	level "LegacyOfTerror_C"
+	level "LegacyOfTerror_D"
+	level "LegacyOfTerror_MissionStatus"
+	name_char "	name_char_LEGACYOFTERROR"
+	text_char "	text_char_LEGACYOFTERROR"
+	true_hero
+	minikit "Darth_Vader" "minifig"
+	progress_buffer_size 31000
+area_end
+
+area_start
+	dir "ZilloBeast"
+	file "ZilloBeast"
+	level "ZilloBeast_A"
+	level "ZilloBeast_B"
+	name_char "	name_char_THEZILLOBEAST"
+	text_char "	text_char_THEZILLOBEAST"
+	true_hero
+	minikit "Chewbacca" "minifig"
+	progress_buffer_size 10000
+area_end
+
+area_start
+	dir "CastleOfDoom"
+	file "CastleOfDoom"
+	level "CastleOfDoom_Intro"
+	level "CastleOfDoom_A"
+	level "CastleOfDoom_B"
+	level "CastleOfDoom_C"
+	level "CastleOfDoom_D"
+	level "CastleOfDoom_MissionStatus"
+	name_char "	name_char_CASTLEOFDOOM"
+	text_char "	text_char_CASTLEOFDOOM"
+	true_hero
+	minikit "Imperial_Guard" "minifig"
+	progress_buffer_size 60000
+area_end
+
+area_start
+	dir "HostageCrisis"
+	file "HostageCrisis"
+	level "HostageCrisis_Intro"
+	level "HostageCrisis_A"
+	level "HostageCrisis_B"
+	level "HostageCrisis_Midtro"
+	level "HostageCrisis_OutroA"
+	level "HostageCrisis_OutroB"
+	level "HostageCrisis_MissionStatus"
+	name_char "	name_char_HOSTAGECRISIS"
+	text_char "	text_char_HOSTAGECRISIS"
+	true_hero
+	minikit "Tusken" "minifig"
+	progress_buffer_size 35000
+area_end
+
+area_start
+	dir "GrievousIntrigue"
+	file "GrievousIntrigue"
+	level "GrievousIntrigue_Intro"
+	level "GrievousIntrigue_A"
+	level "GrievousIntrigue_MidtroB"
+	level "GrievousIntrigue_B"
+	level "GrievousIntrigue_C"
+	level "GrievousIntrigue_MissionStatus"
+	name_char "	name_char_GRIEVOUSINTRIGUE"
+	text_char "	text_char_GRIEVOUSINTRIGUE"
+	true_hero
+	minikit "Bobba_Fett" "minifig"
+	progress_buffer_size 39760
+area_end
+
+area_start
+	dir "GroundAssaultPVP"
+	file "GroundAssaultPvP"
+	level "Christophsis"
+	level "Tatooine"
+	level "RuusanMoon"
+	level "Rugosa"
+	level "DeadMoonOfAntar"
+	level "Vassek"
+	level "RishiMoon"
+	level "Florrum"
+	level "Ryloth"
+	level "Quell"
+	level "Maridun"
+	level "Naboo"
+	level "Coruscant"
+	level "Geonosis"
+	level "Saleucami"
+	level "Malastare"
+	single_buffer
+	no_completion_points
+	no_freeplay
+	no_gold_brick
+	progress_buffer_size 1000
+area_end
+
+area_start
+	dir "Test\CamTest"
+	file "CamTest"
+	level "StraightCorridor"
+	level "BendyCorridor"
+	level "YCorridor"
+	level "JunctionCorridor"
+	level "DonutCorridor"
+	level "LairOfGrevious"
+	level "Rookies"
+	level "RookiesExterior"
+	level "BlueShadow"
+	level "BlueShadow_C"
+	level "Transparent"
+	level "GrievousIntrigueCAM"
+	level "Innocents_A"
+	level "freeplay"
+	test_area
+	no_completion_points
+area_end
+
+area_start
+	dir "Test\MechTest1"
+	file "MechTest1"
+	level "Sabrecut"
+	level "locomote"
+	level "GizSpellIt"
+	level "GizBuildIt"
+	level "Protocol"
+	level "Force"
+	level "SuperCounters"
+	level "PhotonThrow"
+	level "Terrain"
+	level "CamSwitch"
+	level "LoopTest"
+	level "LODTest"
+	level "PushBlock"
+	level "AutoBake"
+	level "TTVisibilityAnim"
+	level "Blowup"
+	level "Dyno"
+	test_area
+	no_completion_points
+area_end
+
+	file "Nallen"
+	level "Interior1"
+	level "Interior2"
+	level "Exterior1"
+	level "Exterior2"
+	level "Cam"
+	test_area
+	no_completion_points
+
+area_start
+	dir "Test\Prototype"
+	file "Prototype"
+	level "Throne_Room"
+	level "Hanger"
+	level "Corridor"
+	level "Corridor_Red"
+	level "Cells"
+	level "Driod_Line"
+	level "Coruscant_Temple"
+	test_area
+	no_completion_points
+area_end
+
+area_start
+	dir "Test\PDobson"
+	file "PDobson"
+	level "TechTestRoom"
+	level "CorridorTest"
+	level "FollowSpecial"
+	level "LEDeditorTest"
+	level "DynoLOD"
+	level "DynoSwitchTest"
+	level "DynoTerrainTypes"
+	level "ObstacleTests"
+	level "Gameplay"
+	level "GrappleObTest"
+	level "SplitCamTest"
+	level "ParticleFollow"
+	level "ComplexGizmoFollows"
+	level "MazeTest"
+	level "LocomoteComplete"
+	level "WiiCutdownTest"
+	test_area
+	no_completion_points
+area_end
+
+area_start
+	dir "Test\DBurton"
+	file "DBurton"
+	level "Exterior_Scale"
+	test_area
+	no_completion_points
+area_end
+
+area_start
+	dir "Test\KShankland"
+	file "KShankland"
+	level "Props_Testing"
+	test_area
+	no_completion_points
+area_end
+
+area_start
+	dir "Test\LFleming"
+	file "LFleming"
+	level "Test"
+	level "Hologram_Test"
+	level "locomote_test"
+	level "Test2"
+	test_area
+	no_completion_points
+area_end
+
+area_start
+	dir "Test\JBakis"
+	file "JBakis"
+	level "JBTest_A"
+	level "JBTest_B"
+	level "JBTest_C"
+	test_area
+	no_completion_points
+area_end
+
+area_start
+	dir "Test\RTSTest"
+	file "pvp"
+	level "pvp"
+	test_area
+	no_completion_points
+area_end
+
+area_start
+	dir "Test\LWarren"
+	file "LWarren"
+	level "E3_Pirates"
+	test_area
+	no_completion_points
+area_end
+
+area_start
+	dir "Test\BKlages"
+	file "BKlages"
+	level "CoverTest"
+	level "GrabberTest"
+	level "MagnaTest"
+	level "CommandoTest"
+	level "TX20Test"
+	level "GeonTest"
+	level "GoldB2Test"
+	level "GrappleTest"
+	test_area
+	no_completion_points
+area_end
+
+area_start
+	dir "Test\CUT_Synch"
+	file "SynchTestA"
+	level "SynchTestA"
+	test_area
+	no_completion_points
+area_end
+
+area_start
+	dir "ArtSlice"
+	file "ArtSlice	levels"
+	level "Ambush_A_CL"
+	level "Ambush_B_JB"
+	level "BlueShadowVirus_A_DH"
+	level "BlueShadowVirus_B_DH"
+	level "BlueShadowVirus_C_RPH"
+	level "BlueShadowVirus_D_RPH"
+	level "CastleOfDoom_DL"
+	level "CastleOfDoom_B_DL"
+	level "CastleOfDoom_C_JB"
+	level "CloakOfDarkness_DP"
+	level "CloakOfDarkness_2_DP"
+	level "DestroyMalevolence_Space_PM"
+	level "DuelOfTheDriods_JH"
+	level "DuelOfTheDroids_C_JH"
+	level "GeonosianArena_CL"
+	level "GrievousIntrigue_B_JH"
+	level "GrievousIntrigue_B_RW"
+	level "GrievousIntrigue_C_RW"
+	level "HiddenEnemy_A_PM"
+	level "HiddenEnemy_PM"
+	level "HiddenEnemy_C_PM"
+	level "HostageCrisis_A_DP"
+	level "HostageCrisis_EW"
+	level "LairOfGrevious_LW"
+	level "LegacyOfTerror_A_CL"
+	level "LegacyOfTerror_B_CL"
+	level "LegacyOfTerror_C_CL"
+	level "LegacyOfTerror_D_CL"
+	level "LegacyOfTerror_2_SH"
+	level "ResoluteHanger_DP"
+	level "ResoluteHub_A_DP"
+	level "Rookies_RPH"
+	level "Rookies_A_RPH"
+	level "StormOverRyloth_A_CL"
+	level "StormOverRyloth_CL"
+	level "VenatorDeck_RW"
+	level "WeaponsFactory_SH"
+	level "WeaponsFactory_B_EW"
+	test_area
+	no_completion_points
+area_end
+
+	no_completion_points
+area_end
+
+area_start
+	dir "ArtSlicePVP"
+	file "ArtSlicePVP"
+	level "Naboo_EM"
+	level "RishiMoon_AD"
+	level "Rugosa_JB"
+	level "Ryloth_AD"
+	level "Saleucami_AK"
+	level "Vassek_SDS"
+	level "RuusanMoon_SDS"
+	level "DeadMoonOfAntar_AD"
+	level "Malastare_EM"
+	level "Quell_EM"
+	level "Tatooine_AD"
+	level "Florrum_EM"
+	level "Geonosis_AD"
+	level "Maridun_EM"
+	level "Coruscant_EM"
+	level "Christopsis_PM"
+	no_completion_points
+area_end
+
+area_start
+	dir "Venator_DEMO_HUB"
+	file "Venator_DEMO_HUB"
+	level "Venator_DEMO_HUB"
+	test_area
+	no_completion_points
+area_end
+
+area_start
+	dir "CUT_SceneTests"
+	file "CUT_SceneTests"
+	level "GunganGeneral_Intro"
+	test_area
+	no_completion_points
+area_end
+
+area_start
+	dir "TitlesNew"
+	file "TitlesNew"
+	level "TitlesNew"
+	name_char "	name_char_TITLES"
+	text_char "	text_char_TITLES"
+	test_area
+area_end
+
