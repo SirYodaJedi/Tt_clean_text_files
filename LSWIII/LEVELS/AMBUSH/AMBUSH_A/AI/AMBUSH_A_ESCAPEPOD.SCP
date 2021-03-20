@@ -1,0 +1,405 @@
+CONST TRUE_RESULT 0.5
+
+State Base
+{
+	conditions
+	{
+	}
+	actions
+	{
+		CreateModule #ModRoomManager #Ambush_A_EscapePod #IgnoreExists
+			AddToModule #SetArea=Ambush_A_EscapePod
+			AddToModule #SetEnterState=EnterRoom
+			AddToModule #SetExitState=ExitRoom
+			AddToModule #SetInitState=InitRoom
+			AddToModule #SetCompleteState=CompleteRoom
+		EndAddToModule
+	}
+}
+
+State EnterRoom
+{
+	conditions
+	{
+		If Message Ambush_A_Coral_Blocked > TRUE_RESULT goto UpdateCanyon
+		If AlwaysTrue > TRUE_RESULT goto UpdateCoral
+	}
+	actions
+	{
+	}
+}
+
+State ExitRoom
+{
+	conditions
+	{
+	}
+	actions
+	{
+	}
+}
+
+State InitRoom
+{
+	conditions
+	{
+	}
+	actions
+	{
+		SetMessage name=Ambush_A_Done_Coral_Right value=0.0
+		SetMessage name=Ambush_A_Done_Coral_Left value=0.0
+		SetMessage name=Ambush_A_Coral_Blocked value=0.0
+		SetMessage name=Ambush_A_Canyon_Arm_Off value=0.0
+		SetMessage name=Ambush_A_Canyon_Exit_Open value=0.0
+		SetMessage name=Ambush_A_ActionMusic value=1.0
+		SetMessage name=Ambush_A_DestroyHint value=0.0
+		SetGizmoAvoid name=FishBones_Ob FALSE
+		SetGizmoAvoid name=FishBones_Bl FALSE
+		SetGizmoAvoid name=CoralBIG_Ob FALSE
+		SetGizmoAvoid name=Coral_Leftovers_Ob FALSE
+		SetGizmoAvoid name=Coral_Explode_Ob FALSE
+		SetGizmoAvoid name=Barnicle_BLACK_Ob FALSE
+		SetGizmoAvoid name=Barnicle_BLACK_1_Destroy_Ob FALSE
+		SetGizmoAvoid name=KillTerrainLeft_Ob FALSE
+		SetGizmoAvoid name=KillTerrainRight_Ob FALSE
+		SetGizmoAvoid name=KillTerrainR_RESET_Ob FALSE
+		SetGizmoAvoid name=CoralExplodeL_Ob FALSE
+		SetGizmoAvoid name=CoralExplodeR_Ob FALSE
+		SetGizmoAvoid name=Rocks_Anim_Ob FALSE
+		SetGizmoAvoid name=Barnicle_BLACK_BLOW_Bl FALSE
+		SetGizmoAvoid name=Barnicle_BLACK_BLOW2_Bl FALSE
+		SetGizmoAvoid name=CoralRealL FALSE
+		SetGizmoAvoid name=Coral_M_Bl_01 FALSE
+		SetGizmoAvoid name=Coral_M_Bl_02 FALSE
+		SetGizmoAvoid name=Coral_M_Bl_03 FALSE
+		SetGizmoAvoid name=Coral_M_Bl_04 FALSE
+		SetGizmoAvoid name=Coral_M_FX FALSE
+		SetGizmoAvoid name=BarnicalsBlowupSILVER_Bl FALSE
+		SetGizmoAvoid name=CoralR_NULL_Bl FALSE
+		SetGizmoAvoid name=CoralRearR FALSE
+		SetGizmoAvoid name=tube1 FALSE
+		SetGizmoAvoid name=tube2 FALSE
+		SetGizmoAvoid name=tube3 FALSE
+		SetGizmoAvoid name=Plant_Fan1_Ob FALSE
+		SetGizmoAvoid name=Plant_Fan2_Ob FALSE
+		SetGizmoAvoid name=Plant_Fan3_Ob FALSE
+		NodeGroup name=tube1 deactivate delete
+		NodeGroup name=tube2 deactivate delete
+		NodeGroup name=tube3 deactivate delete
+		
+		CreateModule #ModCreatureGroup #CoralDroidsStart
+			AddToModule #SetSpawnLocatorSet=CoralSpawnStart
+			AddToModule #SetSize=3
+			AddToModule #SetInitSize=3
+			AddToModule #CanBeKilledByPartyAI
+			AddToModule #SetCreatureType=B1Droid_A
+			AddToModule #SetCreatureScript=CoralStartB1
+			AddToModule #Activate
+		EndAddToModule
+		
+		CreateModule #ModCreatureWave #CoralDroidsRight
+			AddToModule #SetSpawnLocatorSet=CoralSpawnRight
+			AddToModule #SetMinSpawnTime=1.0
+			AddToModule #SetWaveMinSpawnTime=17.0
+			AddToModule #SetMaxActive=3
+			AddToModule #CanBeKilledByPartyAI
+			AddToModule #SetInterestLocatorSet=CoralRunPointsRight
+			AddToModule #SetCreatureType=B1Droid_A
+			AddToModule #SetCreatureScript=CoralDroids
+			AddToModule #Activate
+			AddToModule #PauseSpawn
+		EndAddToModule
+		
+		CreateModule #ModTriggerMsg #CoralDroidsRightTriggerM
+			AddToModule #SetMessage=Ambush_A_Done_Coral_Right
+			AddToModule #InvertState
+		EndAddToModule
+		
+		CreateModule #ModTriggerVolume #CoralDroidsRightTriggerV
+			AddToModule #SetArea=CoralSpawnTriggerRight
+			AddToModule #TriggeredByParty
+			AddToModule #CompleteOnTrigger
+		EndAddToModule
+		
+		CreateModule #ModEvent #CoralDroidsRightEvent
+			AddToModule #AddTriggerModule=#CoralDroidsRightTriggerM
+			AddToModule #AddTriggerModule=#CoralDroidsRightTriggerV
+			AddToModule #NeedsAllTriggers
+			AddToModule #SetEventOnTag=#ResumeSpawn
+			AddToModule #SetEventOffTag=#PauseSpawn
+			AddToModule #ConnectModule=#CoralDroidsRight
+		EndAddToModule
+		
+		CreateModule #ModTriggerVolume #SmashCoralRightTriggerV
+			AddToModule #SetArea=SmashRightCoral
+			AddToModule #SetCreatureGroup=#CoralDroidsRight
+			AddToModule #SetGroupTriggerCount=1
+			AddToModule #ClearStateAfterTrigger
+			AddToModule #SetMinCheckTime=0.5
+		EndAddToModule
+		
+		CreateModule #ModEvent #SmashCoralRightEvent
+			AddToModule #AddTriggerModule=#SmashCoralRightTriggerV
+			AddToModule #SetGizmo=spellit_SilverBarnicle
+			AddToModule #SetGizmoCommand=#SmashIncompleteSpellIt
+		EndAddToModule
+		
+		CreateModule #ModCreatureWave #CoralDroidsLeft
+			AddToModule #SetSpawnLocatorSet=CoralSpawnLeft
+			AddToModule #SetMinSpawnTime=1.0
+			AddToModule #SetWaveMinSpawnTime=17.0
+			AddToModule #SetMaxActive=3
+			AddToModule #CanBeKilledByPartyAI
+			AddToModule #SetInterestLocatorSet=CoralRunPointsLeft
+			AddToModule #SetCreatureType=B1Droid_A
+			AddToModule #SetCreatureScript=CoralDroids
+			AddToModule #Activate
+			AddToModule #PauseSpawn
+		EndAddToModule
+		
+		CreateModule #ModTriggerMsg #CoralDroidsLeftTriggerM
+			AddToModule #SetMessage=Ambush_A_Done_Coral_Left
+			AddToModule #InvertState
+		EndAddToModule
+		
+		CreateModule #ModTriggerVolume #CoralDroidsLeftTriggerV
+			AddToModule #SetArea=CoralSpawnTriggerLeft
+			AddToModule #TriggeredByParty
+			AddToModule #CompleteOnTrigger
+		EndAddToModule
+		
+		CreateModule #ModEvent #CoralDroidsLeftEvent
+			AddToModule #AddTriggerModule=#CoralDroidsLeftTriggerM
+			AddToModule #AddTriggerModule=#CoralDroidsLeftTriggerV
+			AddToModule #NeedsAllTriggers
+			AddToModule #SetEventOnTag=#ResumeSpawn
+			AddToModule #SetEventOffTag=#PauseSpawn
+			AddToModule #ConnectModule=#CoralDroidsLeft
+		EndAddToModule
+		
+		CreateModule #ModTriggerVolume #SmashCoralLeftTriggerV
+			AddToModule #SetArea=SmashLeftCoral
+			AddToModule #SetCreatureGroup=#CoralDroidsLeft
+			AddToModule #SetGroupTriggerCount=1
+			AddToModule #ClearStateAfterTrigger
+			AddToModule #SetMinCheckTime=0.5
+		EndAddToModule
+		
+		CreateModule #ModEvent #SmashCoralLeftEvent
+			AddToModule #AddTriggerModule=#SmashCoralLeftTriggerV
+			AddToModule #SetGizmo=spellit_BlackBarnicle
+			AddToModule #SetGizmoCommand=#SmashIncompleteSpellIt
+		EndAddToModule
+		
+		CreateModule #ModMusicInfluence #ActionMusic
+			AddToModule #SetMusicType=#ActionMusic
+		EndAddToModule
+		
+		CreateModule #ModTriggerMsg #ActionMusicTriggerM
+			AddToModule #SetMessage=Ambush_A_ActionMusic
+		EndAddToModule
+		
+		CreateModule #ModTriggerVolume #ActionMusicTriggerV
+			AddToModule #SetArea=Ambush_A_EscapePod
+			AddToModule #TriggeredByParty
+		EndAddToModule
+		
+		CreateModule #ModEvent #ActionMusicEvent
+			AddToModule #AddTriggerModule=#ActionMusicTriggerM
+			AddToModule #AddTriggerModule=#ActionMusicTriggerV
+			AddToModule #NeedsAllTriggers
+			AddToModule #SetEventOnTag=#Process
+			AddToModule #SetEventOffTag=#NoProcess
+			AddToModule #ConnectModule=#ActionMusic
+		EndAddToModule
+		
+		SetState EnterRoom
+	}
+}
+
+State CompleteRoom
+{
+	conditions
+	{
+	}
+	actions
+	{
+		If FreePlay < 0.5
+			RemoveItem Character=Clone_Thire All
+			AddItem Character=Clone_Thire item=Droid_Head_Thire
+		EndIf
+	}
+}
+
+State UpdateCoral
+{
+	conditions
+	{
+		if Message Ambush_A_Done_Coral_Right > TRUE_RESULT and
+		if Message Ambush_A_Done_Coral_Left > TRUE_RESULT and
+		if module "#CoralDroidsRight #GetNumAlive" <= 0.0 and
+		if module "#CoralDroidsLeft #GetNumAlive" <= 0.0 goto EndCoral
+	}
+	actions
+	{
+	}
+}
+
+State EndCoral
+{
+	conditions
+	{
+	}
+	actions
+	{
+		Wait 2.0
+		SetState InitCanyon
+	}
+}
+
+State InitCanyon
+{
+	conditions
+	{
+	}
+	actions
+	{
+		SetMessage name=Ambush_A_Coral_Blocked value=1.0
+		
+		CreateModule #ModCreatureGroup #CanyonDroidsInitial
+			AddToModule #SetSpawnLocatorSet=CanyonSpawnInitial
+			AddToModule #SetSize=10
+			AddToModule #SetInitSize=10
+			AddToModule #CanBeKilledByPartyAI
+			AddToModule #SetCreatureType=B2Droid_A
+			AddToModule #SetCreatureScript=CanyonDroidsIni
+			AddToModule #SetAIGroup=CanyonDroidsInitial
+			AddToModule #Activate
+		EndAddToModule
+		
+		CreateModule #ModEvent #CanyonDroidsDeadEvent
+			AddToModule #AddTriggerModule=#CanyonDroidsInitial
+			AddToModule #InvertTriggerOutput
+			AddToModule #SetEventMessage=Ambush_A_ActionMusic
+		EndAddToModule
+		
+		CreateModule #ModCreatureGroup #CanyonDroids
+			AddToModule #SetSpawnLocatorSet=MidtroSpawn
+			AddToModule #SetMinSpawnTime=4.0
+			AddToModule #SetDeathSpawnDelay=6.0
+			AddToModule #SetMaxActive=3
+			AddToModule #SetInitSize=2
+			AddToModule #CanBeKilledByPartyAI
+			AddToModule #SetCreatureType=B2Droid_A
+			AddToModule #SetCreatureScript=CanyonDroids
+		EndAddToModule
+		
+		CreateModule #ModTriggerMsg #CanyonDroidsTriggerB
+			AddToModule #SetMessage=Ambush_A_Canyon_Exit_Open
+		EndAddToModule
+		
+		CreateModule #ModEvent #CanyonDroidsEvent
+			AddToModule #AddTriggerModule=#CanyonDroidsTriggerB
+			AddToModule #SetEventOnTag=#PauseSpawn
+			AddToModule #ConnectModule=#CanyonDroids
+		EndAddToModule
+		
+		SetState UpdateCanyon
+	}
+}
+
+State UpdateCanyon
+{
+	conditions
+	{
+		if Message Ambush_A_Canyon_Arm_Off > TRUE_RESULT goto CanyonTakeOffArm
+		if Message Ambush_A_DestroyHint < TRUE_RESULT and
+		if EitherPlayerInContext MagicPush > TRUE_RESULT goto ShowDestroyHint
+		if Message Ambush_A_Canyon_Exit_Open > TRUE_RESULT and
+		if Message Ambush_A_ActionMusic > TRUE_RESULT and
+		if Module "#CanyonDroids #GetNumAlive" < 0.5 goto ActionMusicOff
+	}
+	actions
+	{
+	}
+}
+
+State CanyonTakeOffArm
+{
+	conditions
+	{
+	}
+	actions
+	{
+	If FreePlay < 0.5
+		RemoveItem Character=Clone_Thire All
+		AddItem Character=Clone_Thire item=Droid_Head_Thire
+	EndIf
+	
+	DestroyModule #CanyonDroidsDeadEvent
+	
+	If FreePlay < 0.5
+		SendToModule #CanyonDroids #Activate
+	EndIf
+	
+	SendToModule #CanyonDroids #SetSpawnLocatorSet=CanyonSpawn
+	SendToModule #CanyonDroids #Activate
+	
+	If FreePlay < 0.5
+		SetHint name=HINT_AMB_FORCELIFT ClearDoneFlag
+	EndIF
+	
+	SetMessage name=Ambush_A_Canyon_Arm_Off value=0.0
+	SetMessage name=Ambush_A_ActionMusic value=1.0
+	SetState UpdateCanyon
+	}
+}
+
+State ShowDestroyHint
+{
+	conditions
+	{
+		if GizmoActive "EndBlow2" < TRUE_RESULT goto EndDestroyHint
+		if GizmoActive "iLEGOrock_BL" < TRUE_RESULT goto EndDestroyHint
+		if GizmoActive "iLEGOrock_BL1" < TRUE_RESULT goto EndDestroyHint
+		if GizmoActive "iLEGOrock_BL2" < TRUE_RESULT goto EndDestroyHint
+		if GizmoActive "iLEGOrock_BL3" < TRUE_RESULT goto EndDestroyHint
+		if GizmoActive "iLEGOrock_BL4" < TRUE_RESULT goto EndDestroyHint
+		if GizmoActive "iLEGOrock_BL5" < TRUE_RESULT goto EndDestroyHint
+	}
+	actions
+	{
+		If FreePlay < 0.5
+			SetHintComplete name=HINT_AMB_FORCELIFT
+			SetHint name=HINT_AMB_GOLD_LEGO ClearDoneFlag
+		EndIf
+	}
+}
+
+State EndDestroyHint
+{
+	conditions
+	{
+	}
+	actions
+	{
+		If FreePlay < 0.5
+			SetHintComplete name=HINT_AMB_GOLD_LEGO
+		EndIf
+		
+		SetMessage name=Ambush_A_DestroyHint value=1.0
+		SetState UpdateCanyon
+	}
+}
+
+State ActionMusicOff
+{
+	conditions
+	{
+	}
+	actions
+	{
+		SetMessage name=Ambush_A_ActionMusic value=0.0
+		SetState UpdateCanyon
+	}
+}

@@ -1,0 +1,56 @@
+CONST TRUE_RESULT 0.5
+
+State Base
+{
+	Conditions
+	{
+		if AlwaysTrue > TRUE_RESULT goto BrawlerInit
+	}
+	Actions
+	{
+	}
+}
+
+State BrawlerInit
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		StopCharacterJumpingToAvoid
+		SetState RunToAction
+	}
+}
+
+State RunToAction
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		GoToLocator 0.2 run
+		SetState Update
+	}
+}
+
+State Update
+{
+	ReferenceScript
+	{
+		Script=b1droid
+		Source=Global
+		ReturnState=Update
+		Conditions
+		{
+			if AlwaysTrue == 1
+		}
+	}
+	Conditions
+	{
+	}
+	Actions
+	{
+	}
+}

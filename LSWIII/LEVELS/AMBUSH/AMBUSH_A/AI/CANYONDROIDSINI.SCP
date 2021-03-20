@@ -1,0 +1,64 @@
+CONST TRUE_RESULT 0.5
+
+State Base
+{
+	Conditions
+	{
+		if AlwaysTrue > TRUE_RESULT goto BrawlerInit
+	}
+	Actions
+	{
+	}
+}
+
+State BrawlerInit
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		SetState March
+	}
+}
+
+State March
+{
+	ReferenceScript
+	{
+		Script=Formation
+		Source=Level
+		ReturnState=March
+		Conditions
+		{
+			if IsInGroup > 0.5
+		}
+	}
+	Conditions
+	{
+		if IsInGroup < TRUE_RESULT goto Update
+	}
+	Actions
+	{
+	}
+}
+
+State Update
+{
+	ReferenceScript
+	{
+		Script=b2droid
+		Source=Global
+		ReturnState=Update
+		Conditions
+		{
+			if AlwaysTrue == 1
+		}
+	}
+	Conditions
+	{
+	}
+	Actions
+	{
+	}
+}

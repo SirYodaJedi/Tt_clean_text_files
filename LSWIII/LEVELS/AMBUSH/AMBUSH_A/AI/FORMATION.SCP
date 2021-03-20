@@ -1,0 +1,61 @@
+CONST TRUE_RESULT 0.5
+
+State Base
+{
+	Conditions
+	{
+		if IsInGroup > TRUE_RESULT goto BrawlerInit
+	}
+	Actions
+	{
+	}
+}
+
+State BrawlerInit
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		SetState GroupUp
+	}
+}
+
+State GroupUp
+{
+	Conditions
+	{
+		if Timer > 1.5 goto March
+	}
+	Actions
+	{
+		ResetTimer
+		ControlFormation Stand
+	}
+}
+
+State March
+{
+	Conditions
+	{
+		if OpponentRange < 0.5 goto ExitGroup
+		if NearestPlayerRange < 0.5 goto ExitGroup
+	}
+	Actions
+	{
+		ControlFormation GoToLocator=CanyonDroidMarch Walk GoalRange=0.3 NoFixUp
+		SetState ExitGroup
+	}
+}
+
+State ExitGroup
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		DisbandGroup current
+	}
+}

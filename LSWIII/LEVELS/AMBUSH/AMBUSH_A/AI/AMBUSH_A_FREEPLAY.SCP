@@ -1,0 +1,80 @@
+CONST TRUE_RESULT 0.5
+
+State Base
+{
+	conditions
+	{
+		if Message Ambush_A_FreePlayInit < TRUE_RESULT goto InitRoom
+		if AlwaysTrue > TRUE_RESULT goto EnterRoom
+	}
+	actions
+	{
+	}
+}
+
+State InitRoom
+{
+	conditions
+	{
+	}
+	actions
+	{
+		SetMessage name=Ambush_A_FreePlayInit value=1.0
+		SetMessage name=Ambush_A_SpawnCrab value=0.0
+		SetMessage name=Ambush_A_MiniKitCollected value=0.0
+		SetState EnterRoom
+	}
+}
+
+State EnterRoom
+{
+	conditions
+	{
+	}
+	actions
+	{
+		SetMessage name=Ambush_A_CrabSpawned value=0.0
+		
+		CreateModule #ModCreatureGroup #BabyCrabs
+			AddToModule #SetSpawnLocatorSet=BabyCrabSpawn
+			AddToModule #SetSize=5
+			AddToModule #SetInitSize=5
+			AddToModule #SetCreatureType=CrabLarvae
+			AddToModule #SetCreatureScript=BabyCrab
+			AddToModule #Activate
+		EndAddToModule
+		
+		CreateModule #ModMiniKit #CrabMiniKit
+			AddToModule #SetTargetCount=5
+			AddToModule #SetDisplayColour=#Colour_Blue
+			AddToModule #SetSpawnLocatorSet=CrabMinikit
+			AddToModule #SetSpawnPickup=CrabMinikit
+		EndAddToModule
+		
+		SetState Update
+	}
+}
+
+State Update
+{
+	conditions
+	{
+		if Message Ambush_A_SpawnCrab > TRUE_RESULT and
+		if Message Ambush_A_CrabSpawned < TRUE_RESULT goto SpawnCrab
+	}
+	actions
+	{
+	}
+}
+
+State SpawnCrab
+{
+	conditions
+	{
+	}
+	actions
+	{
+		Activate character=crab_rideon
+		SetMessage name=Ambush_A_CrabSpawned value=1.0
+	}
+}

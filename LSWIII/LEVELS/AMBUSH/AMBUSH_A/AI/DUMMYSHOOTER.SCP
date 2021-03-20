@@ -1,0 +1,35 @@
+CONST TRUE_RESULT 0.5
+
+State Base
+{
+	Conditions
+	{
+		if AlwaysTrue > TRUE_RESULT goto BrawlerInit
+	}
+	Actions
+	{
+	}
+}
+
+State BrawlerInit
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		SetInvulnerable
+		SetDontPush
+		SetState Update
+	}
+}
+
+State Update
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+	}
+}

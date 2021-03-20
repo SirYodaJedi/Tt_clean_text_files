@@ -1,0 +1,59 @@
+CONST TRUE_RESULT 0.5
+
+State Base
+{
+	Conditions
+	{
+		if AlwaysTrue > TRUE_RESULT goto BrawlerInit
+	}
+	Actions
+	{
+	}
+}
+
+State BrawlerInit
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		DontPush
+		SetState Update
+	}
+}
+
+State Update
+{
+	Conditions
+	{
+		if BeenHitByNamedObj MummyCrab > TRUE_RESULT goto FollowMummyInit
+	}
+	Actions
+	{
+	}
+}
+
+State FollowMummyInit
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		IncrementModMinikit ModName=CrabMiniKit AboveCharacter
+		DontPush FALSE
+		SetState FollowMummy
+	}
+}
+
+State FollowMummy
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		ControlCreature FollowCharacter=crab_rideon GoalRange=0.5 Infinate
+	}
+}

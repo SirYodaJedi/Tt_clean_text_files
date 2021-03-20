@@ -1,0 +1,70 @@
+CONST TRUE_RESULT 0.5
+
+State Base
+{
+	Conditions
+	{
+		if AlwaysTrue > TRUE_RESULT goto BrawlerInit
+	}
+	Actions
+	{
+	}
+}
+
+State BrawlerInit
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		UseTimeBasedUpdates FALSE
+		SetZoneAbility +A
+		SetState GetToAction
+	}
+}
+
+State GetToAction
+{
+	Conditions
+	{
+		if InTriggerArea CanyonAttack > TRUE_RESULT goto AttackInit
+	}
+	Actions
+	{
+		SetLocator name=CanyonWalk
+		GoToLocator walk
+	}
+}
+
+State AttackInit
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		SetZoneAbility -A
+		SetState Attack
+	}
+}
+
+State Attack
+{
+	ReferenceScript
+	{
+		Script=b2droid
+		Source=Global
+		ReturnState=Attack
+		Conditions
+		{
+			if AlwaysTrue == 1
+		}
+	}
+	Conditions
+	{
+	}
+	Actions
+	{
+	}
+}

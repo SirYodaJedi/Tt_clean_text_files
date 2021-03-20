@@ -1,0 +1,45 @@
+CONST TRUE_RESULT 0.5
+
+State Base
+{
+	Conditions
+	{
+		if AlwaysTrue > TRUE_RESULT goto BrawlerInit
+	}
+	Actions
+	{
+	}
+}
+
+State BrawlerInit
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		SetShootAccuracy 0.0
+		CannotBeSeen
+		SetState Update
+	}
+}
+
+State Update
+{
+	ReferenceScript
+	{
+		Script=b1droid
+		Source=Global
+		ReturnState=Update
+		Conditions
+		{
+			if AlwaysTrue == 1
+		}
+	}
+	Conditions
+	{
+	}
+	Actions
+	{
+	}
+}

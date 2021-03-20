@@ -1,0 +1,56 @@
+CONST TRUE_RESULT 0.5
+
+State Base
+{
+	Conditions
+	{
+		if AlwaysTrue > TRUE_RESULT goto BrawlerInit
+	}
+	Actions
+	{
+	}
+}
+
+State BrawlerInit
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		SetState GetToAction
+	}
+}
+
+State GetToAction
+{
+	Conditions
+	{
+		if InTriggerArea CanyonAttack > TRUE_RESULT goto Update
+	}
+	Actions
+	{
+		SetLocator name=CanyonWalk
+		GoToLocator walk
+	}
+}
+
+State Update
+{
+	ReferenceScript
+	{
+		Script=b1droid
+		Source=Global
+		ReturnState=Update
+		Conditions
+		{
+			if AlwaysTrue == 1
+		}
+	}
+	Conditions
+	{
+	}
+	Actions
+	{
+	}
+}
