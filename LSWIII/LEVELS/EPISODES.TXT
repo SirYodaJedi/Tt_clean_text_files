@@ -1,0 +1,40 @@
+episode_start
+	text EPISODE_PROLOGUE
+	area "GeonosianArena"
+episode_end
+
+episode_start
+	text EPISODE_VENTRESS
+	area "HiddenEnemy"
+	area "Ambush"
+	area "BlueShadowVirus"
+	area "StormOverRyloth"
+	area "InnocentsofRyloth"
+	area "LibertyonRyloth"
+episode_end
+
+episode_start
+	text EPISODE_DOOKU
+	area "BattleofGeonosis"
+	area "GunganGeneral"
+	area "JediCrash"
+	area "DefendersofthePeace"
+	area "WeaponsFactory"
+	area "LegacyofTerror"
+episode_end
+
+episode_start
+	text EPISODE_GRIEVOUS
+	area "DueloftheDroids"
+	area "ShadowofMalevolence"
+	area "DestroyMalevolence"
+	area "LairofGrievous"
+	area "Rookies"
+	area "GrievousIntrigue"
+episode_end
+
+episode_start
+	text EPISODE_EPILOGUE
+	area "ZilloBeast"
+episode_end
+
