@@ -1,0 +1,141 @@
+SetStartSystem HubSystem_Geonosis,HubSystem_GeonosisLow
+AddStartCharacters Anakin_Gen,Obiwan_Gen
+
+AddArea MultipleAllow
+	AddCharacters Geonosian_solarSailor,Pirate_Tank,ATTE,ATAP,ATRT,Droid_Speeder,CadBane_Speeder,BARC_Speeder,Starhawk_Speederbike
+EndArea
+
+AddArea PlayVehicles
+	UnlockAll
+	AddCharacters JeepGunner,IceCreamVan,Motorbike
+EndArea
+
+AddArea NoFreePlaySpaceVehicles
+	AddCharacters ProbeDroid,Droideka_A,Gonk,LepDroid,Mse_MouseDroid
+EndArea
+
+AddArea SpaceVehicles
+	AddCharacters BTL_B_YWing,Anakin_Interceptor,PloKoon_Interceptor,obiwan_interceptor,LAAT_Gunship,LAAT_C_Dropship,Medical_Frigate,NuClass_AttackShuttle,Republic_Cruiser,twilight,V19_Torrent,Padme_Yacht,ambassadorShuttle,ARC170_Starfighter,StealthShip,Belbullab22_Starfighter,Geonosian_solarSailor,Hyena_Bomber,Vulture_Droid_Vehicle,Geonosian_fighter,sepratistTransport,XanaduBlood,WeequaySaucer,RogueClass_Porax_38,trident,KitFisto_Interceptor,slave1,halo
+EndArea
+
+AddArea AssaultVehicles
+	AddCharacters ATRT,ATAP,ATTE,Stun_Tank_Chassis,BARC_Speeder,Super_Tank,AAT_Chassis,DwarfSpiderDroid,HailFire_Droid,OG9_HomingSpiderDroid,STAP,Pirate_Tank,Starhawk_SpeederBike
+EndArea
+
+AddArea REPAssaultVehicles
+	AddCharacters ATRT,ATAP,ATTE,Stun_Tank_Chassis,BARC_Speeder,Pirate_Tank,Starhawk_SpeederBike
+EndArea
+
+AddArea CISAssaultVehicles
+	AddCharacters Super_Tank,AAT_Chassis,DwarfSpiderDroid,HailFire_Droid,OG9_HomingSpiderDroid,STAP,Pirate_Tank,Starhawk_SpeederBike
+EndArea
+
+AddArea GeonosianArena
+	AddCharacters Obiwan_gen,Anakin_gen,Padme_gen,Anakin_ep2,Obiwan_ep2,Padme_ep2,BARC_Speeder,STAP
+	UnlockCharacters Wullf,CadBane,JangoFett,GenericNemodian,obiwan_interceptor,Vulture_Droid_Vehicle,Hyena_Bomber,countdooku,R4p17
+EndArea
+
+AddArea HiddenEnemy
+	AddCharacters Anakin_Gen,Obiwan_Gen,Clone_Cody,Clone_Cody_Radio,clone_Gen
+	UnlockCharacters B1Droid_A,SportsCars_Dagr,SportsCars_Scout
+EndArea
+
+AddArea BlueShadowVirus
+	AddCharacters Anakin_Gen,Obiwan_Gen,Padme_Gen,Ahsoka_Gen,JarJarBinks,Padme_Gen,Clone_Rex,Clone_Rex_Radio
+	UnlockCharacters DrNuvo,Gonk,LepDroid,B2DroidGold_A,GregarTypho,Neeyutnee,tractorMower
+EndArea
+
+AddArea Ambush
+	AddCharacters Yoda,Clone_Thire,Clone_Jek,Clone_Rys
+	UnlockCharacters B2Droid_A,Crab_rideOn,Tibanna_Droid
+EndArea
+
+AddArea StormOverRyloth
+	AddCharacters Anakin_Gen,Ahsoka_Gen,Anakin_Interceptor,V19_torrent,
+	UnlockCharacters wattambor
+EndArea
+
+AddArea InnocentsOfRyloth
+	AddCharacters Obiwan_Gen,Clone_Cody,Clone_Cody_Radio,Clone_Waxer,Clone_Boil
+	UnlockCharacters ATAP
+EndArea
+
+AddArea LibertyOnRyloth
+	AddCharacters MaceWindu,Clone_Ponds,Clone_Ponds_Radio
+	UnlockCharacters LAAT_C_Dropship,Ventress_gen,Trident
+EndArea
+
+AddArea BattleOfGeonosis
+	AddCharacters MaceWindu,KitFisto,KiAdiMundi
+	UnlockCharacters B1Droid_Comm,ATAP,ATTE,Stun_Tank_Chassis,ATRT
+EndArea
+
+AddArea GunganGeneral
+	AddCharacters JarJarBinks,clone_stone,clone_stone_radio,Clone_Gen,
+	UnlockCharacters Hondo,Pirate_Gen_A,SenatorKharrus,twilight,pirate_tank,UFO,elephant,Starhawk_SpeederBike
+EndArea
+
+AddArea JediCrash
+	AddCharacters Anakin_Gen,Ahsoka_Gen,AaylaSecura,Clone_Bly,Clone_Bly_Radio,LAAT_Gunship,
+	UnlockCharacters Tee_Watt,Turk,Republic_Cruiser,
+EndArea
+
+AddArea DefendersOfThePeace
+	AddCharacters Anakin_Gen,Ahsoka_Gen,AaylaSecura,WagToo,Clone_Bly,Clone_Bly_Radio
+	UnlockCharacters LokDurd,ProbeDroid,Lurmen_Male_A,
+EndArea
+
+AddArea WeaponsFactory
+	AddCharacters Anakin_Gen,Ahsoka_Gen,Luminara,Barriss,clone_Rex,clone_rex_radio
+	UnlockCharacters TX20,Geonosian_Guard,Clone_Topless,BibFortuna,
+EndArea
+
+AddArea LegacyOfTerror
+	AddCharacters Anakin_Gen,Obiwan_Gen,Luminara,Clone_Cody,Clone_Cody_Radio,clone_Gen
+	UnlockCharacters poggle,Geonosian_Zombie,Geonosian_solarSailor,walkerSuit
+EndArea
+
+AddArea DuelOfTheDroids
+	AddCharacters Anakin_Gen,Ahsoka_Gen,R3S6,R2D2,Clone_Rex,Clone_Rex_Radio
+	UnlockCharacters Droideka_A,
+EndArea
+
+AddArea ShadowOfMalevolence
+	AddCharacters Plokoon,Anakin_Gen,Anakin_Interceptor,PloKoon_Interceptor
+	UnlockCharacters BTL_B_YWing
+EndArea
+
+AddArea DestroyMalevolence
+	AddCharacters Anakin_Gen,Obiwan_Gen,Padme_Gen,R2D2,C3PO
+	UnlockCharacters B2Droid_B,Medical_Frigate,Padme_Yacht
+EndArea
+
+AddArea LairOfGrievous
+	AddCharacters KitFisto,NahdarVebb,Clone_Fil,Clone_Fil_Radio,Clone_Bazooka
+	UnlockCharacters R6H5,KitFisto_Interceptor,NuClass_AttackShuttle,ServiceCar
+EndArea
+
+AddArea Rookies
+	AddCharacters Clone_Rex,Clone_Rex_Radio,Clone_Cody,Clone_Cody_Radio,Clone_Hevy,Clone_Echo,Clone_Fives
+	UnlockCharacters Clone_Pilot,gloopGather
+EndArea
+
+AddArea GrievousIntrigue
+	AddCharacters Obiwan_Gen,Anakin_Gen,AdiGallia,EethKoth,Clone_gen,Clone_Cody,Clone_Cody_Radio
+	UnlockCharacters Mse_MouseDroid,ambassadorShuttle,Grievous_A,Belbullab22_Starfighter
+EndArea
+
+AddArea ZilloBeast
+	AddCharacters Anakin_Gen,MaceWindu,Clone_Rex,Clone_Rex_Radio,Clone_Ponds_Radio,Clone_Ponds
+	UnlockCharacters Sionver_Boll,ARC170_Starfighter
+EndArea
+
+AddArea HostageCrisis
+	AddCharacters CadBane,Aurrasing,Robonino,IG86,Helios3D,CommandoDroid,Alama
+	UnlockCharacters BailOrgana,BD3000,OnacondaFarr,SenatorPhilo,Senate_Captain,Senate_Commando,XanaduBlood,Halo,ziro
+EndArea
+
+AddArea CastleOfDoom
+	AddCharacters countdooku,MagnaGuard_A,RogueClass_Porax_38
+	UnlockCharacters GammoreanGuard
+EndArea
