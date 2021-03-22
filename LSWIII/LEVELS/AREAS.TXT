@@ -57,8 +57,8 @@ area_start
 	level "StoryC_End" ;; <- leads to credits
 	level "GroundAssaultPVP_Status"
 	hub_area
-	name_char "	name_char_HUB"
-	text_char "	text_char_HUB"
+	name_char "NAME_CHAR_HUB"
+	text_char "TEXT_CHAR_HUB"
 	progress_buffer_size 50000
 area_end
 
@@ -98,8 +98,8 @@ area_start
 	dir "GeonosianArena"
 	file "GeonosianArena"
 	level "GeonosianArena"
-	name_char "	name_char_GEONOSIANARENA"
-	text_char "	text_char_GEONOSIANARENA"
+	name_char "NAME_CHAR_GEONOSIANARENA"
+	text_char "TEXT_CHAR_GEONOSIANARENA"
 	true_hero
 	minikit "Darth_Sid" "minifig"
 	progress_buffer_size 10000
@@ -113,8 +113,8 @@ area_start
 	level "Ambush_B"
 	level "Ambush_Outro"
 	level "Ambush_MissionStatus"
-	name_char "	name_char_AMBUSH"
-	text_char "	text_char_AMBUSH"
+	name_char "NAME_CHAR_AMBUSH"
+	text_char "TEXT_CHAR_AMBUSH"
 	true_hero
 	minikit "Darth_Vader_Damage" "minifig"
 	progress_buffer_size 40000
@@ -131,8 +131,8 @@ area_start
 	level "Rookies_OutroD"
 	level "Rookies_A_ART"
 	level "Rookies_MissionStatus"
-	name_char "	name_char_ROOKIES"
-	text_char "	text_char_ROOKIES"
+	name_char "NAME_CHAR_ROOKIES"
+	text_char "TEXT_CHAR_ROOKIES"
 	true_hero
 	minikit "Darth_Maul" "minifig"
 	progress_buffer_size 26000
@@ -145,8 +145,8 @@ area_start
 	level "GunganGeneral_IntroB"
 	level "GunganGeneral_A"
 	level "GunganGeneral_Outro"
-	name_char "	name_char_GUNGANGENERAL"
-	text_char "	text_char_GUNGANGENERAL"
+	name_char "NAME_CHAR_GUNGANGENERAL"
+	text_char "TEXT_CHAR_GUNGANGENERAL"
 	true_hero
 	minikit "Admiral_Ackbar" "minifig"
 	progress_buffer_size 15000
@@ -161,8 +161,8 @@ area_start
 	level "DuelOfTheDroids_C"
 	level "DuelOfTheDroids_OUTRO"
 	level "DuelOfTheDroids_MissionStatus"
-	name_char "	name_char_DUELOFTHEDROIDS"
-	text_char "	text_char_DUELOFTHEDROIDS"
+	name_char "NAME_CHAR_DUELOFTHEDROIDS"
+	text_char "TEXT_CHAR_DUELOFTHEDROIDS"
 	true_hero
 	minikit "HanSolo" "minifig"
 	progress_buffer_size 45000
@@ -176,8 +176,8 @@ area_start
 	level "LairOfGrievous_C"
 	level "LairOfGrievous_D"
 	level "LairOfGrievous_MissionStatus"
-	name_char "	name_char_LAIROFGRIEVOUS"
-	text_char "	text_char_LAIROFGRIEVOUS"
+	name_char "NAME_CHAR_LAIROFGRIEVOUS"
+	text_char "TEXT_CHAR_LAIROFGRIEVOUS"
 	true_hero
 	minikit "RebelCommando" "minifig"
 	progress_buffer_size 41000
@@ -191,8 +191,8 @@ area_start
 	level "ShadowOfMalevolence_A"
 	level "ShadowOfMalevolence_OUTRO"
 	level "ShadowOfMalevolence_MissionSt"
-	name_char "	name_char_SHADOWOFMALEVOLENCE"
-	text_char "	text_char_SHADOWOFMALEVOLENCE"
+	name_char "NAME_CHAR_SHADOWOFMALEVOLENCE"
+	text_char "TEXT_CHAR_SHADOWOFMALEVOLENCE"
 	true_hero
 	minikit "LandoCalrissian" "minifig"
 	progress_buffer_size 17000
@@ -207,8 +207,8 @@ area_start
 	level "DestroyMalevolence_B"
 	level "DestroyMalevolence_OUTRO"
 	level "DestroyMalevolence_MissionSt"
-	name_char "	name_char_DESTROYMALEVOLENCE"
-	text_char "	text_char_DESTROYMALEVOLENCE"
+	name_char "NAME_CHAR_DESTROYMALEVOLENCE"
+	text_char "TEXT_CHAR_DESTROYMALEVOLENCE"
 	true_hero
 	minikit "Wedge" "minifig"
 	progress_buffer_size 30000
@@ -221,8 +221,8 @@ area_start
 	level "JediCrash_A"
 	level "JediCrash_OUTRO"
 	level "JediCrash_MissionStatus"
-	name_char "	name_char_JEDICRASH"
-	text_char "	text_char_JEDICRASH"
+	name_char "NAME_CHAR_JEDICRASH"
+	text_char "TEXT_CHAR_JEDICRASH"
 	true_hero
 	minikit "Obiwan_Ep4" "minifig"
 	progress_buffer_size 25500
@@ -232,8 +232,8 @@ area_start
 	dir "DefendersOfThePeace"
 	file "DefendersOfThePeace"
 	level "DefendersOfThePeace"
-	name_char "	name_char_DEFENDERSOFPEACE"
-	text_char "	text_char_DEFENDERSOFPEACE"
+	name_char "NAME_CHAR_DEFENDERSOFPEACE"
+	text_char "TEXT_CHAR_DEFENDERSOFPEACE"
 	true_hero
 	minikit "Galen_Marek" "minifig"
 	progress_buffer_size 38000
@@ -249,8 +249,8 @@ area_start
 	level "HiddenEnemy_D"
 	level "HiddenEnemy_Outro"
 	level "HiddenEnemy_MissionStatus"
-	name_char "	name_char_THEHIDDENENEMY"
-	text_char "	text_char_THEHIDDENENEMY"
+	name_char "NAME_CHAR_THEHIDDENENEMY"
+	text_char "TEXT_CHAR_THEHIDDENENEMY"
 	true_hero
 	minikit "Greedo" "minifig"
 	progress_buffer_size 50000
@@ -268,8 +268,8 @@ area_start
 	level "BlueShadowVirus_D"
 	level "BlueShadowVirus_Outro"
 	level "BlueShadowVirus_MissionStatus"
-	name_char "	name_char_BLUESHADOWVIRUS"
-	text_char "	text_char_BLUESHADOWVIRUS"
+	name_char "NAME_CHAR_BLUESHADOWVIRUS"
+	text_char "TEXT_CHAR_BLUESHADOWVIRUS"
 	true_hero
 	minikit "Shadow_Trooper" "minifig"
 	progress_buffer_size 45000
@@ -279,8 +279,8 @@ area_start
 	dir "BattleOfGeonosis"
 	file "BattleOfGeonosis"
 	level "BattleOfGeonosis"
-	name_char "	name_char_BATTLEOFGEONOSIS"
-	text_char "	text_char_BATTLEOFGEONOSIS"
+	name_char "NAME_CHAR_BATTLEOFGEONOSIS"
+	text_char "TEXT_CHAR_BATTLEOFGEONOSIS"
 	true_hero
 	minikit "LeiaOrgana" "minifig"
 	progress_buffer_size 10000
@@ -294,8 +294,8 @@ area_start
 	level "StormOverRyloth_A"
 	level "StormOverRyloth_Outro"
 	level "StormOverRyloth_MissionStatus"
-	name_char "	name_char_STORMOVERRYLOTH"
-	text_char "	text_char_STORMOVERRYLOTH"
+	name_char "NAME_CHAR_STORMOVERRYLOTH"
+	text_char "TEXT_CHAR_STORMOVERRYLOTH"
 	true_hero
 	minikit "QuiGonJinn" "minifig"
 	progress_buffer_size 16000
@@ -309,8 +309,8 @@ area_start
 	level "InnocentsOfRyloth_B"
 	level "InnocentsOfRyloth_Outro"
 	level "InnocentsOfRyloth_MissionStatus"
-	name_char "	name_char_INNOCENTSOFRYLOTH"
-	text_char "	text_char_INNOCENTSOFRYLOTH"
+	name_char "NAME_CHAR_INNOCENTSOFRYLOTH"
+	text_char "TEXT_CHAR_INNOCENTSOFRYLOTH"
 	true_hero
 	minikit "CaptainAntilles" "minifig"
 	progress_buffer_size 60000
@@ -320,8 +320,8 @@ area_start
 	dir "LibertyOnRyloth"
 	file "LibertyOnRyloth"
 	level "LibertyOnRyloth_A"
-	name_char "	name_char_LIBERTYONRYLOTH"
-	text_char "	text_char_LIBERTYONRYLOTH"
+	name_char "NAME_CHAR_LIBERTYONRYLOTH"
+	text_char "TEXT_CHAR_LIBERTYONRYLOTH"
 	true_hero
 	minikit "Storm_Trooper" "minifig"
 	progress_buffer_size 17000
@@ -336,8 +336,8 @@ area_start
 	level "WeaponsFactory_Outro"
 	level "WeaponsFactory_Midtro"
 	level "WeaponsFactory_MissionStatus"
-	name_char "	name_char_WEAPONSFACTORY"
-	text_char "	text_char_WEAPONSFACTORY"
+	name_char "NAME_CHAR_WEAPONSFACTORY"
+	text_char "TEXT_CHAR_WEAPONSFACTORY"
 	true_hero
 	minikit "LukeSkywalker" "minifig"
 	progress_buffer_size 26000
@@ -352,8 +352,8 @@ area_start
 	level "LegacyOfTerror_C"
 	level "LegacyOfTerror_D"
 	level "LegacyOfTerror_MissionStatus"
-	name_char "	name_char_LEGACYOFTERROR"
-	text_char "	text_char_LEGACYOFTERROR"
+	name_char "NAME_CHAR_LEGACYOFTERROR"
+	text_char "TEXT_CHAR_LEGACYOFTERROR"
 	true_hero
 	minikit "Darth_Vader" "minifig"
 	progress_buffer_size 31000
@@ -364,8 +364,8 @@ area_start
 	file "ZilloBeast"
 	level "ZilloBeast_A"
 	level "ZilloBeast_B"
-	name_char "	name_char_THEZILLOBEAST"
-	text_char "	text_char_THEZILLOBEAST"
+	name_char "NAME_CHAR_THEZILLOBEAST"
+	text_char "TEXT_CHAR_THEZILLOBEAST"
 	true_hero
 	minikit "Chewbacca" "minifig"
 	progress_buffer_size 10000
@@ -380,8 +380,8 @@ area_start
 	level "CastleOfDoom_C"
 	level "CastleOfDoom_D"
 	level "CastleOfDoom_MissionStatus"
-	name_char "	name_char_CASTLEOFDOOM"
-	text_char "	text_char_CASTLEOFDOOM"
+	name_char "NAME_CHAR_CASTLEOFDOOM"
+	text_char "TEXT_CHAR_CASTLEOFDOOM"
 	true_hero
 	minikit "Imperial_Guard" "minifig"
 	progress_buffer_size 60000
@@ -397,8 +397,8 @@ area_start
 	level "HostageCrisis_OutroA"
 	level "HostageCrisis_OutroB"
 	level "HostageCrisis_MissionStatus"
-	name_char "	name_char_HOSTAGECRISIS"
-	text_char "	text_char_HOSTAGECRISIS"
+	name_char "NAME_CHAR_HOSTAGECRISIS"
+	text_char "TEXT_CHAR_HOSTAGECRISIS"
 	true_hero
 	minikit "Tusken" "minifig"
 	progress_buffer_size 35000
@@ -413,8 +413,8 @@ area_start
 	level "GrievousIntrigue_B"
 	level "GrievousIntrigue_C"
 	level "GrievousIntrigue_MissionStatus"
-	name_char "	name_char_GRIEVOUSINTRIGUE"
-	text_char "	text_char_GRIEVOUSINTRIGUE"
+	name_char "NAME_CHAR_GRIEVOUSINTRIGUE"
+	text_char "TEXT_CHAR_GRIEVOUSINTRIGUE"
 	true_hero
 	minikit "Bobba_Fett" "minifig"
 	progress_buffer_size 39760
@@ -703,8 +703,8 @@ area_start
 	dir "TitlesNew"
 	file "TitlesNew"
 	level "TitlesNew"
-	name_char "	name_char_TITLES"
-	text_char "	text_char_TITLES"
+	name_char "NAME_CHAR_TITLES"
+	text_char "TEXT_CHAR_TITLES"
 	test_area
 area_end
 
