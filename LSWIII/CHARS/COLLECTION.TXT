@@ -238,7 +238,6 @@ collect "savageopress" buy_in_shop 250000 only_in_hub no_progress cheat_code "me
 ; === Resolute ===
 
 ;;; Republic
-
 collect "Anakin_Interceptor" buy_in_shop 1000 only_in_hub cheat_code "rctflv"
 collect "V19_Torrent" buy_in_shop 1000 only_in_hub cheat_code "aka9bb"
 collect "LAAT_Gunship" buy_in_shop 1000 only_in_hub cheat_code "c7m3du"
@@ -260,7 +259,6 @@ collect "StealthShip" buy_in_shop 200000 only_in_hub cheat_code "xpy46k"
 ; === Invisible Hand ===
 
 ;;; Separatist
-
 collect "Belbullab22_Starfighter" buy_in_shop 200000 only_in_hub cheat_code "7rl23g"
 collect "trident" buy_in_shop 200000 only_in_hub cheat_code "jsbljs"
 collect "Geonosian_solarSailor" buy_in_shop 200000 only_in_hub cheat_code "pj2u3r"
@@ -271,7 +269,6 @@ collect "sepratistTransport" buy_in_shop 50000 only_in_hub cheat_code "6lt4ql"
 
 
 ;;; Fringe
-
 collect "WeequaySaucer" buy_in_shop 50000 only_in_hub cheat_code "z567hr"
 collect "RogueClass_Porax_38" buy_in_shop 50000 only_in_hub cheat_code "hj5hhd"
 collect "XanaduBlood" buy_in_shop 200000 only_in_hub cheat_code "lq2svt"
