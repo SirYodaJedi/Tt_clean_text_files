@@ -1,0 +1,2708 @@
+char_start
+	dir "Minifigs\SUPER_Characters\Super_Generic"
+	file "Super_Generic"
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Super_Small"
+	file "Super_Small"
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Old_Super_Generic"
+	file "Old_Super_Generic"
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\SUPER_Minifig"
+	file "SUPER_Minifig"
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\SUPER_ProtocolDroid"
+	file "SUPER_ProtocolDroid"
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\SUPER_Minifig"
+	file "SUPER_Minifig_V2"
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\SUPER_Clone"
+	file "SUPER_Clone"
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\SUPER_Indy"
+	file "Indy"
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Female"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Male_Blackeyebrows"
+	face_char
+char_end
+
+#char_start
+# 	dir "Minifigs\SUPER_Characters\Faces"
+# 	file "HanSolo"
+# 	face_char
+#char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_CloneTrooper_Gen"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_CloneTrooper_Gen_Classic"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_CloneTrooper_HL"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_PloKoon"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Yoda"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Jawa"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Yoda_Teeth"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Anakin"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Anakin_Classic"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_ObiWan"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_ObiWan_Classic"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Padme"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_KitFisto"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_NahdarVebb"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Ahsoka"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Ahsoka_Classic"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Ventress"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_JarJarBinks"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_C3PO"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_NuteGunray"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Dooku"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_NuteGunray_Holo"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Dooku_Holo"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_MaceWindu"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Palpatine"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_CadBane"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_AaylaSecura"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Wattambor"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_BailOrgana"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_TwilekChild"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_AurraSing"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_ShahanAlama"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_OnacondaFarr"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_TurkFalso"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_HanSolo"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Neeyutnee"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_TwiLekFemale_Blue"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_TwiLekFemale_Green"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_LokDurd"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_TwiLekFemale_Yellow"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_TwiLekFemaleChild_Blue"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_TwiLekFemaleChild_Green"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_TwiLekFemaleChild_Yellow"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_TwiLekMale_Blue"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_TwiLekMale_Green"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_TwiLekMale_Yellow"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_TwiLekMaleChild_Blue"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_TwiLekMaleChild_Green"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_TwiLekMaleChild_Yellow"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_WagToo"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Poggle"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Geonosian_Guard"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Geonosian_Citizen"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Geonosian_Zombie"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Nuvo"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Barriss"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Robonino"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Lurmen"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_HondoOhnaka"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_DarthSidious"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Luminara"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_EethKoth"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_SenatorPhilo"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_AdiGallia"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_GenericNemodian"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_GregarTypho"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_BobaFett"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Pirate_Gen_A"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Pirate_Gen_B"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Pirate_Gen_C"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_BD3000"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_JangoFett"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_JangoFett"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_BibFortuna"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_WullfYularen"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_ChiCho"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_SenatorKharrus"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_SionverBoll"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_OrnFreeTaa"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_KiAdiMundi"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Bossk"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_WhormLoathsome"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Greedo"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Admiral_Ackbar"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_RuneHaako"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Pilot_A_Wing"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_PuneZignat"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_RebelCommando"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_QuiGonnJin"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_OldBenKenobi"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_LukeSkywalker"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_LegoGen"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_GrandMoffTarkin"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_GalenMarek"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_DarthVaderBattle"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_DarthVader"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_CaptainAntilles"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_SavageOppress"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_FaroArgyus"
+	face_char
+char_end
+
+char_start
+	dir "Minifigs\SUPER_Characters\Faces"
+	file "Face_Indy"
+	face_char
+char_end
+
+char_start
+	dir "Creatures\BrainWorm"
+	file "Brain_Worm"
+char_end
+
+char_start
+	dir "Creatures\Gor"
+	file "Gor"
+char_end
+
+char_start
+	dir "Creatures\TriDroid"
+	file "TriDroid"
+char_end
+
+char_start
+	dir "Creatures\TriDroidGun"
+	file "TriDroidGun"
+char_end
+
+char_start
+	dir "Creatures\TriDroidArm"
+	file "TriDroidArm"
+char_end
+
+char_start
+	dir "Creatures\Acklay"
+	file "Acklay"
+char_end
+
+char_start
+	dir "Creatures\CrabLarvae"
+	file "crabLarvae"
+char_end
+
+char_start
+	dir "Creatures\Reek"
+	file "Reek"
+char_end
+
+char_start
+	dir "Creatures\Rotta"
+	file "Rotta"
+char_end
+
+char_start
+	dir "Creatures\Nexu"
+	file "Nexu"
+char_end
+
+char_start
+	dir "Creatures\Gutkurr"
+	file "Gutkurr"
+char_end
+
+char_start
+	dir "Creatures\RishiEel"
+	file "RishiEel"
+char_end
+
+char_start
+	dir "Creatures\RishiEel"
+	file "RishiEel_Small"
+char_end
+
+char_start
+	dir "Creatures\Orray"
+	file "Orray"
+char_end
+
+char_start
+	dir "Creatures\Skalder"
+	file "Skalder"
+char_end
+
+char_start
+	dir "Creatures\Jabba"
+	file "Jabba"
+char_end
+
+char_start
+	dir "Creatures\QueenKarina"
+	file "QueenKarina"
+char_end
+
+char_start
+	dir "Creatures\ZilloBeast"
+	file "ZilloBeast"
+char_end
+
+char_start
+	dir "Creatures\Generic_Dug"
+	file "Dug_Gen"
+char_end
+
+char_start
+	dir "Creatures\Nakha_Urus"
+	file "Nakha_Urus"
+char_end
+
+char_start
+	dir "Creatures\Neebray"
+	file "Neebray"
+char_end
+
+char_start
+	dir "Creatures\Neebray"
+	file "Neebray_Gold"
+char_end
+
+char_start
+	dir "Creatures\Neebray"
+	file "Neebray_Silver"
+char_end
+
+char_start
+	dir "Creatures\Ziro"
+	file "Ziro"
+char_end
+
+char_start
+	dir "Creatures\Maggot"
+	file "Maggot"
+char_end
+
+char_start
+	dir "Minifigs\LEGO_Builder"
+	file "LEGO_BasePlate"
+char_end
+
+char_start
+	dir "Minifigs\LEGO_Builder"
+	file "LEGO_Creatures"
+char_end
+
+char_start
+	dir "Minifigs\LEGO_Builder"
+	file "LEGO_Props"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Gen"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Gen_Title"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Gen_Classic"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Bazooka"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Bly"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Bly_RADIO"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_HeadLight"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Echo"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Fives"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Jet"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Gree"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Zak"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Oniner"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Fordo"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Jek"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Jek_HEADLIGHT"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Thire"
+char_end
+
+char_start
+	dir "Misc\Clone_Arm"
+	file "Clone_Arm"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Rex"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Rex_RADIO"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Rex_HEADLIGHT"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Boil"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Cody"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Cody_Title"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Cody_RADIO"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Hevy"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Rys"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Waxer"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Fil"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Fil_RADIO"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Gen_Blue"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Gen_Green"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Gen_Orange"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Gen_Red"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Lock"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Ponds"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Ponds_RADIO"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Topless"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Stone"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Stone_Radio"
+char_end
+
+char_start
+	dir "Minifigs\CloneTrooper"
+	file "Clone_Pilot"
+char_end
+
+char_start
+	dir "Minifigs\Chewbacca"
+	file "Chewbacca"
+char_end
+
+char_start
+	dir "Minifigs\AWing_Pilot"
+	file "Awing_Pilot"
+char_end
+
+char_start
+	dir "Minifigs\ObiWan_Kenobi"
+	file "ObiWan_Gen"
+char_end
+
+char_start
+	dir "Minifigs\ObiWan_Kenobi"
+	file "ObiWan_Gen_Classic"
+char_end
+
+char_start
+	dir "Minifigs\ObiWan_Kenobi"
+	file "ObiWan_EP2"
+char_end
+
+char_start
+	dir "Minifigs\Anakin_Skywalker"
+	file "Anakin_Gen"
+char_end
+
+char_start
+	dir "Minifigs\Anakin_Skywalker"
+	file "Anakin_Gen_Classic"
+char_end
+
+char_start
+	dir "Minifigs\Anakin_Skywalker"
+	file "Anakin_EP2"
+char_end
+
+char_start
+	dir "Minifigs\Anakin_Skywalker"
+	file "Anakin_Yellow"
+char_end
+
+char_start
+	dir "Minifigs\Padme_Amidala"
+	file "Padme_Gen"
+char_end
+
+char_start
+	dir "Minifigs\Padme_Amidala"
+	file "Padme_EP2"
+char_end
+
+char_start
+	dir "Minifigs\Padme_Amidala"
+	file "Padme_White"
+char_end
+
+char_start
+	dir "Minifigs\Ahsoka"
+	file "Ahsoka_Gen"
+char_end
+
+char_start
+	dir "Minifigs\Ahsoka"
+	file "Ahsoka_Gen_Classic"
+char_end
+
+char_start
+	dir "Minifigs\Pirate_Gen_A"
+	file "Pirate_Gen_A"
+char_end
+
+char_start
+	dir "Minifigs\Wullf_Yularen"
+	file "Wullf"
+char_end
+
+char_start
+	dir "Minifigs\PloKoon"
+	file "PloKoon"
+char_end
+
+char_start
+	dir "Minifigs\Asajj_Ventress"
+	file "Ventress_Gen"
+char_end
+
+char_start
+	dir "Minifigs\KitFisto"
+	file "KitFisto"
+char_end
+
+char_start
+	dir "Minifigs\NahdarVebb"
+	file "NahdarVebb"
+char_end
+
+char_start
+	dir "Minifigs\JarJarBinks"
+	file "JarJarBinks"
+char_end
+
+char_start
+	dir "Minifigs\JarJarBinks"
+	file "JarJarBinksNEW"
+char_end
+
+char_start
+	dir "Minifigs\DrNuvo"
+	file "DrNuvo"
+char_end
+
+char_start
+	dir "Minifigs\CountDooku"
+	file "CountDooku"
+char_end
+
+char_start
+	dir "Minifigs\AaylaSecura"
+	file "AaylaSecura"
+char_end
+
+char_start
+	dir "Minifigs\NuteGunray"
+	file "NuteGunray"
+char_end
+
+char_start
+	dir "Minifigs\King_Katuunko"
+	file "King_Katuunko"
+char_end
+
+char_start
+	dir "Minifigs\Katuunko_BodyGuard"
+	file "Katuunko_BodyGuard"
+char_end
+
+char_start
+	dir "Minifigs\CountDooku"
+	file "CountDooku_Holo"
+char_end
+
+char_start
+	dir "Minifigs\NuteGunray"
+	file "NuteGunray_Holo"
+char_end
+
+char_start
+	dir "Minifigs\MaceWindu"
+	file "MaceWindu"
+char_end
+
+char_start
+	dir "Minifigs\Chancellor_Palpatine"
+	file "Chancellor_Palpatine"
+char_end
+
+char_start
+	dir "Minifigs\CadBane"
+	file "CadBane"
+char_end
+
+char_start
+	dir "Minifigs\GammoreanGuard"
+	file "GammoreanGuard"
+char_end
+
+char_start
+	dir "Minifigs\BailOrgana"
+	file "BailOrgana"
+char_end
+
+char_start
+	dir "Minifigs\Wattambor"
+	file "Wattambor"
+char_end
+
+char_start
+	dir "Minifigs\AurraSing"
+	file "AurraSing"
+char_end
+
+char_start
+	dir "Minifigs\ShahanAlama"
+	file "Alama"
+char_end
+
+char_start
+	dir "Minifigs\King_Katuunko"
+	file "King_Katuunko"
+char_end
+
+char_start
+	dir "Minifigs\Katuunko_BodyGuard"
+	file "Katuunko_BodyGuard"
+char_end
+
+char_start
+	dir "Minifigs\OnacondaFarr"
+	file "OnacondaFarr"
+char_end
+
+char_start
+	dir "Minifigs\TurkFalso"
+	file "Turk"
+char_end
+
+char_start
+	dir "Minifigs\HanSolo"
+	file "HanSolo"
+char_end
+
+char_start
+	dir "Minifigs\QueenNeeyutnee"
+	file "Neeyutnee"
+char_end
+
+char_start
+	dir "Minifigs\BarrissOffee"
+	file "Barriss"
+char_end
+
+char_start
+	dir "Minifigs\SenateCommando"
+	file "Senate_Commando"
+char_end
+
+char_start
+	dir "Minifigs\SenateCommando"
+	file "Senate_Captain"
+char_end
+
+char_start
+	dir "Minifigs\SenateGuard"
+	file "Senate_Guard"
+char_end
+
+char_start
+	dir "Minifigs\Poggle"
+	file "Poggle"
+char_end
+
+char_start
+	dir "Minifigs\Poggle"
+	file "Poggle_Prisoner"
+char_end
+
+char_start
+	dir "Minifigs\Geonosian_Guard"
+	file "Geonosian_Guard"
+char_end
+
+char_start
+	dir "Minifigs\Geonosian_Citizen"
+	file "Geonosian_Citizen"
+char_end
+
+char_start
+	dir "Minifigs\Geonosian_Zombie"
+	file "Geonosian_Zombie"
+char_end
+
+char_start
+	dir "Minifigs\LokDurd"
+	file "LokDurd"
+char_end
+
+char_start
+	dir "Minifigs\HondoOhnaka"
+	file "Hondo"
+char_end
+
+char_start
+	dir "Minifigs\DarthSidious"
+	file "Darth_Sid"
+char_end
+
+char_start
+	dir "Minifigs\Luminara"
+	file "Luminara"
+char_end
+
+char_start
+	dir "Minifigs\HondoOhnaka"
+	file "Hondo"
+char_end
+
+char_start
+	dir "Minifigs\EethKoth"
+	file "EethKoth"
+char_end
+
+char_start
+	dir "Minifigs\SenatorPhilo"
+	file "SenatorPhilo"
+char_end
+
+char_start
+	dir "Minifigs\AdiGallia"
+	file "AdiGallia"
+char_end
+
+char_start
+	dir "Minifigs\GenericNemodian"
+	file "GenericNemodian"
+char_end
+
+char_start
+	dir "Minifigs\GregarTypho"
+	file "GregarTypho"
+char_end
+
+char_start
+	dir "Minifigs\Pirate_Gen_A"
+	file "Pirate_Gen_A"
+char_end
+
+char_start
+	dir "Minifigs\Pirate_Gen_B"
+	file "Pirate_Gen_B"
+char_end
+
+char_start
+	dir "Minifigs\Pirate_Gen_C"
+	file "Pirate_Gen_C"
+char_end
+
+char_start
+	dir "Minifigs\JangoFett"
+	file "JangoFett"
+char_end
+
+char_start
+	dir "Minifigs\Twilek_Male_A"
+	file "Twilek_Male_A"
+char_end
+
+char_start
+	dir "Minifigs\Twilek_Male_B"
+	file "Twilek_Male_B"
+char_end
+
+char_start
+	dir "Minifigs\Twilek_Male_C"
+	file "Twilek_Male_C"
+char_end
+
+char_start
+	dir "Minifigs\Twilek_Female_A"
+	file "Twilek_Female_A"
+char_end
+
+char_start
+	dir "Minifigs\Twilek_Female_B"
+	file "Twilek_Female_B"
+char_end
+
+char_start
+	dir "Minifigs\Twilek_Female_C"
+	file "Twilek_Female_C"
+char_end
+
+char_start
+	dir "Minifigs\TuskenRaider"
+	file "Tusken"
+char_end
+
+char_start
+	dir "Minifigs\BibFortuna"
+	file "BibFortuna"
+char_end
+
+char_start
+	dir "Minifigs\BD3000"
+	file "BD3000"
+char_end
+
+char_start
+	dir "Minifigs\ChiCho"
+	file "ChiCho"
+char_end
+
+char_start
+	dir "Minifigs\SenatorKharrus"
+	file "SenatorKharrus"
+char_end
+
+char_start
+	dir "Minifigs\Sionver_Boll"
+	file "Sionver_Boll"
+char_end
+
+char_start
+	dir "Minifigs\OrnFreeTaa"
+	file "OrnFreeTaa"
+char_end
+
+char_start
+	dir "Minifigs\KiAdiMundi"
+	file "KiAdiMundi"
+char_end
+
+char_start
+	dir "Minifigs\Bossk"
+	file "Bossk"
+char_end
+
+char_start
+	dir "Minifigs\RebelCommando"
+	file "RebelCommando"
+char_end
+
+char_start
+	dir "Minifigs\LukeSkywalker"
+	file "LukeSkywalker"
+char_end
+
+char_start
+	dir "Minifigs\LeiaOrgana"
+	file "LeiaOrgana"
+char_end
+
+char_start
+	dir "Minifigs\LandoCalrissian"
+	file "LandoCalrissian"
+char_end
+
+char_start
+	dir "Minifigs\Imperial_Guard"
+	file "Imperial_Guard"
+char_end
+
+char_start
+	dir "Minifigs\Greedo"
+	file "Greedo"
+char_end
+
+char_start
+	dir "Minifigs\GrandMoffTarkin"
+	file "GrandMoffTarkin"
+char_end
+
+char_start
+	dir "Minifigs\Galen_Marek"
+	file "Galen_Marek"
+char_end
+
+char_start
+	dir "Minifigs\Darth_Vader_Damage"
+	file "Darth_Vader_Damage"
+char_end
+
+char_start
+	dir "Minifigs\Darth_Vader"
+	file "Darth_Vader"
+char_end
+
+char_start
+	dir "Minifigs\Darth_Maul"
+	file "Darth_Maul"
+char_end
+
+char_start
+	dir "Minifigs\CaptainAntilles"
+	file "CaptainAntilles"
+char_end
+
+char_start
+	dir "Minifigs\Bobba_Fett"
+	file "Bobba_Fett"
+char_end
+
+char_start
+	dir "Minifigs\Admiral_Ackbar"
+	file "Admiral_Ackbar"
+char_end
+
+char_start
+	dir "Minifigs\Wedge"
+	file "Wedge"
+char_end
+
+char_start
+	dir "Minifigs\Shadow_Trooper"
+	file "Shadow_Trooper"
+char_end
+
+char_start
+	dir "Minifigs\Storm_Trooper"
+	file "Storm_Trooper"
+char_end
+
+char_start
+	dir "Minifigs\ObiWan_ep4"
+	file "ObiWan_ep4"
+char_end
+
+char_start
+	dir "Minifigs\QuiGonJinn"
+	file "QuiGonJinn"
+char_end
+
+char_start
+	dir "Minifigs\WhormLoathsome"
+	file "WhormLoathsome"
+char_end
+
+char_start
+	dir "Minifigs\RuneHaako"
+	file "RuneHaako"
+char_end
+
+char_start
+	dir "Minifigs\GenericJedi"
+	file "JediGenMale_A"
+char_end
+
+char_start
+	dir "Minifigs\GenericJedi"
+	file "JediGenMale_B"
+char_end
+
+char_start
+	dir "Minifigs\GenericJedi"
+	file "JediGenMale_C"
+char_end
+
+char_start
+	dir "Minifigs\GenericJedi"
+	file "JediGenMale_D"
+char_end
+
+char_start
+	dir "Minifigs\GenericJedi"
+	file "JediGenMale_E"
+char_end
+
+char_start
+	dir "Minifigs\GenericJedi"
+	file "JediGenFemale_A"
+char_end
+
+char_start
+	dir "Minifigs\GenericJedi"
+	file "JediGenFemale_B"
+char_end
+
+char_start
+	dir "Minifigs\GenericJedi"
+	file "JediGenFemale_C"
+char_end
+
+char_start
+	dir "Minifigs\GenericJedi"
+	file "JediGenFemale_D"
+char_end
+
+char_start
+	dir "Minifigs\GenericJedi"
+	file "JediGenFemale_E"
+char_end
+
+char_start
+	dir "Minifigs\Gha_Nackht"
+	file "Gha_Nackht"
+char_end
+
+char_start
+	dir "Minifigs\Pilot_A_Wing"
+	file "Pilot_A_Wing"
+char_end
+
+char_start
+	dir "Minifigs\Chewbacca"
+	file "Chewbacca"
+char_end
+
+char_start
+	dir "Minifigs\Pune_Zignat"
+	file "Pune_Zignat"
+char_end
+
+char_start
+	dir "Minifigs\SavageOpress"
+	file "SavageOpress"
+char_end
+
+char_start
+	dir "Minifigs\Bolla"
+	file "Bolla"
+char_end
+
+char_start
+	dir "Minifigs\Argyus"
+	file "Argyus"
+char_end
+
+char_start
+	dir "Minifigs\TODAY_AlRoker"
+	file "TODAY_AlRoker"
+char_end
+
+char_start
+	dir "Minifigs\TODAY_AnnCurry"
+	file "TODAY_AnnCurry"
+char_end
+
+char_start
+	dir "Minifigs\TODAY_MattLauer"
+	file "TODAY_MattLauer"
+char_end
+
+char_start
+	dir "Minifigs\TODAY_MeredithVieira"
+	file "TODAY_MeredithVieira"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_1"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_2"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_3"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_4"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_5"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_6"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_7"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_8"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_9"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_10"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_11"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_12"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_13"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_14"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_15"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_16"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_17"
+char_end
+
+char_start
+	dir "Minifigs\Custom_Characters"
+	file "Custom_18"
+char_end
+
+char_start
+	dir "Droids\B1_BattleDroid"
+	file "B1Droid_A"
+char_end
+
+char_start
+	dir "Droids\B1_BattleDroid"
+	file "b1droid_comm"
+char_end
+
+char_start
+	dir "Droids\B1_BattleDroid"
+	file "B1Droid_Title"
+char_end
+
+char_start
+	dir "Droids\General_Grievous"
+	file "Grievous_A"
+char_end
+
+char_start
+	dir "Droids\Vulture_Droid"
+	file "Vulture_Droid"
+char_end
+
+char_start
+	dir "Droids\HailFire_Droid"
+	file "HailFire_Droid"
+char_end
+
+char_start
+	dir "Droids\HailFire_Droid"
+	file "HailFire_Droid_Cramped"
+char_end
+
+char_start
+	dir "Droids\Vulture_Droid"
+	file "Vulture_Droid_Injured"
+char_end
+
+char_start
+	dir "Droids\DummyCharacters"
+	file "Dummy_1"
+char_end
+
+char_start
+	dir "Droids\DummyCharacters"
+	file "Dummy_2"
+char_end
+
+char_start
+	dir "Droids\R2D2"
+	file "R2D2"
+char_end
+
+char_start
+	dir "Droids\R3S6"
+	file "R3S6"
+char_end
+
+char_start
+	dir "Droids\B2_SuperBattleDroid"
+	file "B2Droid_A"
+char_end
+
+char_start
+	dir "Droids\B2_SuperBattleDroid"
+	file "B2Droid_B"
+char_end
+
+char_start
+	dir "Droids\B2_SuperBattleDroid"
+	file "B2DroidGold_A"
+char_end
+
+char_start
+	dir "Droids\B2_SuperBattleDroid"
+	file "B2Droid_RP"
+char_end
+
+char_start
+	dir "Droids\Droideka"
+	file "Droideka_A"
+char_end
+
+char_start
+	dir "Droids\Magna_Guard"
+	file "MagnaGuard_A"
+char_end
+
+char_start
+	dir "Droids\DwarfSpiderDroid"
+	file "DwarfSpiderDroid"
+char_end
+
+char_start
+	dir "Droids\Cleaner_Droid"
+	file "Cleaner_Droid"
+char_end
+
+char_start
+	dir "Droids\C3PO"
+	file "C3PO"
+char_end
+
+char_start
+	dir "Droids\TC70"
+	file "TC70"
+char_end
+
+char_start
+	dir "Droids\CommandoDroid"
+	file "CommandoDroid"
+char_end
+
+char_start
+	dir "Droids\CommandoDroid"
+	file "CommandoDroid_SGT"
+char_end
+
+char_start
+	dir "Droids\4Legged_Gonk_Droid"
+	file "4Legged_Gonk_Droid"
+char_end
+
+char_start
+	dir "Droids\A4D"
+	file "A4D"
+char_end
+
+char_start
+	dir "Droids\IG86"
+	file "IG86"
+char_end
+
+char_start
+	dir "Droids\Gonk"
+	file "Gonk"
+char_end
+
+char_start
+	dir "Droids\TX20"
+	file "TX20"
+char_end
+
+char_start
+	dir "Droids\TX20"
+	file "TX20_Radio"
+char_end
+
+char_start
+	dir "Droids\Probedroid"
+	file "Probedroid"
+char_end
+
+char_start
+	dir "Droids\R6H5"
+	file "R6H5"
+char_end
+
+char_start
+	dir "Droids\Helios3D"
+	file "Helios3D"
+char_end
+
+char_start
+	dir "Droids\LEPDroid"
+	file "LEPDroid"
+char_end
+
+char_start
+	dir "Droids\HailFire_Droid"
+	file "HailFire_Droid"
+char_end
+
+char_start
+	dir "Droids\OG9_HomingSpiderDroid"
+	file "OG9_HomingSpiderDroid"
+char_end
+
+char_start
+	dir "Droids\MSE_MouseDroid"
+	file "MSE_MouseDroid"
+char_end
+
+char_start
+	dir "Droids\R2KT"
+	file "R2KT"
+char_end
+
+char_start
+	dir "Droids\R4P17"
+	file "R4P17"
+char_end
+
+char_start
+	dir "Small\Yoda"
+	file "Yoda"
+char_end
+
+char_start
+	dir "Small\Jawa"
+	file "Jawa"
+char_end
+
+char_start
+	dir "Small\WagToo"
+	file "WagToo"
+char_end
+
+char_start
+	dir "Small\Lurmen"
+	file "Lurmen_Gen"
+char_end
+
+char_start
+	dir "Small\Lurmen"
+	file "Lurmen_Male_A"
+char_end
+
+char_start
+	dir "Small\Lurmen"
+	file "Lurmen_Male_B"
+char_end
+
+char_start
+	dir "Small\Lurmen"
+	file "Lurmen_Male_C"
+char_end
+
+char_start
+	dir "Small\Robonino"
+	file "Robonino"
+char_end
+
+char_start
+	dir "Small\BobaFett"
+	file "BobaFett"
+char_end
+
+char_start
+	dir "Small\TeeWattKaa"
+	file "Tee_Watt"
+char_end
+
+char_start
+	dir "Small\Twileks"
+	file "Twilek_ChildMale_A"
+char_end
+
+char_start
+	dir "Small\Twileks"
+	file "Twilek_ChildMale_B"
+char_end
+
+char_start
+	dir "Small\Twileks"
+	file "Twilek_ChildMale_C"
+char_end
+
+char_start
+	dir "Small\Twileks"
+	file "Twilek_ChildFemale_A"
+char_end
+
+char_start
+	dir "Small\Twileks"
+	file "Twilek_ChildFemale_B"
+char_end
+
+char_start
+	dir "Small\Twileks"
+	file "Twilek_ChildFemale_C"
+char_end
+
+char_start
+	dir "Small\Lurmen"
+	file "Tub"
+char_end
+
+char_start
+	dir "Vehicles\testCar"
+	file "testCar"
+char_end
+
+char_start
+	dir "Vehicles\dummyChar"
+	file "dummyChar"
+char_end
+
+char_start
+	dir "Vehicles\dummyChar"
+	file "SniperdummyChar"
+char_end
+
+char_start
+	dir "Vehicles\Default_Vehicle"
+	file "Default_Vehicle"
+char_end
+
+char_start
+	dir "Vehicles\Vulture_Droid_Vehicle"
+	file "Vulture_Droid_Vehicle"
+char_end
+
+char_start
+	dir "Vehicles\UFO"
+	file "UFO"
+char_end
+
+char_start
+	dir "Vehicles\UFO"
+	file "UFO_Flying"
+char_end
+
+char_start
+	dir "Vehicles\UFO"
+	file "UFO_DuelOfTheDroids"
+char_end
+
+char_start
+	dir "Vehicles\jeepGunner"
+	file "jeepGunner"
+char_end
+
+char_start
+	dir "Vehicles\CityCars\DoctorsCar"
+	file "DoctorsCar"
+char_end
+
+char_start
+	dir "Vehicles\twilight"
+	file "twilight"
+char_end
+
+char_start
+	dir "Vehicles\grievous_starfighter"
+	file "grievous_starfighter"
+char_end
+
+char_start
+	dir "Vehicles\anakin_interceptor"
+	file "anakin_interceptor"
+char_end
+
+char_start
+	dir "Vehicles\anakin_interceptor"
+	file "anakin_interceptor_DuelOfDroids"
+char_end
+
+char_start
+	dir "Vehicles\PloKoon_Interceptor"
+	file "PloKoon_Interceptor"
+char_end
+
+char_start
+	dir "Vehicles\KitFisto_Interceptor"
+	file "KitFisto_Interceptor"
+char_end
+
+char_start
+	dir "Vehicles\Coruscant_Taxi"
+	file "Coruscant_Taxi"
+char_end
+
+char_start
+	dir "Vehicles\EscapePod"
+	file "EscapePod"
+char_end
+
+char_start
+	dir "Vehicles\Pirate_Tank"
+	file "Pirate_Tank"
+char_end
+
+char_start
+	dir "Vehicles\AAT"
+	file "AAT_chassis"
+char_end
+
+char_start
+	dir "Vehicles\AAT"
+	file "AAT_turret"
+char_end
+
+char_start
+	dir "Vehicles\ATTE" ;; AT-TE Walker
+	file "ATTE"
+char_end
+
+char_start
+	dir "Vehicles\ATTE"
+	file "ATTE_turret"
+char_end
+
+char_start
+	dir "Vehicles\ATAP"
+	file "ATAP"
+char_end
+
+char_start
+	dir "Vehicles\ATAP"
+	file "ATAP_Turret"
+char_end
+
+char_start
+	dir "Vehicles\Defoliator"
+	file "Defoliator_chassis"
+char_end
+
+char_start
+	dir "Vehicles\Defoliator"
+	file "Defoliator_turret"
+char_end
+
+char_start
+	dir "Vehicles\NuClass_AttackShuttle"
+	file "NuClass_AttackShuttle"
+char_end
+
+char_start
+	dir "Vehicles\Belbullab22_Starfighter"
+	file "Belbullab22_Starfighter"
+char_end
+
+char_start
+	dir "Vehicles\BTL_B_YWing"
+	file "BTL_B_YWing"
+char_end
+
+char_start
+	dir "Vehicles\BTL_B_YWing_RedLeader"
+	file "BTL_B_YWing_RedLeader"
+char_end
+
+char_start
+	dir "Vehicles\Droid_speeder"
+	file "Droid_Speeder"
+char_end
+
+char_start
+	dir "Vehicles\Droid_speeder_Gun"
+	file "Droid_Speeder_Gun"
+char_end
+
+char_start
+	dir "Vehicles\CadBane_Speeder"
+	file "CadBane_Speeder"
+char_end
+
+char_start
+	dir "Vehicles\Padme_Yacht"
+	file "Padme_Yacht"
+char_end
+
+char_start
+	dir "Vehicles\Elephant"
+	file "Elephant"
+char_end
+
+char_start
+	dir "Vehicles\Motorbike"
+	file "Motorbike"
+char_end
+
+char_start
+	dir "Vehicles\Tibanna_Droid"
+	file "Tibanna_Droid"
+char_end
+
+char_start
+	dir "Vehicles\Tibanna_Droid"
+	file "Tibanna_Droid_Dynamite"
+char_end
+
+char_start
+	dir "Vehicles\Medical_Frigate"
+	file "Medical_Frigate"
+char_end
+
+char_start
+	dir "Vehicles\BARC_Speeder"
+	file "BARC_Speeder"
+char_end
+
+char_start
+	dir "Vehicles\Starhawk_Speederbike"
+	file "Starhawk_Speederbike"
+char_end
+
+char_start
+	dir "Vehicles\STAP"
+	file "STAP"
+char_end
+
+char_start
+	dir "Vehicles\LAAT_Gunship"
+	file "LAAT_Gunship"
+char_end
+
+char_start
+	dir "Vehicles\LAAT_Gunship"
+	file "LAAT_GunshipBLUE"
+char_end
+
+char_start
+	dir "Vehicles\Train_Crane"
+	file "Train_Crane"
+char_end
+
+char_start
+	dir "Vehicles\LAAT_C_Dropship"
+	file "LAAT_C_Dropship"
+char_end
+
+char_start
+	dir "Vehicles\Republic_Cruiser"
+	file "Republic_Cruiser"
+char_end
+
+char_start
+	dir "Vehicles\Republic_Cruiser"
+	file "Republic_Cruiser_M"
+char_end
+
+char_start
+	dir "Vehicles\Geonosian_solarSailor"
+	file "Geonosian_solarSailor"
+char_end
+
+char_start
+	dir "Vehicles\Crab_rideOn"
+	file "Crab_rideOn"
+char_end
+
+char_start
+	dir "Vehicles\ATRT"
+	file "ATRT"
+char_end
+
+char_start
+	dir "Vehicles\Stun_Tank"
+	file "Stun_tank_chassis"
+char_end
+
+char_start
+	dir "Vehicles\Stun_Tank"
+	file "Stun_tank_turret"
+char_end
+
+char_start
+	dir "Vehicles\Droid_Gunship"
+	file "Droid_Gunship"
+char_end
+
+char_start
+	dir "Misc\CannonSeat"
+	file "CannonSeat"
+char_end
+
+char_start
+	dir "Misc\CannonBarrel"
+	file "CannonBarrel"
+char_end
+
+char_start
+	dir "Misc\CannonBarrel"
+	file "CannonBarrelIH"
+char_end
+
+char_start
+	dir "Vehicles\clone_cannon"
+	file "clone_cannon"
+char_end
+
+char_start
+	dir "Vehicles\clone_cannonGOLD"
+	file "clone_cannonGOLD"
+char_end
+
+char_start
+	dir "Vehicles\clone_cannon"
+	file "clone_cannon_bsv"
+char_end
+
+char_start
+	dir "Vehicles\CargoDrop"
+	file "CargoDrop"
+char_end
+
+char_start
+	dir "Vehicles\DookuSpeeder"
+	file "DookuSpeeder"
+char_end
+
+char_start
+	dir "Vehicles\Stun_Tank_Chassis"
+	file "Stun_Tank_Chassis"
+char_end
+
+char_start
+	dir "Vehicles\jabbaBarge"
+	file "jabbaBarge"
+char_end
+
+char_start
+	dir "Vehicles\jabbaBarge"
+	file "jabbaBarge_cannon"
+char_end
+
+char_start
+	dir "Vehicles\Skiff"
+	file "Skiff"
+char_end
+
+char_start
+	dir "Vehicles\sepratistTransport"
+	file "sepratistTransport"
+char_end
+
+char_start
+	dir "Vehicles\ambassadorShuttle"
+	file "ambassadorShuttle"
+char_end
+
+char_start
+	dir "Vehicles\Super_Tank"
+	file "Super_Tank"
+char_end
+
+char_start
+	dir "Vehicles\Super_Tank"
+	file "Super_Tank_Boss"
+char_end
+
+char_start
+	dir "Vehicles\V19_Torrent"
+	file "V19_Torrent"
+char_end
+
+char_start
+	dir "Vehicles\Hardcell_class"
+	file "Hardcell_class"
+char_end
+
+char_start
+	dir "Vehicles\iceCreamVan"
+	file "iceCreamVan"
+char_end
+
+char_start
+	dir "Vehicles\B_wing"
+	file "B_Wing"
+char_end
+
+char_start
+	dir "misc\holo_clone"
+	file "holo_clone"
+char_end
+
+char_start
+	dir "misc\Hoover"
+	file "Hoover"
+char_end
+
+char_start
+	dir "misc\GunTripod"
+	file "GunTripod"
+char_end
+
+char_start
+	dir "misc\Scalf_Character"
+	file "Scalf_Character"
+char_end
+
+char_start
+	dir "misc\Rope"
+	file "Rope"
+char_end
+
+char_start
+	dir "misc\Rope"
+	file "Rope_B"
+char_end
+
+char_start
+	dir "misc\Chain"
+	file "Chain"
+char_end
+
+char_start
+	dir "misc\Whip"
+	file "Whip"
+char_end
+
+char_start
+	dir "misc\JarJar_Tongue"
+	file "JARJAR_TONGUE"
+char_end
+
+char_start
+	dir "misc\holobrick"
+	file "holobrick"
+char_end
+
+char_start
+	dir "misc\Decal"
+	file "DecalCharacter"
+char_end
+
+char_start
+	dir "RTS\Droid_Shield_Projector"
+	file "Droid_Shield_Projector"
+char_end
+
+char_start
+	dir "RTS\Droid_Shield_Generator"
+	file "Droid_Shield_Generator"
+char_end
+
+char_start
+	dir "RTS\Droid_PowerBeam_Distributor"
+	file "Droid_PowerBeam_Distributor"
+char_end
+
+char_start
+	dir "RTS\proton_cannon"
+	file "proton_cannon"
+char_end
+
+char_start
+	dir "RTS\proton_cannon"
+	file "silver_proton_cannon"
+char_end
+
+char_start
+	dir "RTS\proton_gun"
+	file "proton_gun"
+char_end
+
+char_start
+	dir "RTS\Clone_Shield_Generator"
+	file "Clone_Shield_Generator"
+char_end
+
+char_start
+	dir "RTS\Clone_Shield_Projector"
+	file "Clone_Shield_Projector"
+char_end
+
+char_start
+	dir "RTS\Clone_PowerBeam_Distributor"
+	file "Clone_PowerBeam_Distributor"
+char_end
+
+char_start
+	dir "RTS\Clone_TR57_Cannon"
+	file "Clone_TR57_Cannon"
+char_end
+
+char_start
+	dir "RTS\Clone_TR57_Gun"
+	file "Clone_TR57_Gun"
+char_end
+
+char_start
+	dir "RTS\Blaster_GroundCannon"
+	file "Blaster_GroundCannon"
+char_end
+
+char_start
+	dir "RTS\Troop_Generator"
+	file "Troop_Generator"
+char_end
+
+char_start
+	dir "RTS\Vehicle_Generator"
+	file "Vehicle_Generator" ;; Droid version
+char_end
+
+char_start
+	dir "RTS\Vehicle_Generator_Small"
+	file "Vehicle_Generator_SmallClone"
+char_end
+
+char_start
+	dir "RTS\Vehicle_Generator_Comedy"
+	file "Vehicle_Generator_Comedy"
+char_end
+
+char_start
+	dir "RTS\MiniKit_Bunker"
+	file "MiniKit_Bunker"
+char_end
+
+char_start
+	dir "RTS\Escape_Launch"
+	file "Escape_Launch"
+char_end
+
+char_start
+	dir "RTS\Statue_Grievous"
+	file "Statue_Grievous"
+char_end
+
+char_start
+	dir "RTS\Statue_Yoda"
+	file "Statue_Yoda"
+char_end
+
+char_start
+	dir "RTS\CommandPost_Clone"
+	file "CommandPost_Clone"
+char_end
+
+char_start
+	dir "RTS\CommandPost_Droid"
+	file "CommandPost_Droid"
+char_end
+
+char_start
+	dir "RTS\Clone_TroopGen"
+	file "Clone_TroopGen"
+char_end
+
+char_start
+	dir "RTS\zilloCross"
+	file "zilloCross"
+char_end
+
+char_start
+	dir "RTS\teslaCannon"
+	file "teslaCannon"
+char_end
+
+char_start
+	dir "RTS\Vehicle_Generator_Clone"
+	file "VehicleGeneratorClone"
+char_end
+
+char_start
+	dir "RTS\teslaCannon_Droid"
+	file "teslaCannon_Droid"
+char_end
+
+char_start
+	dir "RTS\TorpedoGen"
+	file "TorpedoGen"
+char_end
+
+char_start
+	dir "RTS\coinGen"
+	file "coinGen"
+char_end
+
+char_start
+	dir "Vehicles\Droid_Gunship"
+	file "Droid_Gunship"
+char_end
+
+char_start
+	dir "Misc\Droid_troopGen"
+	file "Droid_troopGen"
+char_end
+
+char_start
+	dir "Misc\Duel_Turret"
+	file "Duel_Turret"
+char_end
+
+char_start
+	dir "Vehicles\SepratistTransport_Large"
+	file "SepratistTransport_Large"
+char_end
+
+char_start
+	dir "Vehicles\CadBane_AirTrailer"
+	file "CadBane_AirTrailer"
+char_end
+
+char_start
+	dir "Vehicles\WeequaySaucer"
+	file "WeequaySaucer"
+char_end
+
+char_start
+	dir "Vehicles\Droch_Class_Dropship"
+	file "Droch_Class_Dropship"
+char_end
+
+char_start
+	dir "Vehicles\Geonosian_Fighter"
+	file "Geonosian_Fighter"
+char_end
+
+char_start
+	dir "Vehicles\serviceCar"
+	file "serviceCar"
+char_end
+
+char_start
+	dir "Vehicles\serviceTrailer"
+	file "serviceTrailer"
+char_end
+
+char_start
+	dir "Vehicles\Geonosian_Fanblade_Fighter"
+	file "Geonosian_Fanblade_Fighter"
+char_end
+
+char_start
+	dir "Vehicles\Geonosian_Fanblade_Fighter"
+	file "Geonosian_Fanblade_Fighter"
+char_end
+
+char_start
+	dir "Vehicles\Slave1"
+	file "Slave1"
+char_end
+
+char_start
+	dir "Vehicles\RogueClass_Porax_38"
+	file "RogueClass_Porax_38"
+char_end
+
+char_start
+	dir "Vehicles\gloopGather"
+	file "gloopGather"
+char_end
+
+char_start
+	dir "Vehicles\grabber_control"
+	file "grabber_control"
+char_end
+
+char_start
+	dir "Vehicles\tractorMower"
+	file "tractorMower"
+char_end
+
+char_start
+	dir "Vehicles\Hyena_Bomber"
+	file "Hyena_Bomber"
+char_end
+
+char_start
+	dir "Vehicles\StealthShip"
+	file "StealthShip"
+char_end
+
+char_start
+	dir "Vehicles\ARC170_Starfighter"
+	file "ARC170_Starfighter"
+char_end
+
+char_start
+	dir "Vehicles\XanaduBlood"
+	file "XanaduBlood"
+char_end
+
+char_start
+	dir "Vehicles\walkerSuit"
+	file "walkerSuit"
+char_end
+
+char_start
+	dir "Vehicles\obiWan_interceptor"
+	file "obiWan_interceptor"
+char_end
+
+char_start
+	dir "Vehicles\SportsCars_Dagr"
+	file "SportsCars_Dagr"
+char_end
+
+char_start
+	dir "Vehicles\SportsCars_Scout"
+	file "SportsCars_Scout"
+char_end
+
+char_start
+	dir "Vehicles\Trident"
+	file "Trident"
+char_end
+
+char_start
+	dir "Vehicles\Halo"
+	file "Halo"
+char_end
+
+char_start
+	dir "Misc\tempIcons"
+	file "tempIcons"
+char_end
+
