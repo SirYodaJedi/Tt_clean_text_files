@@ -1,0 +1,308 @@
+
+//////////////////
+// FUN VEHICLES //
+//////////////////
+
+collect "JeepGunner" 0 only_in_hub funvehicle
+collect "IceCreamVan" 0 only_in_hub funvehicle
+collect "Motorbike" 0 only_in_hub funvehicle
+collect "walkerSuit" 0 only_in_hub funvehicle
+collect "Tibanna_Droid" 0 only_in_hub funvehicle
+collect "tractorMower" 0 only_in_hub funvehicle
+collect "SportsCars_Dagr" 0 only_in_hub funvehicle
+collect "SportsCars_Scout" 0 only_in_hub funvehicle
+collect "gloopGather" 0 only_in_hub funvehicle
+collect "Crab_rideOn" 0 only_in_hub funvehicle
+collect "Elephant" 0 only_in_hub funvehicle
+collect "UFO" 0 only_in_hub funvehicle
+collect "ServiceCar" 0 only_in_hub funvehicle
+
+
+
+//////////////////
+// UNOBTAINABLE //
+//////////////////
+
+; === Hutts ===
+
+collect "Ziro" 0 only_in_hub
+
+
+; === Geonosian Arena variants ===
+
+collect "obiwan_ep2" 0 only_in_hub cheat_code "5u9fjk"
+collect "anakin_ep2" 0 only_in_hub cheat_code "9aa4dw"
+collect "padme_ep2" 0 only_in_hub cheat_code "sz824q"
+
+
+; === RTS turrets ===
+
+collect "ATAP_Turret" 0 only_in_hub
+collect "ATTE_Turret" 0 only_in_hub
+collect "Stun_Tank_Turret" 0 only_in_hub
+collect "AAT_Turret" 0 only_in_hub
+collect "Pirate_Tank_Gun" 0 only_in_hub
+collect "cannonbarrel" 0 only_in_hub
+collect "cannonseat" 0 only_in_hub
+
+
+; === RTS commander variants ===
+
+collect "Clone_Stone_Radio" cheat_code_only
+collect "Clone_Rex_Radio" cheat_code_only
+collect "Clone_Ponds_Radio" cheat_code_only
+collect "Clone_Fil_Radio" cheat_code_only
+collect "Clone_Cody_Radio" cheat_code_only
+collect "Clone_Bly_Radio" cheat_code_only
+collect "TX20_Radio" cheat_code_only
+
+
+
+///////////////////////
+// NORMAL CHARACTERS //
+///////////////////////
+
+; === Story unlocks (goodie) ===
+
+collect "obiwan_gen" buy_in_shop 1000 only_in_hub cheat_code "j9hnf9"
+collect "anakin_gen" buy_in_shop 1000 only_in_hub cheat_code "f9vuyj"
+collect "padme_gen" buy_in_shop 1000 only_in_hub cheat_code "8x87u6"
+collect "Obiwan_Gen" buy_in_shop 1000 only_in_hub cheat_code "j9hnf9"
+collect "Clone_Cody" buy_in_shop 1000 only_in_hub cheat_code "smn259"
+collect "Yoda" buy_in_shop 1000 only_in_hub cheat_code "csqtmb" ;customiser_parts ;; <- not suitable for customiser as not a normal superchar
+collect "Clone_Thire" buy_in_shop 13000 only_in_hub cheat_code "3neuxc" customiser_parts
+collect "Clone_Jek" buy_in_shop 13000 only_in_hub cheat_code "ayrec9"
+collect "Clone_Rys" buy_in_shop 13000 only_in_hub cheat_code "4ptp53"
+collect "Ahsoka_Gen" buy_in_shop 1000 only_in_hub cheat_code "2vj9th" customiser_parts
+collect "JarJarBinks" buy_in_shop 1000 only_in_hub cheat_code "mespts" ;customiser_parts ;; <- not suitable for customiser as head is on multiple layers (too complex)
+collect "Clone_Rex" buy_in_shop 1000 only_in_hub cheat_code "mw3qyh" customiser_parts
+collect "Clone_Waxer" buy_in_shop 13000 only_in_hub cheat_code "bnje79"
+collect "Clone_Boil" buy_in_shop 13000 only_in_hub cheat_code "q5q39p"
+collect "MaceWindu" buy_in_shop 1000 only_in_hub cheat_code "8nvrwj" customiser_parts
+collect "Clone_Ponds" buy_in_shop 1000 only_in_hub cheat_code "jrpr2a"
+collect "KiAdiMundi" buy_in_shop 1000 only_in_hub cheat_code "hgbctq" ;customiser_parts ;; <- not suitable for customiser as head is on multiple layers (too complex)
+collect "KitFisto" buy_in_shop 1000 only_in_hub cheat_code "pywj6n" ;customiser_parts ;; <- not suitable for customiser as head is on multiple layers (too complex)
+collect "Clone_Stone" buy_in_shop 1000 only_in_hub cheat_code "5xzqsv"
+collect "AaylaSecura" buy_in_shop 1000 only_in_hub cheat_code "2vg95b" customiser_parts
+collect "Clone_Bly" buy_in_shop 1000 only_in_hub cheat_code "7cb6ns" ;customiser_parts
+collect "WagToo" buy_in_shop 1000 only_in_hub cheat_code "vruvsz" ;customiser_parts ;; <- not suitable for customiser as not a normal superchar
+collect "Luminara" buy_in_shop 1000 only_in_hub cheat_code "mkuyq8" customiser_parts
+collect "Barriss" buy_in_shop 1000 only_in_hub cheat_code "btvtz5" customiser_parts
+collect "Clone_Gen" buy_in_shop 1000 only_in_hub cheat_code "np5gtt"
+collect "R3S6" buy_in_shop 1000 only_in_hub cheat_code "z87pau" ;customiser_parts
+collect "R2D2" buy_in_shop 1000 only_in_hub cheat_code "rz5huv" ;customiser_parts
+collect "Plokoon" buy_in_shop 1000 only_in_hub cheat_code "bud4vu" customiser_parts
+collect "C3PO" buy_in_shop 1000 only_in_hub cheat_code "574226" ;customiser_parts ;; <- not a proper minifig (uses SUPER_PROTOCOLDROID.ghg as base-model) so not suitable for customiser [PConnor]
+collect "NahdarVebb" buy_in_shop 1000 only_in_hub cheat_code "zkxg43" customiser_parts
+collect "Clone_Fil" buy_in_shop 1000 only_in_hub cheat_code "u25hfc"
+collect "Clone_Bazooka" buy_in_shop 1000 only_in_hub cheat_code "wxutwy"
+collect "Clone_Hevy" buy_in_shop 1000 only_in_hub cheat_code "eub8ug"
+collect "Clone_Echo" buy_in_shop 1000 only_in_hub cheat_code "jb9e5s"
+collect "Clone_Fives" buy_in_shop 1000 only_in_hub cheat_code "jb9e5s"
+collect "AdiGallia" buy_in_shop 1000 only_in_hub cheat_code "g2bfen"
+collect "EethKoth" buy_in_shop 1000 only_in_hub cheat_code "wufdya" customiser_parts
+??
+
+
+; === Story unlocks (baddie) ===
+
+collect "CadBane" buy_in_shop 250000 only_in_hub cheat_code "nhme85" customiser_parts
+collect "Aurrasing" buy_in_shop 1000 only_in_hub cheat_code "m2v1jv" customiser_parts
+collect "Robonino" buy_in_shop 1000 only_in_hub cheat_code "2klw5r" ;customiser_parts ;; <- not suitable for customiser as not a normal superchar
+collect "Alama" buy_in_shop 45000 only_in_hub cheat_code "g4n7c2" customiser_parts
+collect "Helios3D" buy_in_shop 1000 only_in_hub cheat_code "4axty4" ;customiser_parts
+collect "IG86" buy_in_shop 1000 only_in_hub cheat_code "eabpcp" ;customiser_parts
+collect "CommandoDroid" buy_in_shop 1000 only_in_hub cheat_code "qegu64" ;customiser_parts
+collect "MagnaGuard_A" buy_in_shop 1000 only_in_hub cheat_code "2kef2d" ;customiser_parts
+collect "CountDooku" buy_in_shop 250000 only_in_hub cheat_code "ewr7wm" ;customiser_parts
+
+
+; === Free-wandering unlocks ===
+
+collect "Wullf" buy_in_shop 15000 only_in_hub cheat_code "ng6pyx" ;customiser_parts
+collect "JangoFett" buy_in_shop 70000 only_in_hub cheat_code "5kzq4d" customiser_parts
+collect "R4p17" buy_in_shop 35000 only_in_hub cheat_code "5mxsya" customiser_parts
+collect "GenericNemodian" buy_in_shop 20000 only_in_hub cheat_code "bjb94j"
+collect "B1Droid_A" buy_in_shop 6500 only_in_hub cheat_code "5y7ma4"
+collect "B2Droid_A" buy_in_shop 25000 only_in_hub cheat_code "mjkdv5"
+collect "Gonk" buy_in_shop 3000 only_in_hub cheat_code "c686pk"
+collect "LepDroid" buy_in_shop 6000 only_in_hub cheat_code "sm3y9b"
+collect "B2DroidGold_A" buy_in_shop 30000 only_in_hub cheat_code "2c8nhp"
+collect "GregarTypho" buy_in_shop 10000 only_in_hub cheat_code "gd6fx3"
+collect "Neeyutnee" buy_in_shop 30000 only_in_hub cheat_code "zqrn85" customiser_parts
+??
+collect "B1Droid_Comm" buy_in_shop 10000 only_in_hub cheat_code "lsu4lj" ;customiser_parts
+collect "Hondo" buy_in_shop 45000 only_in_hub cheat_code "5a7xyx" ;customiser_parts
+collect "Pirate_Gen_A" buy_in_shop 10000 only_in_hub cheat_code "bh2ehu"
+collect "SenatorKharrus" buy_in_shop 20000 only_in_hub cheat_code "ea4e9s" customiser_parts
+collect "Tee_Watt" buy_in_shop 15000 only_in_hub cheat_code "fyvshd" ;customiser_parts ;; <- not suitable for customiser as not a normal superchar
+collect "Turk" buy_in_shop 45000 only_in_hub cheat_code "hebhw5" ;customiser_parts
+collect "ProbeDroid" buy_in_shop 6000 only_in_hub cheat_code "u2t4sp"
+collect "Lurmen_Male_A" buy_in_shop 10000 only_in_hub cheat_code "r35y7n"
+collect "TX20" buy_in_shop 50000 only_in_hub cheat_code "pe7fgd" ;customiser_parts
+collect "Geonosian_Guard" buy_in_shop 15000 only_in_hub cheat_code "gafzud" customiser_parts
+collect "Clone_Topless" buy_in_shop 25000 only_in_hub cheat_code "mp9dre" ;customiser_parts
+collect "BibFortuna" buy_in_shop 30000 only_in_hub cheat_code "9u4tf3" ;customiser_parts
+collect "Geonosian_Zombie" buy_in_shop 10000 only_in_hub cheat_code "qgenfd" customiser_parts
+collect "Droideka_A" buy_in_shop 40000 only_in_hub cheat_code "9muts2"
+collect "B2Droid_B" buy_in_shop 25000 only_in_hub cheat_code "g65kjj"
+collect "R6H5" buy_in_shop 25000 only_in_hub cheat_code "7pmc3c"
+collect "Clone_Pilot" buy_in_shop 15000 only_in_hub cheat_code "hq7bvd"
+collect "Mse_MouseDroid" buy_in_shop 6000 only_in_hub cheat_code "s6grnz"
+collect "Sionver_Boll" buy_in_shop 25000 only_in_hub cheat_code "5c62yq"
+collect "BailOrgana" buy_in_shop 25000 only_in_hub cheat_code "gehx6c" ;customiser_parts
+collect "BD3000" buy_in_shop 15000 only_in_hub cheat_code "v4wmjn" ;customiser_parts
+collect "OnacondaFarr" buy_in_shop 25000 only_in_hub cheat_code "db7zqn" ;customiser_parts
+collect "SenatorPhilo" buy_in_shop 30000 only_in_hub cheat_code "9q7yct" ;customiser_parts
+collect "Senate_Captain" buy_in_shop 25000 only_in_hub cheat_code "s4y7vw" ;customiser_parts
+collect "Senate_Commando" buy_in_shop 25000 only_in_hub cheat_code "epbplk"
+collect "GammoreanGuard" buy_in_shop 40000 only_in_hub cheat_code "wsfzzq" ;customiser_parts ;; <- PConnor - only superchar-based characters should be customiser_parts characters
+collect "Grievous_A" buy_in_shop 250000 only_in_hub cheat_code "7fnu4t" ;customiser_parts
+collect "Ventress_Gen" buy_in_shop 250000 only_in_hub cheat_code "yg9dd7" ;customiser_parts
+
+
+; === Minikit characters ===
+
+collect "Admiral_Ackbar" buy_in_shop 50000 only_in_hub cheat_code "272y9q" ;customiser_parts
+collect "CaptainAntilles" buy_in_shop 50000 only_in_hub cheat_code "d8sngj" ;customiser_parts
+collect "Chewbacca" buy_in_shop 50000 only_in_hub cheat_code "66uu3t" ;customiser_parts
+collect "HanSolo" buy_in_shop 50000 only_in_hub cheat_code "kfdbxf" ;customiser_parts
+collect "LandoCalrissian" buy_in_shop 50000 only_in_hub cheat_code "eraewe" ;customiser_parts
+collect "LeiaOrgana" buy_in_shop 50000 only_in_hub cheat_code "2d3d3l" ;customiser_parts
+collect "LukeSkywalker" buy_in_shop 50000 only_in_hub cheat_code "pg73hf" ;customiser_parts
+collect "Obiwan_Ep4" buy_in_shop 50000 only_in_hub cheat_code "ffbu5m" ;customiser_parts
+collect "QuiGonJinn" buy_in_shop 50000 only_in_hub cheat_code "lkhd3b" ;customiser_parts
+collect "RebelCommando" buy_in_shop 50000 only_in_hub cheat_code "pzmqnk" ;customiser_parts
+collect "Wedge" buy_in_shop 50000 only_in_hub cheat_code "drglws" ;customiser_parts
+collect "Bobba_Fett" buy_in_shop 100000 only_in_hub cheat_code "ty2byj" ;customiser_parts
+collect "Greedo" buy_in_shop 70000 only_in_hub cheat_code "fuw4c2"
+collect "Darth_Maul" buy_in_shop 275000 only_in_hub cheat_code "qh68ak" ;customiser_parts
+collect "Darth_Sid" buy_in_shop 275000 only_in_hub cheat_code "qxy5xn" ;customiser_parts
+collect "Darth_Vader" buy_in_shop 275000 only_in_hub cheat_code "fm4jb7" ;customiser_parts
+collect "Darth_Vader_Damage" buy_in_shop 275000 only_in_hub cheat_code "nmjfbl" ;customiser_parts
+collect "Galen_Marek" buy_in_shop 275000 only_in_hub cheat_code "egqq4v" ;customiser_parts
+collect "Imperial_Guard" buy_in_shop 50000 only_in_hub cheat_code "5w6fgd" ;customiser_parts
+collect "Shadow_Trooper" buy_in_shop 50000 only_in_hub cheat_code "7gfncq" ;customiser_parts
+collect "Storm_Trooper" buy_in_shop 50000 only_in_hub cheat_code "hpe7pz" ;customiser_parts
+collect "Tusken" buy_in_shop 50000 only_in_hub cheat_code "gc2xsa" ;customiser_parts
+
+
+; === Separatists in prison ===
+
+collect "DrNuvo" buy_in_shop 50000 only_in_hub cheat_code "mb9emw" ;customiser_parts
+collect "Wattambor" buy_in_shop 50000 only_in_hub cheat_code "zp8xvh" ;customiser_parts
+collect "LokDurd" buy_in_shop 50000 only_in_hub cheat_code "tkcyuz" ;customiser_parts
+collect "Poggle" buy_in_shop 50000 only_in_hub cheat_code "4592wm" ;customiser_parts
+collect "NuteGunray" buy_in_shop 50000 only_in_hub cheat_code "qfyxmc" ;customiser_parts
+collect "WhormLoathsome" buy_in_shop 50000 only_in_hub cheat_code "4vvyqv" ;customiser_parts
+
+
+; === Unlocks via total galactic conquest in ground assaults ===
+
+collect "Chancellor_Palpatine" buy_in_shop 35000 only_in_hub cheat_code "5c62yq" ;customiser_parts
+collect "GrandMoffTarkin" buy_in_shop 35000 only_in_hub cheat_code "NH2405" ;customiser_parts
+
+
+; === Custom characters (Weirdos) ===
+
+collect "Custom_1" 0 only_in_hub
+collect "Custom_2" 0 only_in_hub
+collect "Custom_3" 0 only_in_hub
+collect "Custom_4" 0 only_in_hub
+collect "Custom_5" 0 only_in_hub
+collect "Custom_6" 0 only_in_hub
+collect "Custom_7" 0 only_in_hub
+collect "Custom_8" 0 only_in_hub
+collect "Custom_9" 0 only_in_hub
+collect "Custom_10" 0 only_in_hub
+collect "Custom_11" 0 only_in_hub
+collect "Custom_12" 0 only_in_hub
+collect "Custom_13" 0 only_in_hub
+collect "Custom_14" 0 only_in_hub
+collect "Custom_15" 0 only_in_hub
+collect "Custom_16" 0 only_in_hub
+collect "Custom_17" 0 only_in_hub
+collect "Custom_18" 0 only_in_hub
+
+
+; === Super-duper secret cheat code character who doesn't count toward 100% ===
+
+collect "savageopress" buy_in_shop 250000 only_in_hub no_progress cheat_code "mell07" ;customiser_parts
+
+
+
+////////////////////
+// SPACE VEHICLES //
+////////////////////
+
+; === Resolute ===
+
+;;; Republic
+
+collect "Anakin_Interceptor" buy_in_shop 1000 only_in_hub cheat_code "rctflv"
+collect "V19_Torrent" buy_in_shop 1000 only_in_hub cheat_code "aka9bb"
+collect "LAAT_Gunship" buy_in_shop 1000 only_in_hub cheat_code "c7m3du"
+collect "PloKoon_Interceptor" buy_in_shop 1000 only_in_hub cheat_code "l4lcdv"
+collect "LAAT_C_Dropship" buy_in_shop 50000 only_in_hub cheat_code "j2jndd"
+collect "twilight" buy_in_shop 50000 only_in_hub cheat_code "t4k5l4"
+collect "Republic_Cruiser" buy_in_shop 50000 only_in_hub cheat_code "j3mfjz"
+collect "BTL_B_YWing" buy_in_shop 50000 only_in_hub cheat_code "xtl6y3"
+collect "Medical_Frigate" buy_in_shop 50000 only_in_hub cheat_code "bet7cu"
+collect "Padme_Yacht" buy_in_shop 50000 only_in_hub cheat_code "77qejl"
+collect "KitFisto_Interceptor" buy_in_shop 50000 only_in_hub cheat_code "h68d3k"
+collect "NuClass_AttackShuttle" buy_in_shop 50000 only_in_hub cheat_code "bqcxwr"
+collect "ambassadorShuttle" buy_in_shop 50000 only_in_hub cheat_code "hrx2uk"
+collect "ARC170_Starfighter" buy_in_shop 50000 only_in_hub cheat_code "zy3ae2"
+collect "obiWan_interceptor" buy_in_shop 50000 only_in_hub cheat_code "25fmvt"
+collect "StealthShip" buy_in_shop 200000 only_in_hub cheat_code "xpy46k"
+
+
+; === Invisible Hand ===
+
+;;; Separatist
+
+collect "Belbullab22_Starfighter" buy_in_shop 200000 only_in_hub cheat_code "7rl23g"
+collect "trident" buy_in_shop 200000 only_in_hub cheat_code "jsbljs"
+collect "Geonosian_solarSailor" buy_in_shop 200000 only_in_hub cheat_code "pj2u3r"
+collect "Hyena_Bomber" buy_in_shop 50000 only_in_hub cheat_code "npgg24"
+collect "Vulture_Droid_Vehicle" buy_in_shop 100 only_in_hub cheat_code "7w7k7s"
+collect "Geonosian_fighter" buy_in_shop 50000 only_in_hub cheat_code "edenec"
+collect "sepratistTransport" buy_in_shop 50000 only_in_hub cheat_code "6lt4ql"
+
+
+;;; Fringe
+
+collect "WeequaySaucer" buy_in_shop 50000 only_in_hub cheat_code "z567hr"
+collect "RogueClass_Porax_38" buy_in_shop 50000 only_in_hub cheat_code "hj5hhd"
+collect "XanaduBlood" buy_in_shop 200000 only_in_hub cheat_code "lq2svt"
+collect "Halo" buy_in_shop 200000 only_in_hub cheat_code "mhg3xb"
+collect "Slave1" buy_in_shop 50000 only_in_hub cheat_code "kddqvd" ; only char moved; originally before StealthShip
+
+
+
+/////////////////////////
+// RTS GROUND VEHICLES //
+/////////////////////////
+
+; === Republic (REP) ===
+
+collect "ATRT" buy_in_shop 50000 funvehicle only_in_hub cheat_code "z7h46t"
+collect "ATAP" buy_in_shop 75000 funvehicle only_in_hub cheat_code "aa279h"
+collect "ATTE" buy_in_shop 100000 funvehicle only_in_hub cheat_code "vbezez"
+collect "Stun_Tank_Chassis" buy_in_shop 250000 funvehicle only_in_hub cheat_code "p8z9m5"
+collect "BARC_Speeder" 0 funvehicle only_in_hub cheat_code "ymwv33"
+
+
+; === Separatist (CIS) ===
+
+collect "Super_Tank" buy_in_shop 100000 funvehicle only_in_hub cheat_code "rylvnw"
+collect "AAT_Chassis" buy_in_shop 50000 funvehicle only_in_hub cheat_code "c9prkp"
+collect "DwarfSpiderDroid" buy_in_shop 75000 funvehicle only_in_hub cheat_code "nacmgg"
+collect "HailFire_Droid" buy_in_shop 75000 funvehicle only_in_hub cheat_code "t7xf9z"
+collect "OG9_HomingSpiderDroid" buy_in_shop 250000 funvehicle only_in_hub cheat_code "7nec36"
+collect "STAP" 0 funvehicle only_in_hub cheat_code "59uu88"
+
+; === Pirate (available in CIS ground assault grid) ===
+
+collect "Pirate_Tank" buy_in_shop 75000 funvehicle only_in_hub cheat_code "3nqgyl"
+collect "Starhawk_SpeederBike" buy_in_shop 50000 funvehicle only_in_hub cheat_code "3re9xv"
