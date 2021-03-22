@@ -1,0 +1,243 @@
+specialmove_start
+	name "devilsnare grab"
+	attacker character "Devilsnare" action "attack1"
+	victim all action "Plant_grabbed"
+	distance_apart 0.0
+	percent_chance 100
+	victim_ignores_attacks
+	flash_victim_at_attack_end
+	start_victim_rot_y 180
+	end_victim_rot_y 180
+	button special
+	min_duration 3.0
+	max_duration 3.0
+	permanent_hold
+	waggle_free
+	it will then look for the next "auto" one and so find the "wait for button" special move
+	to look for the next phase it would remember what you had pressed and look for a special
+	fps 30
+specialmove_end
+
+specialmove_start
+	name "devilsnare wall grab"
+	attacker character "Devilsnare_wall" action "attack1"
+	victim all action "Plant_grabbed_wall"
+	distance_apart 0.19
+	victim_offset_y -0.2
+	percent_chance 100
+	victim_ignores_attacks
+	flash_victim_at_attack_end
+	start_victim_rot_y 180
+	end_victim_rot_y 180
+	button special
+	min_duration 3.0
+	max_duration 3.0
+	permanent_hold
+	waggle_free
+	it will then look for the next "auto" one and so find the "wait for button" special move
+	to look for the next phase it would remember what you had pressed and look for a special
+	fps 30
+specialmove_end
+
+specialmove_start
+	name "cornish pixie pestering"
+	people
+	attacker character "CornishPixie" action "attack5"
+	victim all action "attacked5"
+	distance_apart 0.2
+	percent_chance 100
+	victim_ignores_attacks
+	flash_victim_at_attack_end
+	button special
+	min_duration 3.0
+	max_duration 3.0
+	permanent_hold
+	waggle_free
+	fps 30
+specialmove_end
+
+specialmove_start
+	name "pawn attack"
+	attacker variant "chesspiece_pawn" action "attack1"
+	victim variant "chesspiece_pawn" action "stun"
+	distance_apart 0.2
+	percent_chance 100
+	victim_ignores_attacks
+	flash_victim_at_attack_end
+	kill_victim_at_end
+	button special
+	min_duration 3.0
+	max_duration 3.0
+	permanent_hold
+	fps 30
+specialmove_end
+
+specialmove_start
+	name "Queen bishop attack"
+	attacker variant "chesspiece_queen" action "attack1"
+	victim variant "chesspiece_bishop" action "stun"
+	distance_apart 0.2
+	percent_chance 100
+	victim_ignores_attacks
+	flash_victim_at_attack_end
+	kill_victim_frame 100
+	button special
+	min_duration 3.0
+	max_duration 3.0
+	permanent_hold
+	fps 30
+specialmove_end
+
+specialmove_start
+	name "Queen takes Rook"
+	attacker variant "chesspiece_queen" action "attack2"
+	victim variant "chesspiece_rook" action "stun2"
+	distance_apart 0.392
+	percent_chance 100
+	victim_ignores_attacks
+	flash_victim_at_attack_end
+	kill_victim_frame 105
+	button special
+	min_duration 3.0
+	max_duration 3.0
+	permanent_hold
+	fps 30
+specialmove_end
+
+specialmove_start
+	name "Rook takes Pawn"
+	attacker variant "chesspiece_rook" action "attack1"
+	victim variant "chesspiece_pawn" action "stun2"
+	distance_apart 0.7743
+	percent_chance 100
+	victim_ignores_attacks
+	flash_victim_at_attack_end
+	kill_victim_frame 62
+	attacker_speed_z 0.3742
+	start_attacker_trans_z 0
+	end_attacker_trans_z 65
+	button special
+	min_duration 3.0
+	max_duration 3.0
+	permanent_hold
+	fps 30
+specialmove_end
+
+specialmove_start
+	name "Knight takes Knight"
+	attacker variant "chesspiece_knight" action "attack1"
+	victim variant "chesspiece_knight" action "stun1"
+	distance_apart 0.515
+	percent_chance 100
+	victim_ignores_attacks
+	flash_victim_at_attack_end
+	kill_victim_frame 96
+	attacker_speed_z 0.4016
+	end_attacker_trans_z 83
+	button special
+	min_duration 3.0
+	max_duration 3.0
+	permanent_hold
+	fps 30
+specialmove_end
+
+specialmove_start
+	name "Bishop takes Queen"
+	attacker variant "chesspiece_bishop" action "attack1"
+	victim variant "chesspiece_queen" action "stun1"
+	distance_apart 0.3961
+	percent_chance 100
+	victim_ignores_attacks
+	flash_victim_at_attack_end
+	kill_victim_frame 76
+	attacker_speed_z 0.196
+	start_attacker_trans_z 58
+	end_attacker_trans_z 145
+	button special
+	min_duration 3.0
+	max_duration 3.0
+	permanent_hold
+	fps 30
+specialmove_end
+
+specialmove_start
+	name "Harry initial grab"
+	attacker all action "attack1"
+	attacker except all_small
+	victim character "mandrake" action "idle9"
+	distance_apart 0.1
+	percent_chance 100
+	victim_ignores_attacks
+	phase 1
+	button special
+	min_duration 9999
+specialmove_end
+
+specialmove_start
+	name "Harry wait for button" ;;Includes Walk (moveaction)
+	attacker all action "idle_mandrake" moveaction "walk_mandrake"
+	attacker except all_small
+	victim character "mandrake" action "idle3" moveaction "idle6"
+	percent_chance 100
+	distance_apart 0.1
+	victim_ignores_attacks
+	permanent_hold
+	phase 2
+	button auto
+specialmove_end
+
+specialmove_start
+	name "Harry potting"
+	attacker all action "potting_mandrake"
+	attacker except all_small
+	victim character "mandrake" action "idle7"
+	distance_apart 0.2
+	percent chance 100
+	only_near_obstacle
+	victim_ignores_attacks
+	phase 3
+	button special
+	min_duration 9999
+specialmove_end
+
+specialmove_start
+	name "Harry dropping"
+	attacker all action "attack2"
+	attacker except all_small
+	victim character "mandrake" action "idle8"
+	distance_apart 0.2
+	not only_near_obstacle
+	percent chance 100
+	victim_ignores_attacks
+	phase 3
+	button special
+	min_duration 9999
+specialmove_end
+
+specialmove_start
+	name "Quirrel is touched by Harry"
+	attacker character "Quirrell" action "stun9"
+	victim character "Harry" action "attack9"
+	distance_apart 0.32837
+	percent_chance 100
+	ai_only
+	can_always_do
+	victim_ignores_attacks
+	button special
+	min_duration 9999
+specialmove_end
+
+specialmove_start
+	name "Harry touches Quirrell"
+	attacker character "Harry" action "attack9"
+	victim character "Quirrell" action "stun9"
+	distance_apart 0.32837
+	percent_chance 100
+	can_always_do
+	exclude_party
+	can_use_on_boss
+	victim_ignores_attacks
+	button special
+	min_duration 9999
+specialmove_end
+
