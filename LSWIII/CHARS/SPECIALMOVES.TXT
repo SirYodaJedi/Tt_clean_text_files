@@ -1,0 +1,406 @@
+specialmove_start
+	name "obi vs SB2"
+	attacker character "ObiWan_Gen" action "attack1"
+	attacker character "Anakin_Gen" action "attack1"
+	victim character "B2Droid_A" action "attacked1"
+	distance_apart 0.6988
+	percent_chance 12
+	start_attacker_trans 1
+	end_attacker_trans 8
+	attacker_speed_z 1.0391
+	attacker_speed_x 0.3990
+	start_victim_trans 26
+	end_victim_trans 51
+	victim_speed_z 0.3546
+	button action
+	victim_ignores_attacks
+	kill_victim_at_end
+specialmove_end
+
+specialmove_start
+	name "obi vs SB2 Gold"
+	attacker character "ObiWan_Gen" action "attack1"
+	attacker character "Anakin_Gen" action "attack1"
+	victim character "B2DroidGold_A" action "attacked1"
+	distance_apart 0.6988
+	percent_chance 12
+	start_attacker_trans 1
+	end_attacker_trans 8
+	attacker_speed_z 1.0391
+	attacker_speed_x 0.3990
+	start_victim_trans 26
+	end_victim_trans 51
+	victim_speed_z 0.3546
+	button action
+	victim_ignores_attacks
+	kill_victim_at_end
+specialmove_end
+
+specialmove_start
+	name "obi vs SB2 B"
+	attacker character "ObiWan_Gen" action "attack1"
+	attacker character "Anakin_Gen" action "attack1"
+	victim character "B2Droid_B" action "attacked1"
+	distance_apart 0.6988
+	percent_chance 12
+	start_attacker_trans 1
+	end_attacker_trans 8
+	attacker_speed_z 1.0391
+	attacker_speed_x 0.3990
+	start_victim_trans 26
+	end_victim_trans 51
+	victim_speed_z 0.3546
+	button action
+	victim_ignores_attacks
+	kill_victim_at_end
+specialmove_end
+
+specialmove_start
+	name "obi vs SB2 RP"
+	attacker character "ObiWan_Gen" action "attack1"
+	attacker character "Anakin_Gen" action "attack1"
+	victim character "B2Droid_RP" action "attacked1"
+	distance_apart 0.6988
+	percent_chance 12
+	start_attacker_trans 1
+	end_attacker_trans 8
+	attacker_speed_z 1.0391
+	attacker_speed_x 0.3990
+	start_victim_trans 26
+	end_victim_trans 51
+	victim_speed_z 0.3546
+	button action
+	victim_ignores_attacks
+	kill_victim_at_end
+specialmove_end
+
+specialmove_start
+	name "Anakin vs B1"
+	attacker character "Anakin_Gen" action "attack2"
+	attacker character "ObiWan_Gen" action "attack2"
+	victim character "B1Droid_A" action "attacked2"
+	distance_apart 0.34
+	percent_chance 8
+	start_attacker_trans 1
+	end_attacker_trans 14
+	attacker_speed_z 0.3311
+	attacker_speed_x 0.1708
+	start_victim_trans 39
+	end_victim_trans 47
+	victim_speed_z 0.6709
+	button action
+	victim_ignores_attacks
+	kill_victim_at_end
+specialmove_end
+
+specialmove_start
+	name "R2D2 vs R3S6"
+	attacker type "Astromech" action "attack1"
+	victim type "Astromech" action "attacked1"
+	distance_apart 0.5 //0.3
+	percent_chance 100
+	victim_ignores_attacks
+	mash
+	override_blocks //essential so it occurs even if victim can normally block attacks
+	hurt_victim_frame 114
+	start_victim_trans 114
+	victim_speed_z 1.0
+	damage_on_mash_fail 1
+	only_use_on_boss
+specialmove_end
+
+specialmove_start
+	name "R3S6 vs R2D2"
+	attacker type "Astromech" action "attack2"
+	victim type "Astromech" action "attacked2"
+	distance_apart 0.5 //0.3
+	percent_chance 100
+	victim_ignores_attacks
+	override_blocks //essential so it occurs even if victim can normally block attacks
+	hurt_victim_frame 57
+	ai_only
+	start_victim_trans 57
+	victim_speed_z 0.5
+	can_be_interrupted_by_player // allows the player to interrupt this move
+specialmove_end
+
+specialmove_start
+	name "Grievous_A vs Droideka_A"
+	attacker character "Grievous_A" action "attack1"
+	victim character "Droideka_A" action "attacked1"
+	distance_apart 0.335
+	percent_chance 100
+	hurt_victim_frame 20 //23
+	ai_only
+	continue_without_opponent
+	launch_victim_frame 20 //23
+	launch_mom 0.0 0.0 4.0
+	launch_target_opponent
+	kill_victim_at_end
+specialmove_end
+
+/
+specialmove_start
+	name "Grievous_A Kick"
+	attacker character "Grievous_A" action "attack4"
+	victim All action "attacked4"
+	distance_apart 0.4
+	percent_chance 100
+	hurt_victim_frame 10
+	ai_only
+	continue_without_opponent
+	launch_victim_frame 10
+	launch_mom 0.0 3.0 1.5
+	launchaction fall
+specialmove_end
+
+/
+specialmove_start
+	name "Ahsoka vs Grievous_A" //Ahsoka stuns Grievous
+	attacker type "Jedi" action "Attack17"
+	victim character "Grievous_A" action "Attacked17"
+	distance_apart 0.5
+	percent_chance 100
+	start_victim_trans 141
+	end_victim_trans 161
+	victim_speed_z 1.541603 //1.1591
+	can_use_on_boss
+	override_blocks
+	stun_victim_at_end
+	ai_only
+	dont_match_y
+specialmove_end
+
+/
+specialmove_start
+	name "Ahsoka vs B1DrOID_A" //Ahsoka Chops arm off B1 and beats him to death with the oily end
+	attacker character "Ahsoka_Gen" action "Attack18" //was attack6
+	victim character "B1DROID_A" action "Attacked18" //was attacked6
+	distance_apart 0.476
+	percent_chance 10 //40
+	start_attacker_trans 65
+	end_attacker_trans 86
+	attacker_speed_z 0.2310 //1.1591
+	button action
+	override_blocks
+	kill_victim_frame 145
+specialmove_end
+
+specialmove_start
+	name "Clone vs B1"
+	attacker type "Clone" action "attack3"
+	attacker character "Clone_Gen" action "attack3"
+	attacker character "Clone_HeadLight" action "attack3"
+	attacker character "Clone_Rex" action "attack3"
+	attacker character "Clone_Rys" action "attack3"
+	victim character "B1Droid_A" action "attacked3"
+	distance_apart 0.3 //0.35
+	percent_chance 8
+	start_attacker_trans 5
+	end_attacker_trans 17
+	attacker_speed_z 1.499
+	start_victim_trans 7 //10
+	end_victim_trans 29
+	victim_speed_z 1.75 //1.505
+	button action
+	victim_ignores_attacks
+	kill_victim_frame 31 //28
+specialmove_end
+
+specialmove_start
+	name "yoda vs B1"
+	attacker character "Yoda" action "attack5"
+	victim character "B1Droid_A" action "attacked5"
+	distance_apart 0.6601
+	percent_chance 10
+	start_attacker_trans 5
+	end_attacker_trans 16
+	attacker_speed_z 1.9091
+	button action
+	victim_ignores_attacks
+	kill_victim_at_end
+	finish_without_victim
+specialmove_end
+
+specialmove_start
+	name "Jedi vs MagnaGuard"
+	attacker character "Anakin_Gen" action "attack6"
+	attacker character "ObiWan_Gen" action "attack6"
+	attacker character "kitfisto" action "attack6"
+	attacker character "nahdarvebb" action "attack6"
+	attacker character "EethKoth" action "attack6"
+	attacker type "Jedi" action "attack6"
+	victim character "MagnaGuard_A" action "attacked6"
+	exclude_party
+	distance_apart 0.45
+	percent_chance 100
+	start_attacker_trans 77
+	end_attacker_trans 82
+	attacker_speed_z 1.7034
+	attacker_speed_x 0
+	mash
+	mash_end_frame 125
+	start_victim_trans 134
+	end_victim_trans 142
+	victim_speed_z 0.9585
+	button action
+	victim_ignores_attacks
+	override_blocks
+	has_head
+	lose_head
+	attacker itemflag "lightsabre"
+	victim itemflag "lightsabre"
+specialmove_end
+
+specialmove_start
+	name "Ventress vs Obiwan"
+	attacker character "Ventress_Gen" action "attack7"
+	victim character "Obiwan_Gen" action "attacked7"
+	victim character "Anakin_Gen" action "attacked7"
+	victim type "Jedi" action "attacked7"
+	distance_apart 0.5688
+	percent_chance 0//100
+	start_attacker_trans 1
+	end_attacker_trans 34
+	attacker_speed_z 0.2606
+	start_victim_trans 26
+	end_victim_trans 37
+	victim_speed_z 0.7287
+	button action
+	victim_ignores_attacks
+	override_blocks
+	attacker itemflag "lightsabre"
+	steal_from_victim_frame 28
+	dont_match_y
+specialmove_end
+
+specialmove_start
+	name "Obiwan vs Geonosian Zombie"
+	attacker type "Jedi" action "attack8"
+	victim character "Geonosian_Zombie" action "attacked8"
+	distance_apart 0.6069
+	percent_chance 100
+	start_victim_trans 26
+	end_victim_trans 36
+	victim_speed_z 0.6459
+	button action
+	victim_ignores_attacks
+	override_blocks
+	attacker itemflag exclude "lightsabre"
+	victim itemflag "lightsabre"
+	steal_from_victim_frame 25
+	kill_victim_at_end
+specialmove_end
+
+specialmove_start
+	name "Ahsoka vs Jedi"
+	attacker character "Ahsoka_Gen" action "attack13"
+	victim type "Jedi" action "attacked13"
+	distance_apart 0.54132
+	percent_chance 100
+	start_attacker_trans 48
+	end_attacker_trans 55
+	attacker_speed_z 0.3173
+	start_victim_trans 45
+	end_victim_trans 55
+	victim_speed_z 0.7648
+	button action
+	victim_ignores_attacks
+	override_blocks
+	attacker itemflag exclude "lightsabre"
+	victim itemflag "lightsabre"
+	steal_from_victim_frame 72
+	ai_only
+	dont_match_y
+specialmove_end
+
+specialmove_start
+	name "Jedi vs MagnaGuard Two"
+	attacker character "Anakin_Gen" action "attack14"
+	attacker character "ObiWan_Gen" action "attack14"
+	attacker character "kitfisto" action "attack14"
+	attacker character "nahdarvebb" action "attack14"
+	attacker character "EethKoth" action "attack14"
+	attacker type "Jedi" action "attack14"
+	victim character "MagnaGuard_A" action "attacked14"
+	exclude_party
+	distance_apart 0.45
+	percent_chance 100
+	start_attacker_trans 1
+	end_attacker_trans 8
+	attacker_speed_z 0
+	attacker_speed_x -0.0669
+	mash
+	mash_end_frame 125
+	start_victim_trans 0
+	end_victim_trans 0
+	victim_speed_z 0
+	button action
+	victim_ignores_attacks
+	override_blocks
+	has_head
+	lose_head
+	attacker itemflag "lightsabre"
+	victim itemflag "lightsabre"
+specialmove_end
+
+specialmove_start
+	name "Jedi vs MagnaGuard Three"
+	attacker character "Anakin_Gen" action "attack15"
+	attacker character "ObiWan_Gen" action "attack15"
+	attacker character "kitfisto" action "attack15"
+	attacker character "nahdarvebb" action "attack15"
+	attacker character "EethKoth" action "attack15"
+	attacker type "Jedi" action "attack15"
+	victim character "MagnaGuard_A" action "attacked15"
+	exclude_party
+	distance_apart 0.45
+	percent_chance 100
+	start_attacker_trans 0
+	end_attacker_trans 0
+	attacker_speed_z 0
+	attacker_speed_x 0
+	start_victim_trans 0
+	end_victim_trans 0
+	victim_speed_z 0
+	button action
+	victim_ignores_attacks
+	override_blocks
+	has_head
+	lose_head
+	attacker itemflag "lightsabre"
+	victim itemflag "lightsabre"
+specialmove_end
+
+specialmove_start
+	name "Another Clone vs B1 "
+	attacker type "Clone" action "attack16"
+	victim character "B1Droid_A" action "attacked16"
+	distance_apart 0.4
+	percent_chance 8
+	start_victim_trans 70
+	end_victim_trans 81
+	victim_speed_z 0.59
+	button action
+	victim_ignores_attacks
+	kill_victim_frame 83
+specialmove_end
+
+specialmove_start
+	name "Chewie vs minifig "
+	attacker character "Chewbacca" action "attack19"
+	victim all action "attacked19"
+	distance_apart 0.3
+	percent_chance 100
+	override_blocks
+	start_attacker_trans 1
+	end_attacker_trans 7
+	attacker_speed_z 0.5
+	start_victim_trans 0
+	end_victim_trans 0
+	victim_speed_z 0
+	button action
+	victim_ignores_attacks
+	kill_victim_frame 92
+specialmove_end
+
