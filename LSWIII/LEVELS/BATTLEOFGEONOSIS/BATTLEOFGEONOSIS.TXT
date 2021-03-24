@@ -1,0 +1,42 @@
+SampleOverride DF_HatchClose volume 0.7 near 15 far 30
+story_coins 80000
+character "MaceWindu" player
+character "KitFisto" player
+character "KiAdiMundi" player
+character "B2Droid_A" cutscene
+character "B1Droid_A" cutscene
+character "KiAdiMundi" cutscene
+character "Face_KiAdiMundi" cutscene
+character "face_macewindu" cutscene
+character "kitfisto" cutscene
+character "face_kitfisto" cutscene
+character "macewindu" cutscene
+character "laat_gunship" cutscene
+character "HailFire_Droid" resident
+character "DwarfSpiderDroid" resident
+character "NuteGunray" Resident
+character "Poggle" Resident
+AIMessage "rex_freed" output0 1
+AIMessage "krawlie_assault" output0 2
+AIMessage "HardCell_Destroy_Count" output0 0
+supercounter_start
+pickup "m_pup2" in_level "BattleOfGeonosis" draw_at_gizmo "m_pup2"
+pickup "m_pup3" in_level "BattleOfGeonosis" draw_at_gizmo "m_pup3"
+pickup "m_pup4" in_level "BattleOfGeonosis" draw_at_gizmo "m_pup4"
+pickup "m_pup5" in_level "BattleOfGeonosis" draw_at_gizmo "m_pup5"
+pickup "m_pup6" in_level "BattleOfGeonosis" draw_at_gizmo "m_pup6"
+pickup "m_pup7" in_level "BattleOfGeonosis" draw_at_gizmo "m_pup7"
+pickup "m_pup8" in_level "BattleOfGeonosis" draw_at_gizmo "m_pup8"
+pickup "m_pup9" in_level "BattleOfGeonosis" draw_at_gizmo "m_pup9"
+pickup "m_pup10" in_level "BattleOfGeonosis" draw_at_gizmo "m_pup10"
+pickup "m_pup11" in_level "BattleOfGeonosis" draw_at_gizmo "m_pup11"
+colour 255 0 255
+supercounter_end
+supercounter_start
+pickup "m_pup12" in_level "BattleOfGeonosis" draw_at_gizmo "m_pup12"
+pickup "m_pup13" in_level "BattleOfGeonosis" draw_at_gizmo "m_pup13"
+pickup "m_pup14" in_level "BattleOfGeonosis" draw_at_gizmo "m_pup14"
+pickup "m_pup15" in_level "BattleOfGeonosis" draw_at_gizmo "m_pup15"
+pickup "m_pup16" in_level "BattleOfGeonosis" draw_at_gizmo "m_pup16"
+colour 0 0 255
+supercounter_end

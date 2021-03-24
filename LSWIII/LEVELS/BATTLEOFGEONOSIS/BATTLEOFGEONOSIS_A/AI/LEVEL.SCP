@@ -1,0 +1,87 @@
+
+State Base
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		ResetTimer
+		Set
+		State InitStage1
+	}
+}
+
+State InitStage1
+{
+	Actions
+	{
+		CreateModule #ModGoalIcons #HardCellGoalIcons
+			AddToModule #SetIconCount=5
+			AddToModule #SetCharIconType=hardcell_class
+			AddToModule #SetIconCompleteMsg=HardCell_Destroy_Count
+			AddToModule #AnimateComplete
+			AddToModule #FadeIn
+			AddToModule #RenderBottomAligned
+			AddToModule #RenderStraight
+		EndAddToModule
+		
+		CreateModule #ModMiniKit #VehicleKillCount
+			AddToModule #SetTargetCount=3
+			AddToModule #SetDisplayColour=#Colour_Red
+			AddToModule #SetSpawnPickup=MK_Veh_Kill ;; Name of minikit placed in level
+			AddToModule #SpawnAtCountPos
+		EndAddToModule
+		
+		Set
+		State Stage1
+	}
+}
+
+State Stage1
+{
+	Conditions
+	{
+		if timer > 1 and
+		if RTSNumFactionObelisks Droid == 0 goto InitStage2
+	}
+	Actions
+	{
+		ResetTimer
+	}
+}
+
+State InitStage2
+{
+	Actions
+	{
+		SendToModule #HardCellGoalIcons #FadeOut
+		Set
+		State Stage2
+	}
+}
+
+State Stage2
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		ResetTimer
+		Wait 5
+		PlayCutscene name=BattleOfGeonosis_Midtro
+	}
+}
+
+State EndLevel
+{
+	conditions
+	{
+	}
+	actions
+	{
+		Wait 2.0
+		PlayCutscene name="BattleOfGeonosis_Outro_A"
+	}
+}

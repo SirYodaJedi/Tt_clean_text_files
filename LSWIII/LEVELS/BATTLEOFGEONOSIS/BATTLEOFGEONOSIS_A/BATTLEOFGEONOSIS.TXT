@@ -1,0 +1,193 @@
+TrackBank "BattleOfGeonosis"
+
+
+GlobalFarScale 1.5
+
+
+SampleForceLoad "ShieldGen_Lp"
+SampleForceLoad "ShieldGen_Act"
+SampleForceLoad "ExplodeDebris"
+SampleForceLoad "RTS-CannonImpact"
+SampleForceLoad "RTS_ObjHvy_Land"
+SampleForceLoad "RTS_TransportPickup"
+SampleForceLoad "RTS_VehGenTransmitLp"
+SampleForceLoad "PhotonTorpedoPkup"
+SampleForceLoad "ProtonTorpImpact"
+SampleForceLoad "ProtonTorpLaunch"
+SampleForceLoad "veh_spdrbike_lp"
+SampleForceLoad "SpdrBike_Fire"
+
+
+SampleDisable SpaceMalevIonCharge
+SampleDisable Siren_LP_01
+
+
+Sampleoverride Kam_SparksLp Volume 0.60 FalloffType Linear near 5 far 15
+Sampleoverride KR_Droid_Shoot Volume 0.4
+Sampleoverride KR_Droid_Sliced Volume 0.4
+Sampleoverride SaberOn Volume 0.28
+Sampleoverride SaberOff Volume 0.28
+
+SampleOverride ExplodeLarge1 Volume 0.45
+SampleOverride ExplodeLarge1B Volume 0.45
+SampleOverride ExplodeLarge2 Volume 0.45
+SampleOverride ExplodeLarge3 Volume 0.45
+SampleOverride ExplodeLarge4 Volume 0.45
+
+
+
+
+RTSManager_start
+	Goodie=Clone
+	Baddie=Droid
+	
+	NoRadioControl
+	
+	GoodieVehicles ATRT ATAP ATAP STUNTANK STUNTANK ATTE ATTE ATTE
+	BaddieVehicles HOMINGSPIDER HOMINGSPIDER HAILFIRE HAILFIRE DSD1 DSD1 AAT AAT
+	
+	CamTerrXZBACKOFF 1.0
+	CamTerrFocusOffsetY 0.5
+	
+	MinikitVehicle HAILFIRE
+	
+	Building Cannon NORMAL NORMAL NORMAL SILVER GOLD
+	Building ShieldGenerator NORMAL NORMAL NORMAL SILVER GOLD
+	Building ShieldProjector NORMAL NORMAL SILVER GOLD
+	Building TorpedoGenerator NORMAL NORMAL SILVER GOLD
+RTSManager_end
+
+
+
+include levels\SimpleRTS\RTS_Clone.txt
+include levels\SimpleRTS\RTS_Droid.txt
+include levels\SimpleRTS\RTS_Freeplay.txt
+
+
+KrawlieManager CloneFormationTest WiiGridScale=2
+terlow -4.2
+
+
+character "NuteGunray" Resident
+character "Poggle" Resident
+character "SportsCars_Scout" Resident ;; Comedy vehicle for freeplay
+character "Clone_Gen" cutscene
+character "ATTE" cutscene
+character "ATAP" cutscene
+character "ATRT" cutscene
+character "MaceWindu" cutscene
+character "face_MaceWindu" cutscene
+character "Stun_tank_turret" cutscene
+character "Stun_tank_chassis" cutscene
+character "HardCell_class" resident
+
+
+
+
+maxgizmoblowups 116
+maxgizmoblowuptypes 23
+max_pickups 168
+max_obstacles 9
+max_levers 2
+max_technos 0
+max_zipups 0
+max_grapples 4
+max_ledges 0
+max_securitydoors 1
+max_tubes 0
+max_teleports 0
+max_plugs 0
+max_whippers 0
+max_gizpanels 0
+max_flocks 0
+max_flock_antinodes 0
+max_flock_creatures 0
+
+
+
+Cam_Offset_Style_Default GroundAssault
+
+settings_start=1
+	farclip=10000
+	nearclip=0.14
+
+	backr_top=0
+	backg_top=0
+	backb_top=0
+	backr_bottom=0
+	backg_bottom=0
+	backb_bottom=0
+settings_end
+
+disable_z_prepass
+
+
+
+////// Rooms //////
+
+area_split_settings_start
+	name default
+	RefCamSplitDistEffectRatio 0.8
+	RefCamPullbackClampDist 4.4 ;; this would be nice at 6 for main rts
+	RefCamIgnoreDistDownCamDir off
+	SockPullbackUseOffset off
+	SplitSockSettingsEnabled on
+	SplitEnabled on
+area_split_settings_end
+
+
+
+
+////// Camera sockets (socks) //////
+
+sock_start 00
+	cam_blend_time 1.0
+	campos_seek 5.0
+	cam_x_offset -2.29
+	cam_y_offset 2
+	cam_z_offset -5.54
+	offset_blend_x_ratio 1.0
+	offset_blend_y_ratio 1.0
+	offset_blend_z_ratio 1.0
+	cam_look_ratio_y 0.8
+	cam_pullback_ratio 0.6 0.2 //0.48
+	split_cam_x_offset -2.29
+	split_cam_y_offset 2.0
+	split_cam_z_offset -5.54
+	split_offset_blend_x_ratio 1.0
+	split_offset_blend_y_ratio 1.0
+	split_offset_blend_z_ratio 1.0
+	split_cam_look_ratio_y 0.7
+	split_cam_dist_to_target_xz 5.0
+sock_end
+
+sock_start 01
+	GAME AlwaysOff
+sock_end
+
+sock_start 02
+	GAME AlwaysOff
+sock_end
+
+sock_start 03
+	GAME AlwaysOff
+sock_end
+
+sock_start 04
+	GAME AlwaysOff
+sock_end
+
+sock_start 05
+	GAME AlwaysOff
+sock_end
+
+sock_start 06
+G	AME AlwaysOff
+sock_end
+
+sock_start 07
+	GAME AlwaysOff
+sock_end
+
+newshadowhack
+terlow -2.0
