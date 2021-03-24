@@ -1,0 +1,60 @@
+////// Rooms //////
+
+area_split_settings_start
+	name default
+	RefCamSplitDistEffectRatio 0.8
+	RefCamPullbackClampDist 3.4
+	RefCamIgnoreDistDownCamDir off
+	SockPullbackUseOffset off
+	SplitSockSettingsEnabled on
+	SplitEnabled on
+area_split_settings_end
+
+area_split_settings_start
+	name Ambush_A_EscapePod
+	RefCamSplitDistEffectRatio 0.8
+	RefCamPullbackClampDist 3.4
+	RefCamIgnoreDistDownCamDir off
+	SockPullbackUseOffset off
+	SplitSockSettingsEnabled on
+	SplitEnabled on
+area_split_settings_end
+
+area_split_settings_start
+	name Ambush_A_Bonus
+	RefCamSplitDistEffectRatio 0.8
+	RefCamPullbackClampDist 3.4
+	RefCamIgnoreDistDownCamDir off
+	SockPullbackUseOffset off
+	SplitSockSettingsEnabled on
+	SplitEnabled on
+area_split_settings_end
+
+
+
+////// Camera sockets (socks) //////
+
+sock_start 00
+	cam_blend_time 1.0
+	campos_seek 5.0
+	cam_y_offset 1.1
+	offset_blend_y_ratio 0.72
+	cam_z_offset -2.3
+	offset_blend_z_ratio 0.88
+	cam_look_ratio_y 0.6
+	cam_pullback_ratio 0.55 0.42 //0.55 0.42
+	split_cam_y_offset 1.1
+	split_offset_blend_y_ratio 0.72
+	split_cam_z_offset -2.3
+	split_offset_blend_z_ratio 0.88
+	split_cam_look_ratio_y 0.85
+	split_cam_dist_to_target 3.2
+sock_end
+
+sock_start 01
+	cam_blend_time 1.0
+	campos_seek 5.0
+	cam_look_ratio 0.7
+	cam_pullback_ratio 0.3 0.15 //0.55 0.26
+	split_cam_look_ratio_y 0.85
+sock_end

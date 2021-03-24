@@ -1,0 +1,40 @@
+character "Droideka_A" resident
+character "AAT_chassis" resident
+
+
+
+TrackBank "Ambush_B"
+
+sfx_footstep "Fs_Dirt"
+sfx_Land "FS_Dirt_Land"
+sfx_misc "AATgunSpark_LP"
+sfx_misc "AAT_Destroyed"
+
+
+SampleOverride "AAT_Destroyed" Volume 0.9 near 3 far 15
+
+
+SampleDisable DiscordMissle_Fire
+SampleDisable ProtonTorpLaunch
+SampleDisable ProtonTorpImpact
+SampleDisable RTS-CannonImpact
+SampleDisable TR57_Fire
+
+
+
+special_draw_distance 40
+farclip=10000
+nearclip=0.14
+
+backr_top=0
+backg_top=0
+backb_top=0
+backr_bottom=0
+backg_bottom=0
+backb_bottom=0
+
+
+
+animset Thire_Arm_Set
+animset Minifig_Tank_Specials
+animset Yoda_Tank_Specials

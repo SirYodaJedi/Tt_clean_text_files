@@ -1,0 +1,52 @@
+character "Crab_RideOn" resident
+character "CrabLarvae" resident
+
+
+
+TrackBank "Ambush_A"
+
+
+sfx_footstep "Fs_Dirt"
+sfx_Land "FS_Dirt_Land"
+
+
+SampleOverride SteamHiss_LP_03 near 0.3 far 2.5 RandPitch 0.25 volume 0.2
+SampleOverride ExplodeDebris Volume 0.8 near 20 far 50
+SampleOverride SpaceMalevIonImp Volume 0.3
+SampleOverride GunC_GrRampFall Volume 0.65
+SampleOverride exp_asteroid Volume 0.5
+SampleOverride exp_asteroid_03 Volume 0.5
+
+SampleOverride LegoClicks Volume 0.30
+SampleOverride LegoClicks2 Volume 0.30
+SampleOverride LegoClicks3 Volume 0.30
+SampleOverride LegoClicks4 Volume 0.30
+SampleOverride LegoClicks5 Volume 0.30
+SampleOverride LegoClicks6 Volume 0.30
+SampleOverride LegoClicks7 Volume 0.30
+
+
+SampleDisable Fs_WaterJump
+SampleDisable Fs_WaterWade
+SampleDisable FS_WaterOut
+SampleDisable RTS-CannonImpact
+SampleDisable RTS-CannonImpact2
+
+
+
+
+terlow -40
+special_draw_distance 25
+farclip=10000
+nearclip=0.14
+
+backr_top=0
+backg_top=0
+backb_top=0
+backr_bottom=0
+backg_bottom=0
+backb_bottom=0
+
+
+
+animset Thire_Arm_Set

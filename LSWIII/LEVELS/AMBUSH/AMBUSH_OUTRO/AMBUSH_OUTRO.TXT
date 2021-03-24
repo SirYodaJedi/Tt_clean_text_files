@@ -1,0 +1,6 @@
+backr_top=0
+backg_top=0
+backb_top=0
+backr_bottom=0
+backg_bottom=0
+backb_bottom=0

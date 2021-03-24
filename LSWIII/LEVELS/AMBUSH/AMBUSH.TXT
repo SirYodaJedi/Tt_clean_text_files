@@ -1,0 +1,66 @@
+character "Yoda" player
+character "Clone_Jek" player
+character "Clone_Thire" player
+character "Clone_Rys" player
+
+character "B1Droid_A" resident
+character "B2Droid_A" resident
+
+
+
+AIMessage "Ambush_A_Done_Coral_Right" output0 1
+AIMessage "Ambush_A_Done_Coral_Left" output0 1
+AIMessage "Ambush_A_Coral_Blocked" output0 1
+AIMessage "Ambush_A_Canyon_Arm_Off" output0 1
+AIMessage "Ambush_A_Canyon_Exit_Open" output0 1
+AIMessage "Ambush_A_FreePlayInit" output0 1
+AIMessage "Ambush_A_SpawnCrab" output0 1
+AIMessage "Ambush_A_CrabSpawned" output0 1
+AIMessage "Ambush_A_Sing_Yellow" output0 1
+AIMessage "Ambush_A_Sing_Red" output0 1
+AIMessage "Ambush_A_Sing_Green" output0 1
+
+AIMessage "AMBUSH_Midtro" output0 1
+
+AIMessage "Wind2" output0 1
+AIMessage "Wind3" output0 1
+
+AIMessage "Ambush_B_AAT1_GUNR" output0 1
+AIMessage "Ambush_B_AAT1_GUNL" output0 1
+AIMessage "Ambush_B_AAT2_GUNR" output0 1
+AIMessage "Ambush_B_AAT2_GUNL" output0 1
+AIMessage "Ambush_B_AAT3_GUNR" output0 1
+AIMessage "Ambush_B_AAT3_GUNL" output0 1
+AIMessage "Ambush_B_AAT1_Destroyed" output0 1
+AIMessage "Ambush_B_AAT2_Destroyed" output0 1
+AIMessage "Ambush_B_AAT3_Destroyed" output0 1
+AIMessage "Ambush_B_AAT1_kill" output0 1
+AIMessage "Ambush_B_AAT2_kill" output0 1
+AIMessage "Ambush_B_AAT3_kill" output0 1
+AIMessage "Ambush_B_AAT_ALL_Destroyed" output0 1
+AIMessage "Ambush_B_SilverLego" output0 1
+
+AIMessage "hologram_outroB_start" output0 1
+
+
+supercounter_start
+	pickup "Minikit5_1" in_level "Ambush_A" draw_at_gizmo "Minikit5_1"
+	pickup "Minikit5_2" in_level "Ambush_B" draw_at_gizmo "Minikit5_2"
+	pickup "Minikit5_3" in_level "Ambush_B" draw_at_gizmo "Minikit5_3"
+	pickup "Minikit5_4" in_level "Ambush_B" draw_at_gizmo "Minikit5_4"
+	pickup "Minikit5_5" in_level "Ambush_B" draw_at_gizmo "Minikit5_5"
+	colour 0 255 0
+supercounter_end
+
+supercounter_start
+	pickup "Minikit2_1" in_level "Ambush_A" draw_at_gizmo "Minikit2_1"
+	pickup "Minikit2_2" in_level "Ambush_B" draw_at_gizmo "Minikit2_2"
+	pickup "Minikit2_3" in_level "Ambush_B" draw_at_gizmo "Minikit2_3"
+	pickup "Minikit2_4" in_level "Ambush_B" draw_at_gizmo "Minikit2_4"
+	pickup "Minikit2_5" in_level "Ambush_B" draw_at_gizmo "Minikit2_5"
+	colour 255 0 0
+supercounter_end
+
+
+
+story_coins 68000

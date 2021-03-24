@@ -1,0 +1,112 @@
+
+////// Rooms //////
+
+area_split_settings_start
+	name default
+	RefCamSplitDistEffectRatio 0.76
+	RefCamPullbackClampDist 4.0
+	RefCamIgnoreDistDownCamDir off
+	SockPullbackUseOffset off
+	SplitSockSettingsEnabled on
+	SplitEnabled on
+area_split_settings_end
+
+area_split_settings_start
+	name IndyCave
+	RefCamSplitDistEffectRatio 0.76
+	RefCamPullbackClampDist 3.0
+	RefCamIgnoreDistDownCamDir off
+	SockPullbackUseOffset off
+	SplitSockSettingsEnabled on
+	SplitEnabled on
+area_split_settings_end
+
+area_split_settings_start
+	name SquidCave
+	RefCamSplitDistEffectRatio 0.76
+	RefCamPullbackClampDist 3.5
+	RefCamIgnoreDistDownCamDir off
+	SockPullbackUseOffset off
+	SplitSockSettingsEnabled on
+	SplitEnabled on
+area_split_settings_end
+
+area_split_settings_start
+	name CrabCave
+	RefCamSplitDistEffectRatio 0.75
+	RefCamPullbackClampDist 3.5
+	RefCamIgnoreDistDownCamDir off
+	SockPullbackUseOffset off
+	SplitSockSettingsEnabled on
+	SplitEnabled on
+area_split_settings_end
+
+
+////// Camera sockets (socks) //////
+
+sock_start 00
+	cam_blend_time 1.0
+	campos_seek 5.0
+	cam_y_offset 0.9
+	offset_blend_y_ratio .63
+	cam_z_offset -2.4
+	offset_blend_z_ratio .39
+	cam_look_ratio 0.50
+	cam_look_ratio_y 0.8
+	cam_pullback_ratio 0.42 0.285
+	split_cam_y_offset 0.9
+	split_offset_blend_y_ratio 0.63
+	split_cam_z_offset -2.4
+	split_offset_blend_z_ratio 0.39
+	split_cam_look_ratio_y 0.7 //0.57
+	split_cam_dist_to_target_xz 4.5 //6.5
+sock_end
+
+sock_start 04
+	cam_blend_time 1.0
+	campos_seek 5.0
+	cam_y_offset 0.9
+	offset_blend_y_ratio .63
+	cam_z_offset -2.4
+	offset_blend_z_ratio .39
+	cam_look_ratio 0.850
+	cam_look_ratio_y 0.56
+	cam_pullback_ratio 0.42 0.285
+	split_cam_y_offset 0.9
+	split_offset_blend_y_ratio 0.63
+	split_cam_z_offset -2.4
+	split_offset_blend_z_ratio 0.39
+	split_cam_look_ratio_y 0.57
+	split_cam_dist_to_target_xz 6.5
+sock_end
+
+sock_start 01
+	cam_blend_time 1.0
+	campos_seek 5.0
+	cam_lateral_ratio 0.2
+	cam_look_ratio 0.5
+	cam_pullback_ratio 0.4 0.2
+	split_cam_look_ratio_y 0.99
+	split_cam_lateral_ratio 0.2
+	split_cam_dist_to_target_xz 3.5
+sock_end
+
+sock_start 02
+	cam_blend_time 1.0
+	campos_seek 5.0
+	cam_y_offset 0.9
+	offset_blend_y_ratio 0.2
+	cam_look_ratio_y 0.5
+	cam_pullback_ratio 0.45 0.20
+	split_cam_y_offset 0.9
+	split_offset_blend_y_ratio 0.2
+sock_end
+
+sock_start 03
+	cam_blend_time 1.0
+	campos_seek 5.0
+	cam_look_ratio 0.3
+	cam_pullback_ratio 0.4 0.25
+	split_cam_dist_to_target_xz 2.9
+sock_end
+

@@ -1,0 +1,13 @@
+cutscene_character "face_ventress"
+cutscene_character "face_nuvo"
+cutscene_character "sepratisttransport"
+cutscene_character "ventress_gen"
+cutscene_character "drnuvo"
+
+
+backr_top=0
+backg_top=0
+backb_top=0
+backr_bottom=0
+backg_bottom=0
+backb_bottom=0

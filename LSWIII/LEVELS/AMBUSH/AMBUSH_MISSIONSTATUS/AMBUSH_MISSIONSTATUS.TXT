@@ -1,0 +1,6 @@
+TrackBank "StatusScreen"
+
+SampleOverride PickupCoin Volume 0.4 RandVol 0.70 RandPitch 0.35
+SampleOverride PickupCoin2 Volume 0.4 RandVol 0.70 RandPitch 0.35
+
+load_collection_icons
