@@ -1,0 +1,78 @@
+CONST TRUE_RESULT 0.5
+
+State Base
+{
+	Conditions
+	{
+		if AlwaysTrue > TRUE_RESULT goto BrawlerInit
+	}
+	Actions
+	{
+	}
+}
+
+State BrawlerInit
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		CreateModule #ModAlert #ModAlert
+			SendToModule #ModAlert #SetCreature=this
+			SendToModule #ModAlert #SetCone=100
+			SendToModule #ModAlert #SetRadius=2.0
+			Set
+		State Update
+	}
+}
+
+State Update
+{
+	Conditions
+	{
+		if module "#ModAlert #GetPercentageComplete" == 1.0 goto OhNoJedi
+	}
+	Actions
+	{
+	}
+}
+
+State OhNoJedi
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		SendToModule #ModAlert #AlertAllCreatures
+		FacePlayer mintime=0.2 maxtime=0.5
+		Set
+		State Attack
+	}
+}
+
+State Attack
+{
+	Conditions
+	{
+		if HasGunJamAnim == 1.0 goto PlayGunJamAnim
+	}
+	Actions
+	{
+		BurstShoot MaxBullets=3 MinBullets=1 BulletDelay=0.5 BurstDelay=2.0 TargetOpponent
+	}
+}
+
+State PlayGunJamAnim
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		PlayGunJamAnim
+		Set
+		State Attack
+	}
+}

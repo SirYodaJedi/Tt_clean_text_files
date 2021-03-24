@@ -1,0 +1,167 @@
+CONST TRUE_RESULT 0.5
+
+State Base
+{
+	Conditions
+	{
+		if AlwaysTrue > TRUE_RESULT goto BrawlerInit
+	}
+	Actions
+	{
+	}
+}
+
+State BrawlerInit
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		DontPush
+		IgnoreAsTarget
+		SetDroidRules Type=DroidekaRed
+		
+		CreateModule #ModHint #ShieldHint
+			AddToModule #SetHint=HINT_REDDROIDEKA
+			AddToModule #Pause
+		EndAddToModule
+
+		CreateModule #ModTriggerMsg #ShieldHintTriggerM
+			AddToModule #SetMessage=Ambush_B_ShieldHint
+			AddToModule #Invert
+			State
+		EndAddToModule
+
+		CreateModule #ModTriggerObj #ShieldHintTriggerO
+			AddToModule #SetObj=This
+			AddToModule #CheckPlayerDist=1.5
+		EndAddToModule
+
+		CreateModule #ModEvent #ShieldHintEvent
+			AddToModule #AddTriggerModule=#ShieldHintTriggerM
+			AddToModule #AddTriggerModule=#ShieldHintTriggerO
+			AddToModule #NeedsAllTriggers
+			AddToModule #SetEventOnTag=#Resume
+			AddToModule #SetEventOffTag=#Pause
+			AddToModule #ConnectModule=#ShieldHint
+		EndAddToModule
+
+		CreateModule #ModTriggerObj #DeadTriggerO
+			AddToModule #SetObj=This
+			AddToModule #CheckDead
+			AddToModule #SetMinCheckTime=0.0
+		EndAddToModule
+
+		CreateModule #ModEvent #DeadEvent
+			AddToModule #AddTriggerModule=#DeadTriggerO
+			AddToModule #SetEventMessage=Ambush_B_ShieldHint
+		EndAddToModule
+
+		Set
+		State GetToLocator
+	}
+}
+
+State GetToLocator
+{
+	Conditions
+	{
+		if LocatorRangeXZ < 0.5 goto GetToLocatorSlow
+	}
+	Actions
+	{
+		ResetTimer
+		SetCanBeMagicPushed FALSE
+		GoToLocator 0.1 run
+	}
+}
+
+State GetToLocatorSlow
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		SetCanBeMagicPushed FALSE
+		GoToLocator walk
+		Set
+		State MoveEnd
+	}
+}
+
+State MoveEnd
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		SetCanBeMagicPushed
+		Set
+		State LookAtPlayer
+	}
+}
+
+State LookAtPlayer
+{
+	Conditions
+	{
+		if GotOpponent > TRUE_RESULT goto ShootOpponent
+		if LocatorRangeXZ > 0.5 goto DelayGetToLocator
+	}
+	Actions
+	{
+		FaceClosestPlayer ChangePlayerTime=5.0
+	}
+}
+
+State ShootOpponent
+{
+	Conditions
+	{
+		if GotOpponent < TRUE_RESULT goto LookAtPlayer
+		if LocatorRangeXZ > 0.5 goto DelayGetToLocator
+	}
+	Actions
+	{
+		BurstShoot MaxBullets=5 MinBullets=2 BulletDelay=1.0 BurstDelay=8.0 TargetOpponent
+	}
+}
+
+State DelayGetToLocator
+{
+	Conditions
+	{
+		if Timer > 12.0 goto GetToLocatorSlow
+	}
+	Actions
+	{
+		ResetTimer
+		BurstShoot MaxBullets=5 MinBullets=2 BulletDelay=1.0 BurstDelay=8.0 TargetOpponent
+	}
+}
+
+State BeenDeactivated
+{
+	Conditions
+	{
+		if Deactivated < TRUE_RESULT goto EndBeenDeactivated
+	}
+	Actions
+	{
+	}
+}
+
+State EndBeenDeactivated
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		Set
+		State LookAtPlayer
+	}
+}

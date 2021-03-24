@@ -1,0 +1,59 @@
+CONST TRUE_RESULT 0.5
+
+State Base
+{
+	Conditions
+	{
+		if AlwaysTrue > TRUE_RESULT goto BrawlerInit
+	}
+	Actions
+	{
+	}
+}
+
+State BrawlerInit
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		Set
+		State JumpOutOfTank
+	}
+}
+
+State JumpOutOfTank
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		Wait 1.0
+		BigJump MyLoc xz_delay_percent=0.2
+		Set
+		State Update
+	}
+}
+
+State Update
+{
+	ReferenceScript
+	{
+		Script=b1droid
+		Source=Global
+		Return
+		State=Update
+		Conditions
+		{
+			if AlwaysTrue == 1
+		}
+	}
+	Conditions
+	{
+	}
+	Actions
+	{
+	}
+}

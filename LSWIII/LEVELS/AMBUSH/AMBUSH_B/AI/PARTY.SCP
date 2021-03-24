@@ -1,0 +1,47 @@
+CONST TRUE_RESULT 0.5
+
+State Base
+{
+	Conditions
+	{
+		if AlwaysTrue > TRUE_RESULT goto Init
+	}
+	Actions
+	{
+	}
+}
+
+State Init
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		SetZoneAbility All -A
+		SetExtraAICastLength 3.0
+		Set
+		State Update
+	}
+}
+
+State Update
+{
+	ReferenceScript
+	{
+		Script=GeneralParty
+		Source=Global
+		Return
+		State=Update
+		Conditions
+		{
+		if AlwaysTrue == 1
+		}
+	}
+	Conditions
+	{
+	}
+	Actions
+	{
+	}
+}

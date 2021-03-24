@@ -1,0 +1,129 @@
+CONST TRUE_RESULT 0.5
+
+State Base
+{
+	Conditions
+	{
+		if AlwaysTrue > TRUE_RESULT goto BrawlerInit
+	}
+	Actions
+	{
+	}
+}
+
+State BrawlerInit
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		DontPush
+		IgnoreAsTarget
+		Set
+		State GetToLocator
+	}
+}
+
+State GetToLocator
+{
+	Conditions
+	{
+		if LocatorRangeXZ < 0.5 goto GetToLocatorSlow
+	}
+	Actions
+	{
+		ResetTimer
+		SetCanBeMagicPushed FALSE
+		GoToLocator 0.1 run
+	}
+}
+
+State GetToLocatorSlow
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		SetCanBeMagicPushed FALSE
+		GoToLocator walk
+		Set
+		State MoveEnd
+	}
+}
+
+State MoveEnd
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		SetCanBeMagicPushed
+		Set
+		State LookAtPlayer
+	}
+}
+
+State LookAtPlayer
+{
+	Conditions
+	{
+		if GotOpponent > TRUE_RESULT goto ShootOpponent
+		if LocatorRangeXZ > 0.5 goto DelayGetToLocator
+	}
+	Actions
+	{
+		FaceClosestPlayer ChangePlayerTime=5.0
+	}
+}
+
+State ShootOpponent
+{
+	Conditions
+	{
+		if GotOpponent < TRUE_RESULT goto LookAtPlayer
+		if LocatorRangeXZ > 0.5 goto DelayGetToLocator
+	}
+	Actions
+	{
+		BurstShoot MaxBullets=5 MinBullets=2 BulletDelay=1.0 BurstDelay=8.0 TargetOpponent
+	}
+}
+
+State DelayGetToLocator
+{
+	Conditions
+	{
+		if Timer > 12.0 goto GetToLocatorSlow
+	}
+	Actions
+	{
+		ResetTimer
+		BurstShoot MaxBullets=5 MinBullets=2 BulletDelay=1.0 BurstDelay=8.0 TargetOpponent
+	}
+}
+
+State BeenDeactivated
+{
+	Conditions
+	{
+		if Deactivated < TRUE_RESULT goto EndBeenDeactivated
+	}
+	Actions
+	{
+	}
+}
+
+State EndBeenDeactivated
+{
+	Conditions
+	{
+	}
+	Actions
+	{
+		Set
+		State LookAtPlayer
+	}
+}

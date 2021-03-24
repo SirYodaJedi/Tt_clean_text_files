@@ -1,0 +1,61 @@
+CONST TRUE_RESULT 0.5
+
+State Base
+{
+	conditions
+	{
+		if AlwaysTrue > TRUE_RESULT goto EnterRoom
+	}
+	actions
+	{
+	}
+}
+
+State EnterRoom
+{
+	conditions
+	{
+	}
+	actions
+	{
+		CreateModule #ModTriggerVolume #LiftBlockTrigger
+			AddToModule #SetArea=PlatformJumpBlock
+			AddToModule #TriggeredByParty
+			AddToModule #PlayerControlOnly
+			AddToModule #Invert
+			State
+		EndAddToModule
+
+		CreateModule #ModEdgeGroup #LiftPuzzleBlock
+			AddToModule #SetEdgeGroup=Jump13
+			AddToModule #SetTriggerModule=#LiftBlockTrigger
+			AddToModule #TempBlock
+		EndAddToModule
+
+		CreateModule #ModTriggerVolume #LiftRaisedTrigger
+			AddToModule #SetArea=LiftTop
+			AddToModule #TriggeredByParty
+			AddToModule #Invert
+			State
+		EndAddToModule
+
+		CreateModule #ModNodeGroup #LiftPuzzleNodes
+			AddToModule #SetNodeGroup=LiftNodes
+			AddToModule #SetTriggerModule=#LiftRaisedTrigger
+		EndAddToModule
+
+		DisableAIScatter locomote=locomote_JediPlatform
+		Set
+		State Update
+	}
+}
+
+State Update
+{
+	conditions
+	{
+	}
+	actions
+	{
+	}
+}

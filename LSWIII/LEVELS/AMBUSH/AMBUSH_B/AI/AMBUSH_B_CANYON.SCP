@@ -1,0 +1,788 @@
+CONST TRUE_RESULT 0.5
+
+State Base 
+{
+	conditions
+	{
+	}
+	actions
+	{
+		CreateModule #ModRoomManager #Ambush_B_Canyon #IgnoreExists
+			AddToModule #SetArea=Ambush_B_Canyon
+			AddToModule #SetEnterState=EnterRoom
+			AddToModule #SetExitState=ExitRoom
+			AddToModule #SetInitState=InitRoom
+			AddToModule #SetCompleteState=CompleteRoom
+		EndAddToModule
+
+	}
+}
+
+State EnterRoom
+{
+	conditions
+	{
+	}
+	actions
+	{
+		If FreePlay < 0.5
+			RemoveItem Character=Clone_Thire All
+			AddItem Character=Clone_Thire item=Droid_Head_Thire
+		EndIf
+		
+		NodeGroup name=Tank1Spawn zone=B
+		NodeGroup name=Tank2Spawn zone=C
+		NodeGroup name=Tank3Spawn zone=D
+		
+		if Message Ambush_B_AAT_ALL_Destroyed > 0.5
+			SetState UpdateDroideka
+		EndIf
+		
+		SetState Update
+	}
+}
+
+State ExitRoom
+{
+	conditions
+	{
+	}
+	actions
+	{
+	}
+}
+
+State InitRoom
+{
+	conditions
+	{
+	}
+	actions
+	{
+		SetRoomComplete #Ambush_A_EscapePod
+		
+		if MissionMode == 1.0
+			CreateModule type=#ModCreatureGroup name=#Bounty
+				AddToModule #SetSpawnLocatorSet=Bounty
+				AddToModule #SetSize=1
+				AddToModule #SetCreatureType=Yoda
+				AddToModule #SetCreatureScript=Bounty
+				AddToModule #SetZone=D
+				AddToModule #Activate
+			EndAddToModule
+		EndIf
+		
+		SetMessage name=Ambush_B_SilverLego value=0.0
+		SetMessage name=Ambush_B_AAT1_Destroyed value=0.0
+		SetMessage name=Ambush_B_AAT2_Destroyed value=0.0
+		SetMessage name=Ambush_B_AAT3_Destroyed value=0.0
+		SetMessage name=Ambush_B_AAT_ALL_Destroyed value=0.0
+		SetMessage name=Ambush_B_AAT_Destroyed_Count value=0.0
+		SetMessage name=Ambush_B_Tank1DelayedIcon value=0.0
+		SetMessage name=Ambush_B_Tank2DelayedIcon value=0.0
+		SetMessage name=Ambush_B_Tank3DelayedIcon value=0.0
+		SetMessage name=Ambush_B_ShieldHint value=0.0
+		SetMessage name=Ambush_A_ActionMusic value=0.0
+		
+		CreateModule #ModTankShoot #Tank1GunRight
+			AddToModule #SetBoltType=EnemyBlastBolt
+			AddToModule #SetMaxBullets=4
+			AddToModule #SetMinBullets=3
+			AddToModule #SetMaxShootDelay=6.0
+			AddToModule #SetMinShootDelay=4.0
+			AddToModule #SetBulletDelay=0.2
+			AddToModule #AddTurret
+			AddToModule #SetTurretDestroyedMessage=Ambush_B_AAT1_GUNR
+			AddToModule #AddTurretShootPoint=AAT1_RGun_Shoot_NULL
+			AddToModule #SetTurretConeAng=90.0
+			AddToModule #SetTurretConeOffset=1.0
+			AddToModule #SetTurretMaxRange=12.0
+			AddToModule #NoProcess
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTankShoot #Tank1GunLeft
+			AddToModule #SetBoltType=EnemyBlastBolt
+			AddToModule #SetMaxBullets=4
+			AddToModule #SetMinBullets=3
+			AddToModule #SetMaxShootDelay=6.0
+			AddToModule #SetMinShootDelay=4.0
+			AddToModule #SetBulletDelay=0.2
+			AddToModule #AddTurret
+			AddToModule #SetTurretDestroyedMessage=Ambush_B_AAT1_GUNL
+			AddToModule #AddTurretShootPoint=AAT1_LGun_Shoot_NULL
+			AddToModule #SetTurretConeAng=90.0
+			AddToModule #SetTurretConeOffset=1.0
+			AddToModule #SetTurretMaxRange=12.0
+			AddToModule #NoProcess
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTankShoot #Tank1GunMid
+			AddToModule #SetBoltType=EnemyBlastBolt
+			AddToModule #SetMaxBullets=4
+			AddToModule #SetMinBullets=3
+			AddToModule #SetMaxShootDelay=6.0
+			AddToModule #SetMinShootDelay=4.0
+			AddToModule #SetBulletDelay=0.2
+			AddToModule #AddTurret
+			AddToModule #AddTurretShootPoint=AAT1_MGun_Shoot_NULL
+			AddToModule #SetTurretConeAng=90.0
+			AddToModule #SetTurretConeOffset=1.0
+			AddToModule #SetTurretMaxRange=12.0
+			AddToModule #NoProcess
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModSpawnDoor #Tank1Door
+			AddToModule #SetOpenGizmo=iAAT_Lid_Ob
+			AddToModule #SetArea=Tank1Spawn
+			AddToModule #CreateFromLocatorSet=Tank1Spawn
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModSpawnDoorManager #Tank1DroidsSpawn
+			AddToModule #AddDoor=#Tank1Door
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModCreatureWave #Tank1Droids
+			AddToModule #SetSpawnModule=#Tank1DroidsSpawn
+			AddToModule #SetMinSpawnTime=4.0
+			AddToModule #SetWaveMinSpawnTime=15.0
+			AddToModule #SetMaxActive=6
+			AddToModule #SetLastGenMaxActive=3
+			AddToModule #CanBeKilledByPartyAI
+			AddToModule #SetInterestLocatorSet=SpawnJump
+			AddToModule #AddWaveCreatureType=B1Droid_A
+			AddToModule #SetWaveCreatureScript=TankDroids
+			AddToModule #SetZone=B
+			AddToModule #Activate
+			AddToModule #NoProcess
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTriggerVolume #Tank1TriggerV
+			AddToModule #TriggeredByParty
+			AddToModule #SetArea=Tank1Trigger
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTriggerMsg #Tank1TriggerM
+			AddToModule #SetMessage=Ambush_B_SilverLego
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModEvent #Tank1Event
+			AddToModule #AddTriggerModule=#Tank1TriggerV
+			AddToModule #AddTriggerModule=#Tank1TriggerM
+			AddToModule #SetEventOnTag=#Process
+			AddToModule #CompleteOnEvent
+			AddToModule #ConnectModule=#Tank1Droids
+			AddToModule #ConnectModule=#Tank1GunRight
+			AddToModule #ConnectModule=#Tank1GunLeft
+			AddToModule #ConnectModule=#Tank1GunMid
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTriggerMsg #Tank1DestroyedTrigger
+			AddToModule #SetMessage=Ambush_B_AAT1_Destroyed
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModEvent #Tank1DestroyedEvent
+			AddToModule #AddTriggerModule=#Tank1DestroyedTrigger
+			AddToModule #SetEventOnTag=#NoProcess
+			AddToModule #SetEventOffTag=#Process
+			AddToModule #ConnectModule=#Tank1Droids
+			AddToModule #ConnectModule=#Tank1GunRight
+			AddToModule #ConnectModule=#Tank1GunLeft
+			AddToModule #ConnectModule=#Tank1GunMid
+			AddToModule #ConnectModule=#Tank1Event
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModBespokeAnim #YodaKillTank1
+			AddToModule #SetAnimType=#YodaKillTank1
+			AddToModule #SetGizmo=gizswitch_AAT1
+			AddToModule #SetSpecial=AAT1_Body
+			AddToModule #SetRelativeZOffset=-1.35
+			AddToModule #NoProcess
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTriggerMsg #Tank1KillTrigger
+			AddToModule #SetMessage=Ambush_B_AAT1_Kill
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModEvent #Tank1KillEvent
+			AddToModule #AddTriggerModule=#Tank1KillTrigger
+			AddToModule #SetEventOnTag=#Process
+			AddToModule #CompleteOnEvent
+			AddToModule #ConnectModule=#YodaKillTank1
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTankShoot #Tank2GunRight
+			AddToModule #SetBoltType=EnemyBlastBolt
+			AddToModule #SetMaxBullets=4
+			AddToModule #SetMinBullets=3
+			AddToModule #SetMaxShootDelay=6.0
+			AddToModule #SetMinShootDelay=4.0
+			AddToModule #SetBulletDelay=0.2
+			AddToModule #AddTurret
+			AddToModule #SetTurretDestroyedMessage=Ambush_B_AAT2_GUNR
+			AddToModule #AddTurretShootPoint=AAT2_RGun_Shoot_NULL
+			AddToModule #SetTurretConeAng=90.0
+			AddToModule #SetTurretConeOffset=1.0
+			AddToModule #SetTurretMaxRange=9.5
+			AddToModule #NoProcess
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTankShoot #Tank2GunLeft
+			AddToModule #SetBoltType=EnemyBlastBolt
+			AddToModule #SetMaxBullets=4
+			AddToModule #SetMinBullets=3
+			AddToModule #SetMaxShootDelay=6.0
+			AddToModule #SetMinShootDelay=4.0
+			AddToModule #SetBulletDelay=0.2
+			AddToModule #AddTurret
+			AddToModule #SetTurretDestroyedMessage=Ambush_B_AAT2_GUNL
+			AddToModule #AddTurretShootPoint=AAT2_LGun_Shoot_NULL
+			AddToModule #SetTurretConeAng=90.0
+			AddToModule #SetTurretConeOffset=1.0
+			AddToModule #SetTurretMaxRange=9.5
+			AddToModule #NoProcess
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTankShoot #Tank2GunMid
+			AddToModule #SetBoltType=EnemyBlastBolt
+			AddToModule #SetMaxBullets=4
+			AddToModule #SetMinBullets=3
+			AddToModule #SetMaxShootDelay=6.0
+			AddToModule #SetMinShootDelay=4.0
+			AddToModule #SetBulletDelay=0.2
+			AddToModule #AddTurret
+			AddToModule #AddTurretShootPoint=AAT2_MGun_Shoot_NULL
+			AddToModule #SetTurretConeAng=90.0
+			AddToModule #SetTurretConeOffset=1.0
+			AddToModule #SetTurretMaxRange=9
+			AddToModule #NoProcess
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModSpawnDoor #Tank2Door
+			AddToModule #SetOpenGizmo=iAAT_Lid_Ob1
+			AddToModule #SetArea=Tank2Spawn
+			AddToModule #CreateFromLocatorSet=Tank2Spawn
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModSpawnDoorManager #Tank2DroidsSpawn
+			AddToModule #AddDoor=#Tank2Door
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModCreatureWave #Tank2Droids
+			AddToModule #SetSpawnModule=#Tank2DroidsSpawn
+			AddToModule #SetMinSpawnTime=4.0
+			AddToModule #SetWaveMinSpawnTime=15.0
+			AddToModule #SetMaxActive=6
+			AddToModule #SetLastGenMaxActive=3
+			AddToModule #CanBeKilledByPartyAI
+			AddToModule #SetInterestLocatorSet=SpawnJump
+			AddToModule #AddWaveCreatureType=B1Droid_A
+			AddToModule #SetWaveCreatureScript=TankDroids
+			AddToModule #AddWaveCreatureType=B1Droid_A
+			AddToModule #SetWaveCreatureScript=TankDroids
+			AddToModule #AddWaveCreatureType=B2Droid_A
+			AddToModule #SetWaveCreatureScript=TankSBDroids
+			AddToModule #SetZone=C
+			AddToModule #Activate
+			AddToModule #NoProcess
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTriggerVolume #Tank2TriggerV
+			AddToModule #TriggeredByParty
+			AddToModule #SetArea=Tank2Trigger
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModEvent #Tank2Event
+			AddToModule #AddTriggerModule=#Tank2TriggerV
+			AddToModule #SetEventOnTag=#Process
+			AddToModule #CompleteOnEvent
+			AddToModule #ConnectModule=#Tank2Droids
+			AddToModule #ConnectModule=#Tank2GunRight
+			AddToModule #ConnectModule=#Tank2GunLeft
+			AddToModule #ConnectModule=#Tank2GunMid
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTriggerMsg #Tank2DestroyedTrigger
+			AddToModule #SetMessage=Ambush_B_AAT2_Destroyed
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModEvent #Tank2DestroyedEvent
+			AddToModule #AddTriggerModule=#Tank2DestroyedTrigger
+			AddToModule #SetEventOnTag=#NoProcess
+			AddToModule #SetEventOffTag=#Process
+			AddToModule #ConnectModule=#Tank2Droids
+			AddToModule #ConnectModule=#Tank2GunRight
+			AddToModule #ConnectModule=#Tank2GunLeft
+			AddToModule #ConnectModule=#Tank2GunMid
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModBespokeAnim #YodaKillTank2
+			AddToModule #SetAnimType=#YodaKillTank2
+			AddToModule #SetGizmo=gizswitch_AAT2
+			AddToModule #SetSpecial=AAT2_Body
+			AddToModule #SetRelativeZOffset=-1.35
+			AddToModule #NoProcess
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTriggerMsg #Tank2KillTrigger
+			AddToModule #SetMessage=Ambush_B_AAT2_Kill
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModEvent #Tank2KillEvent
+			AddToModule #AddTriggerModule=#Tank2KillTrigger
+			AddToModule #SetEventOnTag=#Process
+			AddToModule #CompleteOnEvent
+			AddToModule #ConnectModule=#YodaKillTank2
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTankShoot #Tank3GunRight
+			AddToModule #SetBoltType=EnemyBlastBolt
+			AddToModule #SetMaxBullets=4
+			AddToModule #SetMinBullets=3
+			AddToModule #SetMaxShootDelay=6.0
+			AddToModule #SetMinShootDelay=4.0
+			AddToModule #SetBulletDelay=0.2
+			AddToModule #AddTurret
+			AddToModule #SetTurretDestroyedMessage=Ambush_B_AAT3_GUNR
+			AddToModule #AddTurretShootPoint=AAT3_RGun_Shoot_NULL
+			AddToModule #SetTurretConeAng=90.0
+			AddToModule #SetTurretConeOffset=1.0
+			AddToModule #SetTurretMaxRange=9
+			AddToModule #NoProcess
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTankShoot #Tank3GunLeft
+			AddToModule #SetBoltType=EnemyBlastBolt
+			AddToModule #SetMaxBullets=4
+			AddToModule #SetMinBullets=3
+			AddToModule #SetMaxShootDelay=6.0
+			AddToModule #SetMinShootDelay=4.0
+			AddToModule #SetBulletDelay=0.2
+			AddToModule #AddTurret
+			AddToModule #SetTurretDestroyedMessage=Ambush_B_AAT3_GUNL
+			AddToModule #AddTurretShootPoint=AAT3_LGun_Shoot_NULL
+			AddToModule #SetTurretConeAng=90.0
+			AddToModule #SetTurretConeOffset=1.0
+			AddToModule #SetTurretMaxRange=9.0
+			AddToModule #NoProcess
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTankShoot #Tank3GunMid
+			AddToModule #SetBoltType=EnemyBlastBolt
+			AddToModule #SetMaxBullets=4
+			AddToModule #SetMinBullets=3
+			AddToModule #SetMaxShootDelay=6.0
+			AddToModule #SetMinShootDelay=4.0
+			AddToModule #SetBulletDelay=0.2
+			AddToModule #AddTurret
+			AddToModule #AddTurretShootPoint=AAT3_MGun_Shoot_NULL
+			AddToModule #SetTurretConeAng=90.0
+			AddToModule #SetTurretConeOffset=1.0
+			AddToModule #SetTurretMaxRange=8.5
+			AddToModule #NoProcess
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModSpawnDoor #Tank3Door
+			AddToModule #SetOpenGizmo=iAAT_Lid_Ob2
+			AddToModule #SetArea=Tank3Spawn
+			AddToModule #CreateFromLocatorSet=Tank3Spawn
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModSpawnDoorManager #Tank3DroidsSpawn
+			AddToModule #AddDoor=#Tank3Door
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModCreatureWave #Tank3Droids
+			AddToModule #SetSpawnModule=#Tank3DroidsSpawn
+			AddToModule #SetMinSpawnTime=4.0
+			AddToModule #SetWaveMinSpawnTime=15.0
+			AddToModule #SetMaxActive=6
+			AddToModule #SetLastGenMaxActive=3
+			AddToModule #CanBeKilledByPartyAI
+			AddToModule #SetInterestLocatorSet=SpawnJump
+			AddToModule #AddWaveCreatureType=B1Droid_A
+			AddToModule #SetWaveCreatureScript=TankDroids
+			AddToModule #AddWaveCreatureType=B1Droid_A
+			AddToModule #SetWaveCreatureScript=TankDroids
+			AddToModule #AddWaveCreatureType=B2Droid_A
+			AddToModule #SetWaveCreatureScript=TankSBDroids
+			AddToModule #SetZone=D
+			AddToModule #Activate
+			AddToModule #NoProcess
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTriggerVolume #Tank3TriggerV
+			AddToModule #TriggeredByParty
+			AddToModule #SetArea=Tank3Trigger
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModEvent #Tank3Event
+			AddToModule #AddTriggerModule=#Tank3TriggerV
+			AddToModule #SetEventOnTag=#Process
+			AddToModule #CompleteOnEvent
+			AddToModule #ConnectModule=#Tank3Droids
+			AddToModule #ConnectModule=#Tank3GunRight
+			AddToModule #ConnectModule=#Tank3GunLeft
+			AddToModule #ConnectModule=#Tank3GunMid
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTriggerMsg #Tank3DestroyedTrigger
+			AddToModule #SetMessage=Ambush_B_AAT3_Destroyed
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModEvent #Tank3DestroyedEvent
+			AddToModule #AddTriggerModule=#Tank3DestroyedTrigger
+			AddToModule #SetEventOnTag=#NoProcess
+			AddToModule #SetEventOffTag=#Process
+			AddToModule #ConnectModule=#Tank3Droids
+			AddToModule #ConnectModule=#Tank3GunRight
+			AddToModule #ConnectModule=#Tank3GunLeft
+			AddToModule #ConnectModule=#Tank3GunMid
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModBespokeAnim #YodaKillTank3
+			AddToModule #SetAnimType=#YodaKillTank3
+			AddToModule #SetGizmo=gizswitch_AAT3
+			AddToModule #SetSpecial=AAT3_Body
+			AddToModule #SetRelativeZOffset=-1.35
+			AddToModule #NoProcess
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTriggerMsg #Tank3KillTrigger
+			AddToModule #SetMessage=Ambush_B_AAT3_Kill
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModEvent #Tank3KillEvent
+			AddToModule #AddTriggerModule=#Tank3KillTrigger
+			AddToModule #SetEventOnTag=#Process
+			AddToModule #CompleteOnEvent
+			AddToModule #ConnectModule=#YodaKillTank3
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModEvent #Tank1IconDelay
+			AddToModule #AddTriggerModule=#Tank1KillTrigger
+			AddToModule #SetSendDelay=6.0
+			AddToModule #SetEventMessage=Ambush_B_Tank1DelayedIcon
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModEvent #Tank2IconDelay
+			AddToModule #AddTriggerModule=#Tank2KillTrigger
+			AddToModule #SetSendDelay=7.0
+			AddToModule #SetEventMessage=Ambush_B_Tank2DelayedIcon
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModEvent #Tank3IconDelay
+			AddToModule #AddTriggerModule=#Tank3KillTrigger
+			AddToModule #SetSendDelay=6.0
+			AddToModule #SetEventMessage=Ambush_B_Tank3DelayedIcon
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTriggerMsg #Tank1IconDelayTrigger
+			AddToModule #SetMessage=Ambush_B_Tank1DelayedIcon
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTriggerMsg #Tank2IconDelayTrigger
+			AddToModule #SetMessage=Ambush_B_Tank2DelayedIcon
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTriggerMsg #Tank3IconDelayTrigger
+			AddToModule #SetMessage=Ambush_B_Tank3DelayedIcon
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModEvent #TankKillCounter
+			AddToModule #AddTriggerModule=#Tank1IconDelayTrigger
+			AddToModule #AddTriggerModule=#Tank2IconDelayTrigger
+			AddToModule #AddTriggerModule=#Tank3IconDelayTrigger
+			AddToModule #SetCountMessage=Ambush_B_AAT_Destroyed_Count
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModGoalIcons #TankIcons
+			AddToModule #SetIconCount=3
+			AddToModule #SetCharIconType=AAT_chassis
+			AddToModule #SetIconCompleteMsg=Ambush_B_AAT_Destroyed_Count
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		If MissionMode > 0.5
+			SendToModule #TankIcons #NoRender
+		EndIf
+		
+		CreateModule #ModCreatureGroup #SentryDroids
+			AddToModule #SetSize=8
+			AddToModule #SetInitSize=8
+			AddToModule #SetLastGenSize=4
+			AddToModule #SetLastGenInitSize=4
+			AddToModule #CanBeKilledByPartyAI
+			AddToModule #SetSpawnLocatorSet=SilverSentry
+			AddToModule #SetCreatureType=B1Droid_A
+			AddToModule #SetCreatureScript=SentryDroids
+			AddToModule #AddZone=B
+			AddToModule #AddZone=C
+			AddToModule #AddZone=D
+			AddToModule #Activate
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		SetState EnterRoom
+	}
+}
+
+State CompleteRoom
+{
+	conditions
+	{
+	}
+	actions
+	{
+		If FreePlay < 0.5
+			SetLimbHitPoints Character=Clone_Thire HitPoints=1
+			RemoveItem Character=Clone_Thire All
+		EndIf
+	}
+}
+
+State Update
+{
+	conditions
+	{
+		if Message Ambush_B_AAT_ALL_Destroyed > TRUE_RESULT goto EndTanks
+	}
+	actions
+	{
+	}
+}
+
+State EndTanks
+{
+	conditions
+	{
+	}
+	actions
+	{
+		Wait 1.0
+		SendToModule #TankIcons #FadeOutDestroy
+		Wait 3.0
+		SetState InitDroideka
+	}
+}
+
+State InitDroideka
+{
+	conditions
+	{
+	}
+	actions
+	{
+		SetMessage name=Ambush_B_AAT_ALL_Destroyed value=1.0
+		
+		CreateModule #ModMusicInfluence #ActionMusic
+			AddToModule #SetMusicType=#ActionMusic
+		EndAddToModule
+
+		CreateModule #ModCreatureWave #DroidekaSpawn1
+			AddToModule #SetSize=2
+			AddToModule #SetSpawnLocatorSet=DroidekaSpawnAll
+			AddToModule #SetInterestLocatorSet=DroidekaStandAll
+			AddToModule #AddWaveCreatureType=Droideka_A
+			AddToModule #SetWaveCreatureScript=Droideka
+			AddToModule #AddWaveCreatureType=Droideka_A
+			AddToModule #SetWaveCreatureScript=DroidekaRed
+			AddToModule #KeepInterestLocOrder
+			AddToModule #SetZone=D
+			AddToModule #Activate
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModCreatureWave #DroidekaSpawn2
+			AddToModule #SetSize=3
+			AddToModule #SetSpawnLocatorSet=DroidekaSpawnAll
+			AddToModule #SetInterestLocatorSet=DroidekaStandAll
+			AddToModule #AddWaveCreatureType=Droideka_A
+			AddToModule #SetWaveCreatureScript=DroidekaRed
+			AddToModule #AddWaveCreatureType=Droideka_A
+			AddToModule #SetWaveCreatureScript=DroidekaRed
+			AddToModule #AddWaveCreatureType=Droideka_A
+			AddToModule #SetWaveCreatureScript=DroidekaRed
+			AddToModule #KeepInterestLocOrder
+			AddToModule #SetZone=D
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModEvent #Droideka2Event
+			AddToModule #AddTriggerModule=#DroidekaSpawn1
+			AddToModule #CompleteOnEvent
+			AddToModule #SetSendDelay=4.0
+			AddToModule #SetEventOnTag=#Activate
+			AddToModule #ConnectModule=#DroidekaSpawn2
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModGizmoFlash #BolderFlash1
+			AddToModule #SetGizmo=SilverRock_CG4
+			AddToModule #SetTargetColour=#Colour_FlashBlue
+			AddToModule #Pause
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTriggerVolume #Bolder1TriggerV1
+			AddToModule #SetArea=BolderFlash1
+			AddToModule #SetCreatureGroup=#DroidekaSpawn1
+			AddToModule #SetGroupTriggerCount=1
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTriggerVolume #Bolder1TriggerV2
+			AddToModule #SetArea=BolderFlash1
+			AddToModule #SetCreatureGroup=#DroidekaSpawn2
+			AddToModule #SetGroupTriggerCount=1
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModEvent #Bolder1Event
+			AddToModule #AddTriggerModule=#Bolder1TriggerV1
+			AddToModule #AddTriggerModule=#Bolder1TriggerV2
+			AddToModule #SetEventOnTag=#Resume
+			AddToModule #SetEventOffTag=#Pause
+			AddToModule #ConnectModule=#BolderFlash1
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModGizmoFlash #BolderFlash2
+			AddToModule #SetGizmo=SilverRock_CG5
+			AddToModule #SetTargetColour=#Colour_FlashBlue
+			AddToModule #Pause
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTriggerVolume #Bolder2TriggerV1
+			AddToModule #SetArea=BolderFlash2
+			AddToModule #SetCreatureGroup=#DroidekaSpawn1
+			AddToModule #SetGroupTriggerCount=1
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModTriggerVolume #Bolder2TriggerV2
+			AddToModule #SetArea=BolderFlash2
+			AddToModule #SetCreatureGroup=#DroidekaSpawn2
+			AddToModule #SetGroupTriggerCount=1
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModEvent #Bolder2Event
+			AddToModule #AddTriggerModule=#Bolder2TriggerV1
+			AddToModule #AddTriggerModule=#Bolder2TriggerV2
+			AddToModule #SetEventOnTag=#Resume
+			AddToModule #SetEventOffTag=#Pause
+			AddToModule #ConnectModule=#BolderFlash2
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		Wait 1.0
+		
+		CreateModule #ModGoalIcons #DroidekaIcons
+			AddToModule #AttachModule=#DroidekaSpawn1
+			AddToModule #AttachModule=#DroidekaSpawn2
+			AddToModule #SortIcons
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		CreateModule #ModCreatureGroup #PotBoilerDroids
+			AddToModule #SetSpawnLocatorSet=PotBoilerSpawn
+			AddToModule #SetMinSpawnTime=5.0
+			AddToModule #SetDeathSpawnDelay=5.0
+			AddToModule #SetMaxActive=3
+			AddToModule #CanBeKilledByPartyAI
+			AddToModule #SetInterestLocatorSet=PotBoilerRun
+			AddToModule #SetCreatureType=B1Droid_A
+			AddToModule #SetCreatureScript=PotBoilerDroids
+			AddToModule #AddZone=D
+			AddToModule #Activate
+			AddToModule #ProtectLevel
+		EndAddToModule
+
+		SetState UpdateDroideka
+	}
+}
+
+State UpdateDroideka
+{
+	conditions
+	{
+		if Module "#DroidekaSpawn1 #GetPercentageComplete" == 1.0 and
+		if Module "#DroidekaSpawn2 #GetPercentageComplete" == 1.0 goto WaitForEnd
+	}
+	actions
+	{
+	}
+}
+
+State WaitForEnd
+{
+	conditions
+	{
+	}
+	actions
+	{
+		SendToModule #DroidekaIcons #FadeOutDestroy
+		SendToModule #PotBoilerDroids #SetSizeToNumAlive
+		SetState EndLevel
+	}
+}
+
+State EndLevel
+{
+	conditions
+	{
+	}
+	actions
+	{
+		Wait 2.0
+		CompleteLevel door=OUTRO
+	}
+}
